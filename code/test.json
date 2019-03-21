@@ -1,0 +1,462 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000018 require",
+    "1000019 file",
+    "1000020 console"
+  ],
+  "variables": [
+    "1000001 fs",
+    "1000002 readfile",
+    "1000009 fname",
+    "1000010 fname2",
+    "1000011 fname3"
+  ],
+  "enclosed": [
+    "1000018 require",
+    "1000001 fs",
+    "1000019 file",
+    "1000002 readfile",
+    "1000009 fname",
+    "1000020 console",
+    "1000010 fname2",
+    "1000011 fname3"
+  ],
+  "body": [
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "fs",
+            "thedef": "1000001 fs"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000018 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "fs",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "readfile",
+            "thedef": "1000002 readfile"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "name",
+                "thedef": "1000004 name"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "cb",
+                "thedef": "1000005 cb"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000003 arguments",
+              "1000004 name",
+              "1000005 cb"
+            ],
+            "enclosed": [
+              "1000001 fs",
+              "1000019 file",
+              "1000005 cb"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "fs",
+                      "thedef": "1000001 fs"
+                    },
+                    "property": "readFile"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "file",
+                      "thedef": "1000019 file"
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "utf-8",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "err",
+                          "thedef": "1000007 err"
+                        },
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "data",
+                          "thedef": "1000008 data"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000006 arguments",
+                        "1000007 err",
+                        "1000008 data"
+                      ],
+                      "enclosed": [
+                        "1000005 cb",
+                        "1000008 data"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "cb",
+                              "thedef": "1000005 cb"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "data",
+                                "thedef": "1000008 data"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "fname",
+            "thedef": "1000009 fname"
+          },
+          "value": {
+            "_class": "AST_String",
+            "value": "a.txt",
+            "quote": "\""
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "fname2",
+            "thedef": "1000010 fname2"
+          },
+          "value": {
+            "_class": "AST_String",
+            "value": "b.txt",
+            "quote": "\""
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "fname3",
+            "thedef": "1000011 fname3"
+          },
+          "value": {
+            "_class": "AST_String",
+            "value": "ab.txt",
+            "quote": "\""
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "readfile",
+          "thedef": "1000002 readfile"
+        },
+        "args": [
+          {
+            "_class": "AST_SymbolRef",
+            "name": "fname",
+            "thedef": "1000009 fname"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "data",
+                "thedef": "1000013 data"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000012 arguments",
+              "1000013 data"
+            ],
+            "enclosed": [
+              "1000020 console",
+              "1000010 fname2",
+              "1000002 readfile",
+              "1000011 fname3",
+              "1000013 data"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "console",
+                      "thedef": "1000020 console"
+                    },
+                    "property": "log"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "fname2",
+                      "thedef": "1000010 fname2"
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "readfile",
+                    "thedef": "1000002 readfile"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "fname2",
+                      "thedef": "1000010 fname2"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "data2",
+                          "thedef": "1000015 data2"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000014 arguments",
+                        "1000015 data2"
+                      ],
+                      "enclosed": [
+                        "1000020 console",
+                        "1000011 fname3",
+                        "1000002 readfile",
+                        "1000013 data",
+                        "1000015 data2"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "console",
+                                "thedef": "1000020 console"
+                              },
+                              "property": "log"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "fname3",
+                                "thedef": "1000011 fname3"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "readfile",
+                              "thedef": "1000002 readfile"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "fname3",
+                                "thedef": "1000011 fname3"
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "data3",
+                                    "thedef": "1000017 data3"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000016 arguments",
+                                  "1000017 data3"
+                                ],
+                                "enclosed": [
+                                  "1000020 console",
+                                  "1000013 data",
+                                  "1000015 data2",
+                                  "1000017 data3"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "console",
+                                          "thedef": "1000020 console"
+                                        },
+                                        "property": "log"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "data",
+                                          "thedef": "1000013 data"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "console",
+                                          "thedef": "1000020 console"
+                                        },
+                                        "property": "log"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "data2",
+                                          "thedef": "1000015 data2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "console",
+                                          "thedef": "1000020 console"
+                                        },
+                                        "property": "log"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "data3",
+                                          "thedef": "1000017 data3"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
