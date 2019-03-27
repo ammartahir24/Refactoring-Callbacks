@@ -12,9 +12,9 @@
 \begin{document}
 
 \title{Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
+%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+%should not be used}
+%\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
@@ -57,18 +57,25 @@ email address}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+JavaScript is the most dominant language used to develop front-ends and back-end in multiple web applications. This is because of multiple features it brings with it along the lines of event-driven and asynchronous programming; which are one of the most crucial aspects when developing a smooth and fast web interface. One of the features that helps maintain flow of instructions in asynchronous language is callbacks or higher order functions. However, a poor understanding of callbacks can result in many complexities such as nested callbacks (also referred to as callback hell). Another problem that nested callbacks can cause is lose of benefit of asynchrony since execution of program becomes linear when independent functions are nested into callbacks of other function calls. We present a tool developed in JavaScript that checks for independent instructions inside callbacks and refactors them outside of callbacks.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+JavaScript, Callbacks, Refactoring, Asynchronous programming
 \end{IEEEkeywords}
 
-\section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+\section{1. Introduction}
+Callbacks if implemented rightly can result in a very smooth and robust functioning of program, however, callbacks in JavaScript are inherently difficult to understand. They get even more complicated when there are callbacks nested within other callbacks. In addition to increasing complexity in understanding code, they can also result in loss of benefits that JavaScript brings on table with its asynchronous way of executing instructions. Consider the code excerpt in figure 1.1, we see in line number 14 a call to readfile for file1.txt with a callback, in its callback there is another call to same function with file2.txt. Execution of this code will result in a completely serial reading of files, where as we could have achieved better results if second call was outside the callback of first call.
+
+\includegraphics[scale=0.75,read="Fig 1.1"]{introImg1.png}
+
+On average, every tenth function in JavaScript user applications takes a callback as an argument, over 43\% of these callback functions are anonymous and majority of these callbacks are nested[ CITATION Gal15 \l 1033 ]. This naturally means, there will be many such situations where callbacks will be affecting asynchrony and their refactoring will not result in any change in execution of program. This gives us opportunity to develop a method that automates refactoring in JavaScript function callbacks in such a way that independent instructions are taken out of callbacks and placed in a scope where their earlier execution does not affect functionality of program but enhances the overall performance.
+Rest of the articles is divided into following order:
+3- Methodology
+4- Implementation
+5- Limitations and Challenges
+6- Related Work
+7- Conclusion
 
 \section{Ease of Use}
 
@@ -229,7 +236,7 @@ copy& More table copy$^{\mathrm{a}}$& &  \\
 \end{table}
 
 \begin{figure}[htbp]
-\centerline{\includegraphics{fig1.png}}
+
 \caption{Example of a figure caption.}
 \label{fig}
 \end{figure}
