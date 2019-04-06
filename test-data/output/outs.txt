@@ -1,0 +1,186 @@
+---------Vars in scope----------------------
+main [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f0 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f1 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f2 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f3 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES',
+  'example' ]
+f4 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES',
+  'example' ]
+f5 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f6 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f7 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f8 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f9 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES',
+  'invalid' ]
+f10 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES',
+  'invalid' ]
+f11 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES',
+  'invalid' ]
+f12 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f13 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f14 [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+---------Func Args--------------------------
+f0 []
+f1 []
+f2 []
+f3 [ 'example' ]
+f4 []
+f5 []
+f6 []
+f7 []
+f8 []
+f9 [ 'invalid' ]
+f10 []
+f11 []
+f12 []
+f13 []
+f14 []
+---------Vars declared here-----------------
+main [ 'assert',
+  'db',
+  'compressible',
+  'EXAMPLE_TYPES',
+  'INVALID_TYPES' ]
+f0 []
+f1 []
+f2 []
+f3 []
+f4 []
+f5 []
+f6 []
+f7 []
+f8 []
+f9 []
+f10 []
+f11 []
+f12 []
+f13 []
+f14 []
+refactored at line number:  51
+refactored at line number:  62
+refactored at line number:  61
+refactored at line number:  62
+refactored at line number:  60
+refactored at line number:  61
+refactored at line number:  62
+refactored at line number:  67
+refactored at line number:  77
+refactored at line number:  82
+refactored at line number:  81
+refactored at line number:  82
+refactored at line number:  80
+refactored at line number:  81
+refactored at line number:  82
+refactored at line number:  76
+refactored at line number:  79
+refactored at line number:  77
+refactored at line number:  80
+refactored at line number:  81
+refactored at line number:  82
+refactored at line number:  89
+refactored at line number:  90
+refactored at line number:  93
+refactored at line number:  88
+refactored at line number:  92
+refactored at line number:  89
+refactored at line number:  90
+refactored at line number:  93
+---------refactored code--------------------
+var assert=require("assert")
+var db=require("mime-db")
+var compressible=require("../")
+var EXAMPLE_TYPES=[{type:"text/penguins",should:true},{type:"text/html",should:true},{type:"text/plain",should:true},{type:"text/jade",should:true},{type:"something/text",should:undefined},{type:"something/frog+TEXT",should:true},{type:"type/json
+askjkl+json",should:undefined},{type:"type/+json",should:true},{type:'data/beans+xml 
+ charset="utf-8"',should:true},{type:"can/worms+xml
+blaaaah",should:true},{type:"data/xml",should:undefined},{type:"asdf/nope",should:undefined},{type:"cats",should:undefined}]
+var INVALID_TYPES=[undefined,null,0,1,false,true]
+describe("Testing if spec lookups are correct.",function(){})
+describe("Testing if the regex works as intended.",function(){})
+describe("Testing if charsets are handled correctly.",function(){})
+describe("Ensuring invalid types do not cause errors.",function(){})
+describe("Ensuring types are always stripped correctly.",function(){})
+it("All DB `compressible` types should reflect in compressible",function(){for(var type in db){if(db[type].compressible!==undefined){assert.strictEqual(compressible(type),db[type].compressible)}}})
+EXAMPLE_TYPES.forEach(function(example){})
+it(example.type+" should"+(example.should?" ":" not ")+"be compressible",function(){})
+assert.strictEqual(compressible(example.type),example.should)
+it("Charsets should be stripped off without issue",function(){for(var type in db){if(db[type].compressible!==undefined){assert.strictEqual(compressible(type+"
+ charset=utf-8"),db[type].compressible)}}})
+it("No arguments should return false without error",function(){})
+INVALID_TYPES.forEach(function(invalid){})
+assert.strictEqual(compressible(),false)
+it(invalid+" should return false without error",function(){})
+assert.doesNotThrow(function(){})
+assert.strictEqual(compressible(invalid),false)
+it("Uppercase types should work",function(){})
+it("White-spaced types should work",function(){})
+assert.strictEqual(compressible("TEXT/HTML"),true)
+assert.strictEqual(compressible('TEXT/plain
+ charset="utf-8"'),true)
+assert.strictEqual(compressible('application/json 
+ charset="utf-8"'),true)
+

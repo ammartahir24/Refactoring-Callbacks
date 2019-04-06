@@ -1,0 +1,670 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000019 require",
+    "1000020 __dirname",
+    "1000021 JSON"
+  ],
+  "variables": [
+    "1000001 fs",
+    "1000002 infile",
+    "1000003 outfile_pre",
+    "1000004 outfile_json",
+    "1000005 outfile_txt",
+    "1000006 list"
+  ],
+  "enclosed": [
+    "1000019 require",
+    "1000020 __dirname",
+    "1000003 outfile_pre",
+    "1000001 fs",
+    "1000002 infile",
+    "1000004 outfile_json",
+    "1000021 JSON",
+    "1000006 list",
+    "1000005 outfile_txt"
+  ],
+  "body": [
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "fs",
+            "thedef": "1000001 fs"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000019 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "fs",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "infile",
+            "thedef": "1000002 infile"
+          },
+          "value": {
+            "_class": "AST_Binary",
+            "operator": "+",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "__dirname",
+              "thedef": "1000020 __dirname"
+            },
+            "right": {
+              "_class": "AST_String",
+              "value": "/expansions.txt",
+              "quote": "'"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "outfile_pre",
+            "thedef": "1000003 outfile_pre"
+          },
+          "value": {
+            "_class": "AST_Binary",
+            "operator": "+",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "__dirname",
+              "thedef": "1000020 __dirname"
+            },
+            "right": {
+              "_class": "AST_String",
+              "value": "/expansions",
+              "quote": "'"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "outfile_json",
+            "thedef": "1000004 outfile_json"
+          },
+          "value": {
+            "_class": "AST_Binary",
+            "operator": "+",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "outfile_pre",
+              "thedef": "1000003 outfile_pre"
+            },
+            "right": {
+              "_class": "AST_String",
+              "value": ".json",
+              "quote": "'"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "outfile_txt",
+            "thedef": "1000005 outfile_txt"
+          },
+          "value": {
+            "_class": "AST_Binary",
+            "operator": "+",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "outfile_pre",
+              "thedef": "1000003 outfile_pre"
+            },
+            "right": {
+              "_class": "AST_String",
+              "value": ".txt",
+              "quote": "'"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "list",
+            "thedef": "1000006 list"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_Call",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "fs",
+                                    "thedef": "1000001 fs"
+                                  },
+                                  "property": "readFileSync"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "infile",
+                                    "thedef": "1000002 infile"
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "utf8",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              "property": "split"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "\n",
+                                "quote": "\""
+                              }
+                            ]
+                          },
+                          "property": "map"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_Function",
+                            "name": null,
+                            "argnames": [
+                              {
+                                "_class": "AST_SymbolFunarg",
+                                "name": "e",
+                                "thedef": "1000008 e"
+                              }
+                            ],
+                            "uses_arguments": false,
+                            "variables": [
+                              "1000007 arguments",
+                              "1000008 e"
+                            ],
+                            "enclosed": [
+                              "1000008 e"
+                            ],
+                            "body": [
+                              {
+                                "_class": "AST_Return",
+                                "value": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "e",
+                                      "thedef": "1000008 e"
+                                    },
+                                    "property": "trim"
+                                  },
+                                  "args": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "property": "filter"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_Function",
+                        "name": null,
+                        "argnames": [
+                          {
+                            "_class": "AST_SymbolFunarg",
+                            "name": "e",
+                            "thedef": "1000010 e"
+                          }
+                        ],
+                        "uses_arguments": false,
+                        "variables": [
+                          "1000009 arguments",
+                          "1000010 e"
+                        ],
+                        "enclosed": [
+                          "1000010 e"
+                        ],
+                        "body": [
+                          {
+                            "_class": "AST_Return",
+                            "value": {
+                              "_class": "AST_Binary",
+                              "operator": ">",
+                              "left": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "e",
+                                  "thedef": "1000010 e"
+                                },
+                                "property": "length"
+                              },
+                              "right": {
+                                "_class": "AST_Number",
+                                "value": 0
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "property": "filter"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [
+                      {
+                        "_class": "AST_SymbolFunarg",
+                        "name": "e",
+                        "thedef": "1000012 e"
+                      }
+                    ],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000011 arguments",
+                      "1000012 e"
+                    ],
+                    "enclosed": [
+                      "1000012 e"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_Return",
+                        "value": {
+                          "_class": "AST_Binary",
+                          "operator": "!==",
+                          "left": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000012 e"
+                              },
+                              "property": "charAt"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 0
+                              }
+                            ]
+                          },
+                          "right": {
+                            "_class": "AST_String",
+                            "value": "#",
+                            "quote": "'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "property": "sort"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "a",
+                    "thedef": "1000014 a"
+                  },
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "b",
+                    "thedef": "1000015 b"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000013 arguments",
+                  "1000014 a",
+                  "1000015 b"
+                ],
+                "enclosed": [
+                  "1000014 a",
+                  "1000015 b"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "a",
+                              "thedef": "1000014 a"
+                            },
+                            "property": "toLowerCase"
+                          },
+                          "args": []
+                        },
+                        "property": "localeCompare"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "b",
+                              "thedef": "1000015 b"
+                            },
+                            "property": "toLowerCase"
+                          },
+                          "args": []
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "fs",
+            "thedef": "1000001 fs"
+          },
+          "property": "writeFileSync"
+        },
+        "args": [
+          {
+            "_class": "AST_SymbolRef",
+            "name": "outfile_json",
+            "thedef": "1000004 outfile_json"
+          },
+          {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "JSON",
+                "thedef": "1000021 JSON"
+              },
+              "property": "stringify"
+            },
+            "args": [
+              {
+                "_class": "AST_SymbolRef",
+                "name": "list",
+                "thedef": "1000006 list"
+              },
+              {
+                "_class": "AST_Null"
+              },
+              {
+                "_class": "AST_Number",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "fs",
+            "thedef": "1000001 fs"
+          },
+          "property": "writeFileSync"
+        },
+        "args": [
+          {
+            "_class": "AST_SymbolRef",
+            "name": "outfile_txt",
+            "thedef": "1000005 outfile_txt"
+          },
+          {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "list",
+                "thedef": "1000006 list"
+              },
+              "property": "reduce"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "p",
+                    "thedef": "1000017 p"
+                  },
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "c",
+                    "thedef": "1000018 c"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000016 arguments",
+                  "1000017 p",
+                  "1000018 c"
+                ],
+                "enclosed": [
+                  "1000017 p",
+                  "1000018 c"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Binary",
+                      "operator": "+",
+                      "left": {
+                        "_class": "AST_Binary",
+                        "operator": "+",
+                        "left": {
+                          "_class": "AST_SymbolRef",
+                          "name": "p",
+                          "thedef": "1000017 p"
+                        },
+                        "right": {
+                          "_class": "AST_SymbolRef",
+                          "name": "c",
+                          "thedef": "1000018 c"
+                        }
+                      },
+                      "right": {
+                        "_class": "AST_String",
+                        "value": "\n",
+                        "quote": "'"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Binary",
+                "operator": "+",
+                "left": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "list",
+                      "thedef": "1000006 list"
+                    },
+                    "property": "shift"
+                  },
+                  "args": []
+                },
+                "right": {
+                  "_class": "AST_String",
+                  "value": "\n",
+                  "quote": "'"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "fs",
+            "thedef": "1000001 fs"
+          },
+          "property": "appendFileSync"
+        },
+        "args": [
+          {
+            "_class": "AST_SymbolRef",
+            "name": "outfile_txt",
+            "thedef": "1000005 outfile_txt"
+          },
+          {
+            "_class": "AST_Binary",
+            "operator": "+",
+            "left": {
+              "_class": "AST_Binary",
+              "operator": "+",
+              "left": {
+                "_class": "AST_Binary",
+                "operator": "+",
+                "left": {
+                  "_class": "AST_Binary",
+                  "operator": "+",
+                  "left": {
+                    "_class": "AST_String",
+                    "value": "#\n",
+                    "quote": "\""
+                  },
+                  "right": {
+                    "_class": "AST_String",
+                    "value": "# please don't add your expansions down here!\n",
+                    "quote": "\""
+                  }
+                },
+                "right": {
+                  "_class": "AST_String",
+                  "value": "# insert them in alphabetical order to help reduce merge conflicts.\n",
+                  "quote": "\""
+                }
+              },
+              "right": {
+                "_class": "AST_String",
+                "value": "#\n",
+                "quote": "\""
+              }
+            },
+            "right": {
+              "_class": "AST_String",
+              "value": "# <3\n",
+              "quote": "\""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

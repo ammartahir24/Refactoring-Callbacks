@@ -1,0 +1,1488 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000025 require",
+    "1000026 undefined",
+    "1000027 describe",
+    "1000028 it"
+  ],
+  "variables": [
+    "1000001 assert",
+    "1000002 db",
+    "1000003 compressible",
+    "1000004 EXAMPLE_TYPES",
+    "1000005 INVALID_TYPES"
+  ],
+  "enclosed": [
+    "1000025 require",
+    "1000026 undefined",
+    "1000027 describe",
+    "1000028 it",
+    "1000002 db",
+    "1000001 assert",
+    "1000003 compressible",
+    "1000004 EXAMPLE_TYPES",
+    "1000005 INVALID_TYPES"
+  ],
+  "body": [
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "assert",
+            "thedef": "1000001 assert"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000025 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "assert",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "db",
+            "thedef": "1000002 db"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000025 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "mime-db",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "compressible",
+            "thedef": "1000003 compressible"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000025 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "../",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "EXAMPLE_TYPES",
+            "thedef": "1000004 EXAMPLE_TYPES"
+          },
+          "value": {
+            "_class": "AST_Array",
+            "elements": [
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "text/penguins",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "text/html",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "text/plain",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "text/jade",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "something/text",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_SymbolRef",
+                      "name": "undefined",
+                      "thedef": "1000026 undefined"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "something/frog+TEXT",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "type/json;askjkl+json",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_SymbolRef",
+                      "name": "undefined",
+                      "thedef": "1000026 undefined"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "type/+json",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "data/beans+xml ; charset=\"utf-8\"",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "can/worms+xml;blaaaah",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "data/xml",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_SymbolRef",
+                      "name": "undefined",
+                      "thedef": "1000026 undefined"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "asdf/nope",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_SymbolRef",
+                      "name": "undefined",
+                      "thedef": "1000026 undefined"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "type",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "cats",
+                      "quote": "'"
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "should",
+                    "value": {
+                      "_class": "AST_SymbolRef",
+                      "name": "undefined",
+                      "thedef": "1000026 undefined"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "INVALID_TYPES",
+            "thedef": "1000005 INVALID_TYPES"
+          },
+          "value": {
+            "_class": "AST_Array",
+            "elements": [
+              {
+                "_class": "AST_SymbolRef",
+                "name": "undefined",
+                "thedef": "1000026 undefined"
+              },
+              {
+                "_class": "AST_Null"
+              },
+              {
+                "_class": "AST_Number",
+                "value": 0
+              },
+              {
+                "_class": "AST_Number",
+                "value": 1
+              },
+              {
+                "_class": "AST_False"
+              },
+              {
+                "_class": "AST_True"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000027 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "Testing if spec lookups are correct.",
+            "quote": "'"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000006 arguments"
+            ],
+            "enclosed": [
+              "1000028 it",
+              "1000002 db",
+              "1000026 undefined",
+              "1000001 assert",
+              "1000003 compressible"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000028 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "All DB `compressible` types should reflect in compressible",
+                      "quote": "'"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000007 arguments",
+                        "1000008 type"
+                      ],
+                      "enclosed": [
+                        "1000002 db",
+                        "1000008 type",
+                        "1000026 undefined",
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_ForIn",
+                          "init": {
+                            "_class": "AST_Var",
+                            "definitions": [
+                              {
+                                "_class": "AST_VarDef",
+                                "name": {
+                                  "_class": "AST_SymbolVar",
+                                  "name": "type",
+                                  "thedef": "1000008 type"
+                                },
+                                "value": null
+                              }
+                            ]
+                          },
+                          "object": {
+                            "_class": "AST_SymbolRef",
+                            "name": "db",
+                            "thedef": "1000002 db"
+                          },
+                          "body": {
+                            "_class": "AST_BlockStatement",
+                            "body": [
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_Binary",
+                                  "operator": "!==",
+                                  "left": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_Sub",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "db",
+                                        "thedef": "1000002 db"
+                                      },
+                                      "property": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "type",
+                                        "thedef": "1000008 type"
+                                      }
+                                    },
+                                    "property": "compressible"
+                                  },
+                                  "right": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "undefined",
+                                    "thedef": "1000026 undefined"
+                                  }
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_BlockStatement",
+                                  "body": [
+                                    {
+                                      "_class": "AST_SimpleStatement",
+                                      "body": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "assert",
+                                            "thedef": "1000001 assert"
+                                          },
+                                          "property": "strictEqual"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "compressible",
+                                              "thedef": "1000003 compressible"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "type",
+                                                "thedef": "1000008 type"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Sub",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "db",
+                                                "thedef": "1000002 db"
+                                              },
+                                              "property": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "type",
+                                                "thedef": "1000008 type"
+                                              }
+                                            },
+                                            "property": "compressible"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000027 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "Testing if the regex works as intended.",
+            "quote": "'"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000009 arguments"
+            ],
+            "enclosed": [
+              "1000004 EXAMPLE_TYPES",
+              "1000028 it",
+              "1000001 assert",
+              "1000003 compressible"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "EXAMPLE_TYPES",
+                      "thedef": "1000004 EXAMPLE_TYPES"
+                    },
+                    "property": "forEach"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "example",
+                          "thedef": "1000011 example"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000010 arguments",
+                        "1000011 example"
+                      ],
+                      "enclosed": [
+                        "1000028 it",
+                        "1000011 example",
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000028 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_Binary",
+                                  "operator": "+",
+                                  "left": {
+                                    "_class": "AST_Binary",
+                                    "operator": "+",
+                                    "left": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "example",
+                                        "thedef": "1000011 example"
+                                      },
+                                      "property": "type"
+                                    },
+                                    "right": {
+                                      "_class": "AST_String",
+                                      "value": " should",
+                                      "quote": "'"
+                                    }
+                                  },
+                                  "right": {
+                                    "_class": "AST_Conditional",
+                                    "condition": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "example",
+                                        "thedef": "1000011 example"
+                                      },
+                                      "property": "should"
+                                    },
+                                    "consequent": {
+                                      "_class": "AST_String",
+                                      "value": " ",
+                                      "quote": "'"
+                                    },
+                                    "alternative": {
+                                      "_class": "AST_String",
+                                      "value": " not ",
+                                      "quote": "'"
+                                    }
+                                  }
+                                },
+                                "right": {
+                                  "_class": "AST_String",
+                                  "value": "be compressible",
+                                  "quote": "'"
+                                }
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000012 arguments"
+                                ],
+                                "enclosed": [
+                                  "1000001 assert",
+                                  "1000003 compressible",
+                                  "1000011 example"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "assert",
+                                          "thedef": "1000001 assert"
+                                        },
+                                        "property": "strictEqual"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "compressible",
+                                            "thedef": "1000003 compressible"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "example",
+                                                "thedef": "1000011 example"
+                                              },
+                                              "property": "type"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "example",
+                                            "thedef": "1000011 example"
+                                          },
+                                          "property": "should"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000027 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "Testing if charsets are handled correctly.",
+            "quote": "'"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000013 arguments"
+            ],
+            "enclosed": [
+              "1000028 it",
+              "1000002 db",
+              "1000026 undefined",
+              "1000001 assert",
+              "1000003 compressible"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000028 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "Charsets should be stripped off without issue",
+                      "quote": "'"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000014 arguments",
+                        "1000015 type"
+                      ],
+                      "enclosed": [
+                        "1000002 db",
+                        "1000015 type",
+                        "1000026 undefined",
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_ForIn",
+                          "init": {
+                            "_class": "AST_Var",
+                            "definitions": [
+                              {
+                                "_class": "AST_VarDef",
+                                "name": {
+                                  "_class": "AST_SymbolVar",
+                                  "name": "type",
+                                  "thedef": "1000015 type"
+                                },
+                                "value": null
+                              }
+                            ]
+                          },
+                          "object": {
+                            "_class": "AST_SymbolRef",
+                            "name": "db",
+                            "thedef": "1000002 db"
+                          },
+                          "body": {
+                            "_class": "AST_BlockStatement",
+                            "body": [
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_Binary",
+                                  "operator": "!==",
+                                  "left": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_Sub",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "db",
+                                        "thedef": "1000002 db"
+                                      },
+                                      "property": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "type",
+                                        "thedef": "1000015 type"
+                                      }
+                                    },
+                                    "property": "compressible"
+                                  },
+                                  "right": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "undefined",
+                                    "thedef": "1000026 undefined"
+                                  }
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_BlockStatement",
+                                  "body": [
+                                    {
+                                      "_class": "AST_SimpleStatement",
+                                      "body": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "assert",
+                                            "thedef": "1000001 assert"
+                                          },
+                                          "property": "strictEqual"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "compressible",
+                                              "thedef": "1000003 compressible"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Binary",
+                                                "operator": "+",
+                                                "left": {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "type",
+                                                  "thedef": "1000015 type"
+                                                },
+                                                "right": {
+                                                  "_class": "AST_String",
+                                                  "value": "; charset=utf-8",
+                                                  "quote": "'"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Sub",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "db",
+                                                "thedef": "1000002 db"
+                                              },
+                                              "property": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "type",
+                                                "thedef": "1000015 type"
+                                              }
+                                            },
+                                            "property": "compressible"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000027 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "Ensuring invalid types do not cause errors.",
+            "quote": "'"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000016 arguments"
+            ],
+            "enclosed": [
+              "1000028 it",
+              "1000001 assert",
+              "1000003 compressible",
+              "1000005 INVALID_TYPES"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000028 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "No arguments should return false without error",
+                      "quote": "'"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000017 arguments"
+                      ],
+                      "enclosed": [
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "assert",
+                                "thedef": "1000001 assert"
+                              },
+                              "property": "strictEqual"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "compressible",
+                                  "thedef": "1000003 compressible"
+                                },
+                                "args": []
+                              },
+                              {
+                                "_class": "AST_False"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "INVALID_TYPES",
+                      "thedef": "1000005 INVALID_TYPES"
+                    },
+                    "property": "forEach"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "invalid",
+                          "thedef": "1000019 invalid"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000018 arguments",
+                        "1000019 invalid"
+                      ],
+                      "enclosed": [
+                        "1000028 it",
+                        "1000019 invalid",
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000028 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "invalid",
+                                  "thedef": "1000019 invalid"
+                                },
+                                "right": {
+                                  "_class": "AST_String",
+                                  "value": " should return false without error",
+                                  "quote": "'"
+                                }
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000020 arguments"
+                                ],
+                                "enclosed": [
+                                  "1000001 assert",
+                                  "1000003 compressible",
+                                  "1000019 invalid"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "assert",
+                                          "thedef": "1000001 assert"
+                                        },
+                                        "property": "doesNotThrow"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Function",
+                                          "name": null,
+                                          "argnames": [],
+                                          "uses_arguments": false,
+                                          "variables": [
+                                            "1000021 arguments"
+                                          ],
+                                          "enclosed": [
+                                            "1000001 assert",
+                                            "1000003 compressible",
+                                            "1000019 invalid"
+                                          ],
+                                          "body": [
+                                            {
+                                              "_class": "AST_SimpleStatement",
+                                              "body": {
+                                                "_class": "AST_Call",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "assert",
+                                                    "thedef": "1000001 assert"
+                                                  },
+                                                  "property": "strictEqual"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_Call",
+                                                    "expression": {
+                                                      "_class": "AST_SymbolRef",
+                                                      "name": "compressible",
+                                                      "thedef": "1000003 compressible"
+                                                    },
+                                                    "args": [
+                                                      {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "invalid",
+                                                        "thedef": "1000019 invalid"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "_class": "AST_False"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000027 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "Ensuring types are always stripped correctly.",
+            "quote": "'"
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000022 arguments"
+            ],
+            "enclosed": [
+              "1000028 it",
+              "1000001 assert",
+              "1000003 compressible"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000028 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "Uppercase types should work",
+                      "quote": "'"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000023 arguments"
+                      ],
+                      "enclosed": [
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "assert",
+                                "thedef": "1000001 assert"
+                              },
+                              "property": "strictEqual"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "compressible",
+                                  "thedef": "1000003 compressible"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "TEXT/HTML",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              {
+                                "_class": "AST_True"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "assert",
+                                "thedef": "1000001 assert"
+                              },
+                              "property": "strictEqual"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "compressible",
+                                  "thedef": "1000003 compressible"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "TEXT/plain; charset=\"utf-8\"",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              {
+                                "_class": "AST_True"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000028 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "White-spaced types should work",
+                      "quote": "'"
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000024 arguments"
+                      ],
+                      "enclosed": [
+                        "1000001 assert",
+                        "1000003 compressible"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "assert",
+                                "thedef": "1000001 assert"
+                              },
+                              "property": "strictEqual"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "compressible",
+                                  "thedef": "1000003 compressible"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "application/json ; charset=\"utf-8\"",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              {
+                                "_class": "AST_True"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
