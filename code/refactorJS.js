@@ -41,23 +41,20 @@ async function convertAstToCode(ast){
 	return uglifyjs.minify(ast, astToCode)
 }
 
-//variables that are in scope of given variable
+//variables that are in scope of given variable(function,if)
 scopedvars = {};
 //variables given as argument of a function
 funcargs = {};
 //variables decalred inside scope of a function
 funcvars = {};
 //to differentiate anonymous functions, ast does not do automatically.
+refac_funcs = {};
+cbcount = 0;
 var anon_count = 0;
 
 async function readfilee(file,cb){
 	fs.readFile(file, "utf-8", function (err,data){
 		cb(data);
-	})
-}
-var writefile = function(file,data,cb){
-	fs.writeFile(file,data,function(err){
-		cb();
 	})
 }
 
@@ -66,7 +63,8 @@ var getcount = function(data){
 	var count =0;
 	for(var key in data){
 		if(data.hasOwnProperty(key)){
-			if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
+			if(data[key]["_class"]=="AST_Var" 
+				&& data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
 				count++;
 			}
 			if(data[key]["_class"]=="AST_SimpleStatement"){
@@ -79,7 +77,8 @@ var getcount = function(data){
 					})
 				}
 			}
-			if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]["_class"]=="AST_Call"){
+			if(data[key]["_class"]=="AST_Var" 
+				&& data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Call"){
 				if("args" in  data[key]["definitions"][0]["value"]){
 					templist = data[key]["definitions"][0]["value"]["args"];
 					templist.forEach(function(i){
@@ -94,6 +93,11 @@ var getcount = function(data){
 			}
 			if(data[key]['_class']=='AST_For'){
 				count++;
+			}
+			if(data[key]['_class']=='AST_If'){
+				count++;
+				if(data[key]['alternative']!=null)
+					count++;
 			}
 		}
 	}
@@ -115,7 +119,7 @@ async function printify(data, scope, list, indent,cb){
 		var check = 0;
 		for(var key in data){
 			if(data.hasOwnProperty(key)){
-				if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
+				if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
 					funchandler(data[key]["definitions"][0]["value"]["argnames"],nlist,function(nnlist,args){
 						count++;
 						check = 1;
@@ -156,7 +160,7 @@ async function printify(data, scope, list, indent,cb){
 				}
 				else if(data[key]['_class']=='AST_While'){
 					count++;
-					printify(data[key]['body']['body'],'while',nlist,"--"+indent,function(){
+					printify(data[key]['body']['body'],'while'+anon_count++,nlist,"--"+indent,function(){
 						if(count==tcount){
 							cb();
 						}
@@ -168,13 +172,33 @@ async function printify(data, scope, list, indent,cb){
 					}
 					templist = data[key]['body']['body']
 					count++;
-					printify(templist,"for",nlist,"--"+indent,function(){
+					printify(templist,"for"+anon_count++,nlist,"--"+indent,function(){
 						if(count==tcount){
 							cb();
 						}
 					})
 				}
-				else if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]["_class"]=="AST_Call" 
+				//write code for if condition  here:
+				else if(data[key]["_class"]=="AST_If"){
+					console.log(data[key])
+					count++;
+					printify(data[key]['body']['body'],'if'+anon_count++,nlist,"--"+indent,function(){
+						if(count==tcount){
+							cb()
+						}
+					})
+					if(data[key]['alternative']!=null){
+						count++;
+						printify([data[key]['alternative']],"if"+anon_count++,nlist,"--"+indent,function(){
+							console.log("IF COND")
+							if(count==tcount){
+								cb()
+							}
+						})
+					}
+				}
+
+				else if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Call" 
 					&& "args" in  data[key]["definitions"][0]["value"]){
 					templist = data[key]["definitions"][0]["value"]["args"];
 					templist.forEach (function(i){
@@ -219,6 +243,7 @@ var funchandler = function(data, liste, cb){
 		list.push(data[i]["name"]);
 		args.push(data[i]["name"]);
 	}
+	console.log(list,args)
 	cb(list,args);
 }
 
@@ -231,7 +256,7 @@ var scopefinder = function(data, liste, cb){
 	}
 	for(var key in data){
 		if(data.hasOwnProperty(key)){
-			if(data[key]["_class"]=="AST_Var" && 
+			if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& 
 data[key]["definitions"][0]["value"]["_class"]!="AST_Function"){
 				list.push(data[key]["definitions"][0]["name"]["name"]);
 				fvars.push(data[key]["definitions"][0]["name"]["name"]);
@@ -258,10 +283,17 @@ data[key]["definitions"][0]["value"]["_class"]!="AST_Function"){
 //As stated earlier refactor also works on certain keywords. Rest of the implementation for other keywords
 //can be done in retty similar fashion.
 
+var extractFuncName = function(exp){
+	if (exp['_class']=='AST_SymbolRef'){
+		return exp['name'];
+	}
+	return extractFuncName(exp['expression'])+"."+exp['property']
+}
+
 var refactor = function(data,mdata,name,mname,mast,ast,signal){
 	for (var key in data){
 		if(data.hasOwnProperty(key)){
-			if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
+			if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
 				refactor(data[key]["definitions"][0]["value"]["body"],data,data[key]["definitions"][0]["name"]["name"],name,ast,ast[key]["definitions"][0]["value"]["body"],0);
 			}
 			else if(data[key]["_class"]=="AST_SimpleStatement" && "args" in data[key]["body"]){
@@ -288,7 +320,9 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 			else if(data[key]['_class']=='AST_While'){
 				refactor(data[key]['body']['body'],data,'while',name,ast,ast[key]['body']['body'],0)
 			}
-			else if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]["_class"]=="AST_Call" 
+			//write code for if condition here
+
+			else if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Call" 
 					&& "args" in  data[key]["definitions"][0]["value"]){
 				templist = data[key]["definitions"][0]["value"]["args"];
 				templist.forEach (function(i){
@@ -303,7 +337,8 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 							nem = i["fname"]
 							index = templist.findIndex(x =>x["fname"]==nem);
 						}
-						refactor(i["body"],data,nem,name,ast,ast[key]["body"]["args"][index]["body"],1);
+						if(ast[key]['body']!=null)
+							refactor(i["body"],data,nem,name,ast,ast[key]["body"]["args"][index]["body"],1);
 					}
 				})
 			}
@@ -323,9 +358,10 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 					indices.push(i)
 				}
 			}
+			//write code for if condition here
 			else if(data[i]["_class"]=="AST_Var"){
 				if(data[i]['definitions'][0]['_class']=='AST_VarDef'){
-					if(data[i]['definitions'][0]['value']['_class']=='AST_Call'){
+					if(data[i]['definitions'][0]['value']!=null && data[i]['definitions'][0]['value']['_class']=='AST_Call'){
 						var nem = data[i]['definitions'][0]['name']['name'];
 						liste = data[i]['definitions'][0]['value']['args']
 						var move = true;
@@ -364,6 +400,8 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 			else if(data[i]["_class"]=="AST_Function"){
 				if(ismoveable(data[i],name)){
 					console.log("refactored at line number: ",ast[i]['start']['line'])
+					cbcount++;
+					console.log(data[i])
 					//to_refactor.push(ast[i]);
 					//d_refactor.push(data[i]);
 					indices.push(i)
@@ -397,6 +435,15 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 					}
 					if(move==true){
 						console.log("refactored at line number: ",ast[i]['start']['line'])
+						cbcount++;
+						var funcname = extractFuncName(data[i]['body']['expression'])
+						if (refac_funcs.hasOwnProperty(funcname)){
+							refac_funcs[funcname]++;
+						}
+						else{
+							refac_funcs[funcname] = 1
+						}
+						// console.log("second",extractFuncName(data[i]['body']['expression']))
 						//to_refactor.push(ast[i]);
 						//d_refactor.push(data[i]);
 						indices.push(i)
@@ -530,6 +577,10 @@ async function prog(fname){
 			codelines = resultCode.code.split(';')
 			for(var i=0; i<codelines.length; i++){
 				console.log(codelines[i])
+			}
+			console.log("---------Refactored function count----------")
+			for (var key in refac_funcs){
+				console.log(key,":",refac_funcs[key])
 			}
 		});
 	})
