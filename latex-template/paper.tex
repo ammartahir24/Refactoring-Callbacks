@@ -11,28 +11,29 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Paper Title*\\
+\title{RefactorMyCallbacks : An automation to refactor
+instructions from within callbacks in JavaScript\\
 %{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
 %should not be used}
 %\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 \author{\IEEEauthorblockN{Ammar Tahir}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
+\IEEEauthorblockA{\textit{Computer Science Department} \\
+\textit{LUMS}\\
+Lahore, Pakistan \\
+20100212@lums.edu.pk}
 \and
 \IEEEauthorblockN{Sheikh Abdul Mannan}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
+\IEEEauthorblockA{\textit{Computer Science Department} \\
+\textit{LUMS}\\
+Lahore, Pakistan \\
+20100261@lums.edu.pk}
 \and
 \IEEEauthorblockN{Junaid Haroon Siddiqui}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
+\IEEEauthorblockA{\textit{Computer Science Department} \\
+\textit{LUMS}\\
+Lahore, Pakistan \\
+junaid.siddiqui@lums.edu.pk}
 }
 
 \maketitle
@@ -57,7 +58,7 @@ On average, every tenth function in JavaScript user applications takes a callbac
 
 
 Rest of the articles is divided into following order:
-\begin{itemize}
+\begin{enumerate}
 	\item Methodology
 	\item Implementation
 	\item Testing
@@ -65,40 +66,30 @@ Rest of the articles is divided into following order:
 	\item Related Work
 	\item Conclusion
 
-\end{itemize}
+\end{enumerate}
 
 \section{Methodology}
 Our proposed solution refactors all the independent instructions from callbacks, these can be reduced and limited to only async I/O or other blocking instruction but for simplicity we will currently refactor all independent instructions. Our solution mainly consists of 3 major parts:
-\begin{itemize}
+\begin{enumerate}
 	\item AST extraction
 	\item Execution context extraction
 	\item Decision based refactoring
-\end{itemize}
+\end{enumerate}
 \subsection{AST extraction}
 Abstract Syntax Tree is the context form of a parse tree that contains information about order of different instructions, operators and variables. An AST assigns a separate node to every operator or operand it encounters in code; thus, making a full fledge tree for the whole syntax of program. There are multiple different tools available that produce detailed AST for any given code. We can extract information like names of variables, scope of variables, structure of functions and metadata like line number in actual code etc. 
 
 \subsection{Execution Context extraction}
 Next, we use AST to develop execution context of our program. Execution context is the environment, different functions execute in. Typically, execution context contains information such as names of variables, scopes of variables, variables declared within a function and global variables. To extract execution context, we maintain dictionaries for different variables: for variables in scope of each function we maintain a separate dictionary, for variables declared in a function we have a separate dictionary and for arguments of function we have a different dictionary. We traverse the whole AST recursively from root to leaves and at each node we check if it’s a variable we append it to appropriate function’s list. At the end of this function we have complete execution context of the program. Pseudo code for Execution Context Extraction is shown in figure 2.
 
-\begin{figure}[htbp]
+\begin{figure}[t]
 	\includegraphics[scale=0.5]{code-execcon-extract.png}
 	\caption{Pseudo code for Execution Context Extraction}
 	\label{fig}
 \end{figure}
 
+
+
 \subsection{Decision based refactoring}
-
-\begin{figure}[htbp]
-	\includegraphics[scale=0.5]{not-refactorable-example.png}
-	\caption{An example where instruction (at line number 2) is not refactorable}
-	\label{fig}
-\end{figure}
-
-\begin{figure}[htbp]
-	\includegraphics[scale=0.5]{refactorable-example.png}
-	\caption{An example where instruction (at line number 3) is refactorable}
-	\label{fig}
-\end{figure}
 
 
 After we have execution context and we know scopes of different variables, we can now make decisions about what instructions are refactorable. We can refactor only a few types of instruction, the fact that what instructions are fit for refactoring depends upon what variables they depend upon. In this perspective we can have following 4 cases:
@@ -113,7 +104,18 @@ After we have execution context and we know scopes of different variables, we ca
 		In other case when variable cannot be refactored, we do not refactor any instruction that contains it.}
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[t]
+	\includegraphics[scale=0.5]{not-refactorable-example.png}
+	\caption{An example where instruction (at line number 2) is not refactorable}
+	\label{fig}
+\end{figure}
+
+\begin{figure}[t]
+	\includegraphics[scale=0.5]{refactorable-example.png}
+	\caption{An example where instruction (at line number 3) is refactorable}
+	\label{fig}
+\end{figure}
+\begin{figure}[t]
 	\includegraphics[scale=0.5]{code-decision-refactor.png}
 	\caption{Pseudo code for Decision Based Refactoring}
 	\label{fig}
