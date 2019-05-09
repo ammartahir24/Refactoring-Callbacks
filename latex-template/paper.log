@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.2)  9 MAY 2019 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.2)  9 MAY 2019 21:44
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -509,7 +509,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Underfull \hbox (badness 3989) in paragraph at lines 44--46
+Underfull \hbox (badness 3989) in paragraph at lines 45--47
 []\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---JavaScript, Call-backs, Refac-to
 r-ing, Asyn-
  []
@@ -517,58 +517,58 @@ r-ing, Asyn-
 <introImg1.png, id=1, 469.00218pt x 258.9675pt>
 File: introImg1.png Graphic file (type png)
 <use introImg1.png>
-Package pdftex.def Info: introImg1.png  used on input line 51.
+Package pdftex.def Info: introImg1.png  used on input line 52.
 (pdftex.def)             Requested size: 234.50052pt x 129.48341pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
-("C:\Users\sam\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
-
-("C:\Users\sam\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 [1{C:/Users/sam/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
  <./introImg1.png>]
-<code-execcon-extract.png, id=13, 507.39563pt x 179.92218pt>
+<code-execcon-extract.png, id=12, 507.39563pt x 179.92218pt>
 File: code-execcon-extract.png Graphic file (type png)
 <use code-execcon-extract.png>
-Package pdftex.def Info: code-execcon-extract.png  used on input line 84.
+Package pdftex.def Info: code-execcon-extract.png  used on input line 85.
 (pdftex.def)             Requested size: 253.69719pt x 89.96086pt.
 
-Overfull \hbox (1.69719pt too wide) in paragraph at lines 84--85
+Overfull \hbox (1.69719pt too wide) in paragraph at lines 85--86
 [][] 
  []
 
-<not-refactorable-example.png, id=14, 432.11438pt x 82.05656pt>
+LaTeX Font Info:    Try loading font information for U+msa on input line 97.
+("C:\Users\sam\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 97.
+
+("C:\Users\sam\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<not-refactorable-example.png, id=13, 432.11438pt x 82.05656pt>
 File: not-refactorable-example.png Graphic file (type png)
 <use not-refactorable-example.png>
-Package pdftex.def Info: not-refactorable-example.png  used on input line 92.
+Package pdftex.def Info: not-refactorable-example.png  used on input line 108.
 (pdftex.def)             Requested size: 216.05666pt x 41.02817pt.
-<refactorable-example.png, id=15, 446.41782pt x 97.11281pt>
+<refactorable-example.png, id=14, 446.41782pt x 97.11281pt>
 File: refactorable-example.png Graphic file (type png)
 <use refactorable-example.png>
-Package pdftex.def Info: refactorable-example.png  used on input line 98.
+Package pdftex.def Info: refactorable-example.png  used on input line 114.
 (pdftex.def)             Requested size: 223.20836pt x 48.55627pt.
-<code-decision-refactor.png, id=16, 526.21594pt x 177.66376pt>
+<code-decision-refactor.png, id=15, 526.21594pt x 177.66376pt>
 File: code-decision-refactor.png Graphic file (type png)
 <use code-decision-refactor.png>
-Package pdftex.def Info: code-decision-refactor.png  used on input line 117.
+Package pdftex.def Info: code-decision-refactor.png  used on input line 119.
 (pdftex.def)             Requested size: 263.10733pt x 88.83165pt.
 
-Overfull \hbox (11.10733pt too wide) in paragraph at lines 117--118
+Overfull \hbox (11.10733pt too wide) in paragraph at lines 119--120
 [][] 
  []
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 124--125
+Underfull \hbox (badness 3590) in paragraph at lines 126--127
 []\OT1/ptm/m/n/10 We have im-ple-mented above men-tioned pro-gram in
  []
 
 [2 <./code-execcon-extract.png> <./not-refactorable-example.png> <./refactorabl
-e-example.png> <./code-decision-refactor.png>]
+e-example.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -580,7 +580,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (paper.aux)
+[3 <./code-decision-refactor.png>] (paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -588,7 +588,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4387 strings out of 492945
  65036 string characters out of 3127141
- 137619 words of memory out of 3000000
+ 138619 words of memory out of 3000000
  8225 multiletter control sequences out of 15000+200000
  35813 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -600,7 +600,7 @@ utmb8a.pfb><C:/Users/sam/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmbi8a.pfb><C:/Users/sam/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Users/sam/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on paper.pdf (3 pages, 116883 bytes).
+Output written on paper.pdf (3 pages, 117238 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
