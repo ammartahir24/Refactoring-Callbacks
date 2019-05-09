@@ -16,19 +16,19 @@
 %should not be used}
 %\thanks{Identify applicable funding agency here. If none, delete this.}
 }
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\author{\IEEEauthorblockN{Ammar Tahir}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockN{Sheikh Abdul Mannan}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockN{Junaid Haroon Siddiqui}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
@@ -87,13 +87,27 @@ Next, we use AST to develop execution context of our program. Execution context 
 \end{figure}
 
 \subsection{Decision based refactoring}
+
+\begin{figure}[htbp]
+	\includegraphics[scale=0.5]{not-refactorable-example.png}
+	\caption{An example where instruction (at line number 2) is not refactorable}
+	\label{fig}
+\end{figure}
+
+\begin{figure}[htbp]
+	\includegraphics[scale=0.5]{refactorable-example.png}
+	\caption{An example where instruction (at line number 3) is refactorable}
+	\label{fig}
+\end{figure}
+
+
 After we have execution context and we know scopes of different variables, we can now make decisions about what instructions are refactorable. We can refactor only a few types of instruction, the fact that what instructions are fit for refactoring depends upon what variables they depend upon. In this perspective we can have following 4 cases:
 \begin{itemize}
 	\item {\textbf{Instruction depends upon no variable:}
 		There can be instructions that do not depend upon any of the variables for example declaration of a new variable, or line number 15 from figure 1 is fit to be refactored. In this case, instruction is safe to be refactored.}
-	\item{\textbf{Instruction depends upon function argument:}Since callbacks may include instructions that are dependent upon arguments of main function, we should not refactor these instructions out of function.}
+	\item{\textbf{Instruction depends upon function argument:}Since callbacks may include instructions that are dependent upon arguments of main function, we should not refactor these instructions out of function. Figure 3 shows another version of code from figure 1 where line 2 is not refactorable now.}
 	\item{\textbf{Instructions depend upon variables declared in scope of parent function:}
-		In this case, such an instruction will be safe to be refactored.}
+		In this case, such an instruction will be safe to be refactored. Consult figure 4, where line number 2 is refactorable now because it has been declared in scope outside of containing function.}
 	\item{\textbf{Instruction depends on a variable declared within the scope of function:}
 		This case can have two scenarios, either the variable in terms of which the instruction is expressed is itself refactorable or it is not. In first case, when variable itself is refactorable, we can first let variable declaration instruction get refactored first and then refactor the instruction that contains the said variable.
 		In other case when variable cannot be refactored, we do not refactor any instruction that contains it.}
