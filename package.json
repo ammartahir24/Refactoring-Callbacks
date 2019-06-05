@@ -1,0 +1,23 @@
+{
+  "name": "refactoring-callbacks",
+  "version": "1.0.0",
+  "description": "project that refactors code according to callbacks",
+  "main": "index.js",
+  "dependencies": {
+    "uglify-js": "^3.5.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabdulm/Refactoring-Callbacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabdulm/Refactoring-Callbacks/issues"
+  },
+  "homepage": "https://github.com/sabdulm/Refactoring-Callbacks#readme"
+}
