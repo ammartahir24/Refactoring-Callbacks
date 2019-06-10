@@ -296,6 +296,16 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 			if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
 				refactor(data[key]["definitions"][0]["value"]["body"],data,data[key]["definitions"][0]["name"]["name"],name,ast,ast[key]["definitions"][0]["value"]["body"],0);
 			}
+			// masla from here
+			else if(data[key]["_class"]==="AST_SimpleStatement" && data[key]["body"]["_class"]==="AST_Call" && data[key]["body"]["expression"]["name"] === "assert"){
+				refactor(data[key]['body'],data,'assert',name,ast,ast[key]['body']['body'],0)
+			}
+
+			else if(data[key]["_class"]==="AST_SimpleStatement" && data[key]["body"]["_class"]==="AST_Call" && data[key]["body"]["expression"]["_class"] === "AST_Dot" && data[key]["body"]["expression"]["expression"]["name"]==="assert"){
+				refactor(data[key]['body'],data,'assert',name,ast,ast[key]['body']['body'],0)
+			}
+			// till here
+			// just can't figure out recursive me bhejna kya hai...
 			else if(data[key]["_class"]=="AST_SimpleStatement" && "args" in data[key]["body"]){
 				templist = data[key]["body"]["args"];
 				templist.forEach (function(i){
@@ -341,7 +351,7 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 							refactor(i["body"],data,nem,name,ast,ast[key]["body"]["args"][index]["body"],1);
 					}
 				})
-			}
+			}			
 		}
 	}
 	if(signal){

@@ -11,7 +11,7 @@
     "@babel/core": "^7.4.5"
   },
   "scripts": {
-    "convert-es5" : "babel orig -d es5",
+    "convert-es5" : "babel test-data/orig -d test-data/es5",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
