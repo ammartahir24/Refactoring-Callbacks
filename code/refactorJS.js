@@ -110,7 +110,7 @@ var getcount = function(data){
 //purpose of this project, variable declaration, function call, function declaration,
 //Anonymous function declaration. For loop and while loop some time malfunction.
 
-async function printify(data, scope, list, indent,cb){
+async function printify(data, scope, list, indent,cb, forif=0){
 	var count = 0;
 	var tcount = getcount(data);
 	scopefinder(data,list,function(nlist, fvars){
@@ -179,18 +179,27 @@ async function printify(data, scope, list, indent,cb){
 					})
 				}
 				//write code for if condition  here:
-				else if(data[key]["_class"]=="AST_If"){
-					console.log(data[key])
-					count++;
-					printify(data[key]['body']['body'],'if'+anon_count++,nlist,"--"+indent,function(){
+				else if(data[key]["_class"]=="AST_BlockStatement"){
+					printify(data[key]['body'],'if'+anon_count++,nlist,"--"+indent,function(){
 						if(count==tcount){
 							cb()
 						}
 					})
+				}
+				else if(data[key]["_class"]=="AST_If"){
+					console.log("IF CONDSSSS",data[key])
+					count++;
 					if(data[key]['alternative']!=null){
 						count++;
 						printify([data[key]['alternative']],"if"+anon_count++,nlist,"--"+indent,function(){
-							console.log("IF COND")
+							console.log("IF COND",data[key]['alternative'])
+							if(count==tcount){
+								cb()
+							}
+						},0)
+					}
+					if (forif==0){
+						printify(data[key]['body']['body'],'if'+anon_count++,nlist,"--"+indent,function(){
 							if(count==tcount){
 								cb()
 							}
@@ -296,16 +305,6 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 			if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Function"){
 				refactor(data[key]["definitions"][0]["value"]["body"],data,data[key]["definitions"][0]["name"]["name"],name,ast,ast[key]["definitions"][0]["value"]["body"],0);
 			}
-			// masla from here
-			else if(data[key]["_class"]==="AST_SimpleStatement" && data[key]["body"]["_class"]==="AST_Call" && data[key]["body"]["expression"]["name"] === "assert"){
-				refactor(data[key]['body'],data,'assert',name,ast,ast[key]['body']['body'],0)
-			}
-
-			else if(data[key]["_class"]==="AST_SimpleStatement" && data[key]["body"]["_class"]==="AST_Call" && data[key]["body"]["expression"]["_class"] === "AST_Dot" && data[key]["body"]["expression"]["expression"]["name"]==="assert"){
-				refactor(data[key]['body'],data,'assert',name,ast,ast[key]['body']['body'],0)
-			}
-			// till here
-			// just can't figure out recursive me bhejna kya hai...
 			else if(data[key]["_class"]=="AST_SimpleStatement" && "args" in data[key]["body"]){
 				templist = data[key]["body"]["args"];
 				templist.forEach (function(i){
@@ -330,6 +329,15 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 			else if(data[key]['_class']=='AST_While'){
 				refactor(data[key]['body']['body'],data,'while',name,ast,ast[key]['body']['body'],0)
 			}
+			else if(data[key]['_class']=='AST_If'){
+				refactor(data[key]['body']['body'],data,'if',name,ast,ast[key]['body']['body'],0)
+				if(data[key]['alternative']!=null){
+					refactor([data[key]['alternative']],data,'if',name,ast,[ast[key]['alternative']],0)
+				}
+			}
+			else if(data[key]['_class']=='AST_BlockStatement'){
+				refactor(data[key]['body'],data,'if',name,ast,ast[key]['body'],0)
+			}
 			//write code for if condition here
 
 			else if(data[key]["_class"]=="AST_Var" && data[key]["definitions"][0]["value"]!=null&& data[key]["definitions"][0]["value"]["_class"]=="AST_Call" 
@@ -351,7 +359,7 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 							refactor(i["body"],data,nem,name,ast,ast[key]["body"]["args"][index]["body"],1);
 					}
 				})
-			}			
+			}
 		}
 	}
 	if(signal){
