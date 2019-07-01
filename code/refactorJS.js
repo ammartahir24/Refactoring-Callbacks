@@ -17,7 +17,7 @@ async function writefile(obj){
 const codeToAst = {
 	parse: {},
 	compress:false,
-	mangle: false,
+	mangle: true,
 	output: {
 		ast: true,
 		code: false
