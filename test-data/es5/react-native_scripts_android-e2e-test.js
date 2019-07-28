@@ -30,22 +30,22 @@
 /* eslint-env mocha */
 'use strict';
 
-const wd = require('wd');
+var wd = require('wd');
 
-const path = require('path');
+var path = require('path');
 
-const fs = require('fs');
+var fs = require('fs');
 
-const pd = require('pretty-data2').pd;
+var pd = require('pretty-data2').pd;
 
 require('colors'); // value in ms to print out screen contents, set this value in CI to debug if tests are failing
 
 
-const appiumDebugInterval = process.env.APPIUM_DEBUG_INTERVAL;
+var appiumDebugInterval = process.env.APPIUM_DEBUG_INTERVAL;
 describe('Android Test App', function () {
   this.timeout(600000);
-  let driver;
-  let debugIntervalId;
+  var driver;
+  var debugIntervalId;
   before(function () {
     driver = wd.promiseChainRemote({
       host: 'localhost',
@@ -66,23 +66,23 @@ describe('Android Test App', function () {
     }); // every interval print what is on the screen
 
     if (appiumDebugInterval) {
-      debugIntervalId = setInterval(() => {
+      debugIntervalId = setInterval(function () {
         // it driver.on('command') will log the screen contents
         driver.source();
       }, appiumDebugInterval);
     }
 
-    const desired = {
+    var desired = {
       platformName: 'Android',
       deviceName: 'Android Emulator',
       app: path.resolve('android/app/build/outputs/apk/debug/app-debug.apk')
     }; // React Native in dev mode often starts with Red Box "Can't fibd variable __fbBatchedBridge..."
     // This is fixed by clicking Reload JS which will trigger a request to packager server
 
-    return driver.init(desired).setImplicitWaitTimeout(5000).waitForElementByXPath('//android.widget.Button[@text="Reload JS"]').then(elem => {
+    return driver.init(desired).setImplicitWaitTimeout(5000).waitForElementByXPath('//android.widget.Button[@text="Reload JS"]').then(function (elem) {
       elem.click();
       driver.sleep(2000);
-    }, err => {// ignoring if Reload JS button can't be located
+    }, function (err) {// ignoring if Reload JS button can't be located
     });
   });
   after(function () {
@@ -93,12 +93,12 @@ describe('Android Test App', function () {
     return driver.quit();
   });
   it('should display new content after a refresh', function () {
-    const androidAppCode = fs.readFileSync('App.js', 'utf-8');
-    let intervalToUpdate;
-    return driver.waitForElementByXPath('//android.widget.TextView[starts-with(@text, "Welcome to React")]').then(() => {
+    var androidAppCode = fs.readFileSync('App.js', 'utf-8');
+    var intervalToUpdate;
+    return driver.waitForElementByXPath('//android.widget.TextView[starts-with(@text, "Welcome to React")]').then(function () {
       fs.writeFileSync('App.js', androidAppCode.replace('Step One', 'Step 1'), 'utf-8');
     }).sleep(1000) // http://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_MENU
-    .pressDeviceKey(46).pressDeviceKey(46).sleep(2000).waitForElementByXPath('//android.widget.TextView[starts-with(@text, "Step 1")]').finally(() => {
+    .pressDeviceKey(46).pressDeviceKey(46).sleep(2000).waitForElementByXPath('//android.widget.TextView[starts-with(@text, "Step 1")]').finally(function () {
       clearInterval(intervalToUpdate);
       fs.writeFileSync('App.js', androidAppCode, 'utf-8');
       driver.pressDeviceKey(46).pressDeviceKey(46).sleep(2000);

@@ -14,7 +14,7 @@ var spawn = require('child_process').spawn;
 
 require('./createFlowConfigs');
 
-var runFlow =  function (renderer, args) {
+async function runFlow(renderer, args) {
   return new Promise(function (resolve) {
     console.log('Running Flow on the ' + chalk.yellow(renderer) + ' renderer...');
     var cmd = __dirname + '/../../node_modules/.bin/flow';

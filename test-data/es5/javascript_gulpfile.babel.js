@@ -59,7 +59,7 @@ gulp.task('compile_titanium', function () {
   return gulp.src('src/titanium/index.js').pipe(gulpWebpack(webpackConfig)).pipe(gulp.dest('dist/titanium'));
 });
 gulp.task('create_version', function () {
-  return gulp.src('dist/web/pubnub.js').pipe(rename("pubnub." + packageJSON.version + ".js")).pipe(gulp.dest('upload/normal'));
+  return gulp.src('dist/web/pubnub.js').pipe(rename("pubnub.".concat(packageJSON.version, ".js"))).pipe(gulp.dest('upload/normal'));
 });
 gulp.task('create_version_gzip', function () {
   return gulp.src('upload/normal/*.js').pipe(gzip({
@@ -70,7 +70,7 @@ gulp.task('uglify_web', function () {
   return gulp.src('dist/web/pubnub.js').pipe(uglify({
     mangle: true,
     compress: true
-  })).pipe(rename('pubnub.min.js')).pipe(gulp.dest('dist/web')).pipe(rename("pubnub." + packageJSON.version + ".min.js")).pipe(gulp.dest('upload/normal'));
+  })).pipe(rename('pubnub.min.js')).pipe(gulp.dest('dist/web')).pipe(rename("pubnub.".concat(packageJSON.version, ".min.js"))).pipe(gulp.dest('upload/normal'));
 });
 gulp.task('uglify_titanium', function () {
   return gulp.src('dist/titanium/pubnub.js').pipe(uglify({

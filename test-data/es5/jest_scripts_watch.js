@@ -1,3 +1,5 @@
+"use strict";
+
 //https://github.com/facebook/jest/blob/master/scripts/watch.js
 
 /**
@@ -10,24 +12,22 @@
 /**
  * Watch files for changes and rebuild (copy from 'src/' to `build/`) if changed
  */
-const fs = require('fs');
+var fs = require('fs');
 
-const {
-  execSync
-} = require('child_process');
+var _require = require('child_process'),
+    execSync = _require.execSync;
 
-const path = require('path');
+var path = require('path');
 
-const chalk = require('chalk');
+var chalk = require('chalk');
 
-const {
-  getPackages
-} = require('./buildUtils');
+var _require2 = require('./buildUtils'),
+    getPackages = _require2.getPackages;
 
-const BUILD_CMD = `node ${path.resolve(__dirname, './build.js')}`;
-let filesToBuild = new Map();
+var BUILD_CMD = "node ".concat(path.resolve(__dirname, './build.js'));
+var filesToBuild = new Map();
 
-const exists = filename => {
+var exists = function exists(filename) {
   try {
     return fs.statSync(filename).isFile();
   } catch (e) {}
@@ -35,42 +35,44 @@ const exists = filename => {
   return false;
 };
 
-const rebuild = filename => filesToBuild.set(filename, true);
+var rebuild = function rebuild(filename) {
+  return filesToBuild.set(filename, true);
+};
 
-const packages = getPackages();
-packages.forEach(p => {
-  const srcDir = path.resolve(p, 'src');
+var packages = getPackages();
+packages.forEach(function (p) {
+  var srcDir = path.resolve(p, 'src');
 
   try {
     fs.accessSync(srcDir, fs.F_OK);
     fs.watch(srcDir, {
       recursive: true
-    }, (event, filename) => {
-      const filePath = path.resolve(srcDir, filename);
+    }, function (event, filename) {
+      var filePath = path.resolve(srcDir, filename);
 
       if ((event === 'change' || event === 'rename') && exists(filePath)) {
-        console.log(chalk.green('->'), `${event}: ${filename}`);
+        console.log(chalk.green('->'), "".concat(event, ": ").concat(filename));
         rebuild(filePath);
       } else {
-        const buildFile = path.resolve(srcDir, '..', 'build', filename);
+        var buildFile = path.resolve(srcDir, '..', 'build', filename);
 
         try {
           fs.unlinkSync(buildFile);
-          process.stdout.write(chalk.red('  \u2022 ') + path.relative(path.resolve(srcDir, '..', '..'), buildFile) + ' (deleted)' + '\n');
+          process.stdout.write(chalk.red("  \u2022 ") + path.relative(path.resolve(srcDir, '..', '..'), buildFile) + ' (deleted)' + '\n');
         } catch (e) {}
       }
     });
   } catch (e) {// doesn't exist
   }
 });
-setInterval(() => {
-  const files = Array.from(filesToBuild.keys());
+setInterval(function () {
+  var files = Array.from(filesToBuild.keys());
 
   if (files.length) {
     filesToBuild = new Map();
 
     try {
-      execSync(`${BUILD_CMD} ${files.join(' ')}`, {
+      execSync("".concat(BUILD_CMD, " ").concat(files.join(' ')), {
         stdio: [0, 1, 2]
       });
     } catch (e) {}

@@ -33,29 +33,29 @@ var pdfjsDisplayDisplayUtils = require('./display/display_utils.js');
 
 var pdfjsDisplaySVG = require('./display/svg.js');
 
-let pdfjsDisplayWorkerOptions = require('./display/worker_options.js');
+var pdfjsDisplayWorkerOptions = require('./display/worker_options.js');
 
-let pdfjsDisplayAPICompatibility = require('./display/api_compatibility.js');
+var pdfjsDisplayAPICompatibility = require('./display/api_compatibility.js');
 
 if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
-  const isNodeJS = require('./shared/is_node.js');
+  var isNodeJS = require('./shared/is_node.js');
 
   if (isNodeJS()) {
-    let PDFNodeStream = require('./display/node_stream.js').PDFNodeStream;
+    var PDFNodeStream = require('./display/node_stream.js').PDFNodeStream;
 
-    pdfjsDisplayAPI.setPDFNetworkStreamFactory(params => {
+    pdfjsDisplayAPI.setPDFNetworkStreamFactory(function (params) {
       return new PDFNodeStream(params);
     });
   } else {
-    let PDFNetworkStream = require('./display/network.js').PDFNetworkStream;
+    var PDFNetworkStream = require('./display/network.js').PDFNetworkStream;
 
-    let PDFFetchStream;
+    var PDFFetchStream;
 
     if (pdfjsDisplayDisplayUtils.isFetchSupported()) {
       PDFFetchStream = require('./display/fetch_stream.js').PDFFetchStream;
     }
 
-    pdfjsDisplayAPI.setPDFNetworkStreamFactory(params => {
+    pdfjsDisplayAPI.setPDFNetworkStreamFactory(function (params) {
       if (PDFFetchStream && pdfjsDisplayDisplayUtils.isValidFetchUrl(params.url)) {
         return new PDFFetchStream(params);
       }
@@ -64,11 +64,11 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
     });
   }
 } else if (typeof PDFJSDev !== 'undefined' && PDFJSDev.test('CHROME')) {
-  let PDFNetworkStream = require('./display/network.js').PDFNetworkStream;
+  var _PDFNetworkStream = require('./display/network.js').PDFNetworkStream;
 
-  let PDFFetchStream;
+  var _PDFFetchStream;
 
-  let isChromeWithFetchCredentials = function () {
+  var isChromeWithFetchCredentials = function isChromeWithFetchCredentials() {
     // fetch does not include credentials until Chrome 61.0.3138.0 and later.
     // https://chromium.googlesource.com/chromium/src/+/2e231cf052ca5e68e22baf0008ac9e5e29121707
     try {
@@ -84,15 +84,15 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
   };
 
   if (pdfjsDisplayDisplayUtils.isFetchSupported() && isChromeWithFetchCredentials()) {
-    PDFFetchStream = require('./display/fetch_stream.js').PDFFetchStream;
+    _PDFFetchStream = require('./display/fetch_stream.js').PDFFetchStream;
   }
 
-  pdfjsDisplayAPI.setPDFNetworkStreamFactory(params => {
-    if (PDFFetchStream && pdfjsDisplayDisplayUtils.isValidFetchUrl(params.url)) {
-      return new PDFFetchStream(params);
+  pdfjsDisplayAPI.setPDFNetworkStreamFactory(function (params) {
+    if (_PDFFetchStream && pdfjsDisplayDisplayUtils.isValidFetchUrl(params.url)) {
+      return new _PDFFetchStream(params);
     }
 
-    return new PDFNetworkStream(params);
+    return new _PDFNetworkStream(params);
   });
 }
 

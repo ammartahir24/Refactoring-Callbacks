@@ -1,3 +1,5 @@
+"use strict";
+
 /*https://github.com/jquery/jquery/blob/master/src/callbacks.js*/
 define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toType, rnothtmlwhite) {
   "use strict"; // Convert String-formatted options into Object-formatted ones
@@ -43,9 +45,9 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
         // Last fire value for non-forgettable lists
     memory,
         // Flag to know if list was already fired
-    fired,
+    _fired,
         // Flag to prevent firing
-    locked,
+    _locked,
         // Actual callback list
     list = [],
         // Queue of execution data for repeatable lists
@@ -53,12 +55,12 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
         // Index of currently firing callback (modified by add/remove as needed)
     firingIndex = -1,
         // Fire callbacks
-    fire = function () {
+    fire = function fire() {
       // Enforce single-firing
-      locked = locked || options.once; // Execute callbacks for all pending executions,
+      _locked = _locked || options.once; // Execute callbacks for all pending executions,
       // respecting firingIndex overrides and runtime changes
 
-      fired = firing = true;
+      _fired = firing = true;
 
       for (; queue.length; firingIndex = -1) {
         memory = queue.shift();
@@ -80,7 +82,7 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
 
       firing = false; // Clean up if we're done firing for good
 
-      if (locked) {
+      if (_locked) {
         // Keep an empty list if we have data for future add calls
         if (memory) {
           list = []; // Otherwise, this object is spent
@@ -92,7 +94,7 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
         // Actual Callbacks object
     self = {
       // Add a callback or a collection of callbacks to the list
-      add: function () {
+      add: function add() {
         if (list) {
           // If we have memory from a past run, we should fire after adding
           if (memory && !firing) {
@@ -121,7 +123,7 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
         return this;
       },
       // Remove a callback from the list
-      remove: function () {
+      remove: function remove() {
         jQuery.each(arguments, function (_, arg) {
           var index;
 
@@ -137,11 +139,11 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
       },
       // Check if a given callback is in the list.
       // If no argument is given, return whether or not list has callbacks attached.
-      has: function (fn) {
+      has: function has(fn) {
         return fn ? jQuery.inArray(fn, list) > -1 : list.length > 0;
       },
       // Remove all callbacks from the list
-      empty: function () {
+      empty: function empty() {
         if (list) {
           list = [];
         }
@@ -151,19 +153,19 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
       // Disable .fire and .add
       // Abort any current/pending executions
       // Clear all callbacks and values
-      disable: function () {
-        locked = queue = [];
+      disable: function disable() {
+        _locked = queue = [];
         list = memory = "";
         return this;
       },
-      disabled: function () {
+      disabled: function disabled() {
         return !list;
       },
       // Disable .fire
       // Also disable .add unless we have memory (since it would have no effect)
       // Abort any pending executions
-      lock: function () {
-        locked = queue = [];
+      lock: function lock() {
+        _locked = queue = [];
 
         if (!memory && !firing) {
           list = memory = "";
@@ -171,12 +173,12 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
 
         return this;
       },
-      locked: function () {
-        return !!locked;
+      locked: function locked() {
+        return !!_locked;
       },
       // Call all callbacks with the given context and arguments
-      fireWith: function (context, args) {
-        if (!locked) {
+      fireWith: function fireWith(context, args) {
+        if (!_locked) {
           args = args || [];
           args = [context, args.slice ? args.slice() : args];
           queue.push(args);
@@ -189,13 +191,13 @@ define(["./core", "./core/toType", "./var/rnothtmlwhite"], function (jQuery, toT
         return this;
       },
       // Call all the callbacks with the given arguments
-      fire: function () {
+      fire: function fire() {
         self.fireWith(this, arguments);
         return this;
       },
       // To know if the callbacks have already been called at least once
-      fired: function () {
-        return !!fired;
+      fired: function fired() {
+        return !!_fired;
       }
     };
 
