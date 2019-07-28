@@ -2,12 +2,14 @@ import glob
 import os
 
 os.system('npm run convert-es5')
-
-files = glob.glob('es5/*.js')
+dir = 'es5/'
+files = os.listdir(dir)
+# files = [dir + i for i in files]
 
 for i in files:
-	fname = i.split('/')[-2].split('.')[0] +'.JSON'
-	os.system('uglifyjs --output ast '+i+' > asts/'+fname)
+	fname = i.split('.')[0] + '.JSON'
+	os.system('uglifyjs es5/'+i+' -m > mangled/'+i)
+	# os.system('uglifyjs --output ast mangled/'+i+' > asts/'+fname)
 
 print(len(files), 'files converted to ast')
 

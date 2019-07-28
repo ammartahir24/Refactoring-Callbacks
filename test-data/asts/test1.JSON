@@ -46,7 +46,7 @@
               {
                 "_class": "AST_String",
                 "value": "fs",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -69,25 +69,25 @@
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "name",
-                "thedef": "1000004 name"
+                "name": "e",
+                "thedef": "1000004 e"
               },
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "cb",
-                "thedef": "1000005 cb"
+                "name": "i",
+                "thedef": "1000005 i"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000003 arguments",
-              "1000004 name",
-              "1000005 cb"
+              "1000004 e",
+              "1000005 i"
             ],
             "enclosed": [
               "1000001 fs",
               "1000046 file",
-              "1000005 cb"
+              "1000005 i"
             ],
             "body": [
               {
@@ -120,24 +120,24 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "err",
-                          "thedef": "1000007 err"
+                          "name": "e",
+                          "thedef": "1000007 e"
                         },
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "data",
-                          "thedef": "1000008 data"
+                          "name": "o",
+                          "thedef": "1000008 o"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000006 arguments",
-                        "1000007 err",
-                        "1000008 data"
+                        "1000007 e",
+                        "1000008 o"
                       ],
                       "enclosed": [
-                        "1000005 cb",
-                        "1000008 data"
+                        "1000005 i",
+                        "1000008 o"
                       ],
                       "body": [
                         {
@@ -146,14 +146,14 @@
                             "_class": "AST_Call",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "cb",
-                              "thedef": "1000005 cb"
+                              "name": "i",
+                              "thedef": "1000005 i"
                             },
                             "args": [
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "data",
-                                "thedef": "1000008 data"
+                                "name": "o",
+                                "thedef": "1000008 o"
                               }
                             ]
                           }
@@ -184,32 +184,32 @@
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "file",
-                "thedef": "1000011 file"
+                "name": "e",
+                "thedef": "1000011 e"
               },
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "data",
-                "thedef": "1000012 data"
+                "name": "o",
+                "thedef": "1000012 o"
               },
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "cb",
-                "thedef": "1000013 cb"
+                "name": "i",
+                "thedef": "1000013 i"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000010 arguments",
-              "1000011 file",
-              "1000012 data",
-              "1000013 cb"
+              "1000011 e",
+              "1000012 o",
+              "1000013 i"
             ],
             "enclosed": [
               "1000001 fs",
-              "1000011 file",
-              "1000012 data",
-              "1000013 cb"
+              "1000011 e",
+              "1000012 o",
+              "1000013 i"
             ],
             "body": [
               {
@@ -228,13 +228,13 @@
                   "args": [
                     {
                       "_class": "AST_SymbolRef",
-                      "name": "file",
-                      "thedef": "1000011 file"
+                      "name": "e",
+                      "thedef": "1000011 e"
                     },
                     {
                       "_class": "AST_SymbolRef",
-                      "name": "data",
-                      "thedef": "1000012 data"
+                      "name": "o",
+                      "thedef": "1000012 o"
                     },
                     {
                       "_class": "AST_Function",
@@ -242,18 +242,18 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "err",
-                          "thedef": "1000015 err"
+                          "name": "e",
+                          "thedef": "1000015 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000014 arguments",
-                        "1000015 err"
+                        "1000015 e"
                       ],
                       "enclosed": [
-                        "1000013 cb",
-                        "1000015 err"
+                        "1000013 i",
+                        "1000015 e"
                       ],
                       "body": [
                         {
@@ -262,14 +262,14 @@
                             "_class": "AST_Call",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "cb",
-                              "thedef": "1000013 cb"
+                              "name": "i",
+                              "thedef": "1000013 i"
                             },
                             "args": [
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "err",
-                                "thedef": "1000015 err"
+                                "name": "e",
+                                "thedef": "1000015 e"
                               }
                             ]
                           }
@@ -300,17 +300,17 @@
               {
                 "_class": "AST_String",
                 "value": "a.txt",
-                "quote": "'"
+                "quote": "\""
               },
               {
                 "_class": "AST_String",
                 "value": "b.txt",
-                "quote": "'"
+                "quote": "\""
               },
               {
                 "_class": "AST_String",
                 "value": "c.txt",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -333,17 +333,17 @@
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "data",
-                "thedef": "1000019 data"
+                "name": "e",
+                "thedef": "1000019 e"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000018 arguments",
-              "1000019 data"
+              "1000019 e"
             ],
             "enclosed": [
-              "1000019 data"
+              "1000019 e"
             ],
             "body": [
               {
@@ -354,8 +354,8 @@
                     "_class": "AST_Dot",
                     "expression": {
                       "_class": "AST_SymbolRef",
-                      "name": "data",
-                      "thedef": "1000019 data"
+                      "name": "e",
+                      "thedef": "1000019 e"
                     },
                     "property": "toUpperCase"
                   },
@@ -383,17 +383,17 @@
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "list",
-                "thedef": "1000022 list"
+                "name": "e",
+                "thedef": "1000022 e"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000021 arguments",
-              "1000022 list"
+              "1000022 e"
             ],
             "enclosed": [
-              "1000022 list",
+              "1000022 e",
               "1000002 readfile",
               "1000017 To_Upper_Case",
               "1000047 console",
@@ -408,8 +408,8 @@
                     "_class": "AST_Dot",
                     "expression": {
                       "_class": "AST_SymbolRef",
-                      "name": "list",
-                      "thedef": "1000022 list"
+                      "name": "e",
+                      "thedef": "1000022 e"
                     },
                     "property": "forEach"
                   },
@@ -420,18 +420,18 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "i",
-                          "thedef": "1000024 i"
+                          "name": "e",
+                          "thedef": "1000024 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000023 arguments",
-                        "1000024 i"
+                        "1000024 e"
                       ],
                       "enclosed": [
                         "1000002 readfile",
-                        "1000024 i",
+                        "1000024 e",
                         "1000017 To_Upper_Case",
                         "1000047 console",
                         "1000009 writefile"
@@ -449,8 +449,8 @@
                             "args": [
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "i",
-                                "thedef": "1000024 i"
+                                "name": "e",
+                                "thedef": "1000024 e"
                               },
                               {
                                 "_class": "AST_Function",
@@ -458,24 +458,24 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "data",
-                                    "thedef": "1000026 data"
+                                    "name": "e",
+                                    "thedef": "1000026 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000025 arguments",
-                                  "1000026 data",
-                                  "1000027 first_file",
-                                  "1000028 second_file",
-                                  "1000029 third_file"
+                                  "1000026 e",
+                                  "1000027 l",
+                                  "1000028 t",
+                                  "1000029 a"
                                 ],
                                 "enclosed": [
-                                  "1000026 data",
+                                  "1000026 e",
                                   "1000002 readfile",
-                                  "1000027 first_file",
-                                  "1000028 second_file",
-                                  "1000029 third_file",
+                                  "1000027 l",
+                                  "1000028 t",
+                                  "1000029 a",
                                   "1000017 To_Upper_Case",
                                   "1000047 console",
                                   "1000009 writefile"
@@ -488,15 +488,15 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "first_file",
-                                          "thedef": "1000027 first_file"
+                                          "name": "l",
+                                          "thedef": "1000027 l"
                                         },
                                         "value": {
                                           "_class": "AST_Sub",
                                           "expression": {
                                             "_class": "AST_SymbolRef",
-                                            "name": "data",
-                                            "thedef": "1000026 data"
+                                            "name": "e",
+                                            "thedef": "1000026 e"
                                           },
                                           "property": {
                                             "_class": "AST_Number",
@@ -513,15 +513,15 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "second_file",
-                                          "thedef": "1000028 second_file"
+                                          "name": "t",
+                                          "thedef": "1000028 t"
                                         },
                                         "value": {
                                           "_class": "AST_Sub",
                                           "expression": {
                                             "_class": "AST_SymbolRef",
-                                            "name": "data",
-                                            "thedef": "1000026 data"
+                                            "name": "e",
+                                            "thedef": "1000026 e"
                                           },
                                           "property": {
                                             "_class": "AST_Number",
@@ -538,15 +538,15 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "third_file",
-                                          "thedef": "1000029 third_file"
+                                          "name": "a",
+                                          "thedef": "1000029 a"
                                         },
                                         "value": {
                                           "_class": "AST_Sub",
                                           "expression": {
                                             "_class": "AST_SymbolRef",
-                                            "name": "data",
-                                            "thedef": "1000026 data"
+                                            "name": "e",
+                                            "thedef": "1000026 e"
                                           },
                                           "property": {
                                             "_class": "AST_Number",
@@ -568,8 +568,8 @@
                                       "args": [
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "first_file",
-                                          "thedef": "1000027 first_file"
+                                          "name": "l",
+                                          "thedef": "1000027 l"
                                         },
                                         {
                                           "_class": "AST_Function",
@@ -577,23 +577,23 @@
                                           "argnames": [
                                             {
                                               "_class": "AST_SymbolFunarg",
-                                              "name": "d1",
-                                              "thedef": "1000031 d1"
+                                              "name": "n",
+                                              "thedef": "1000031 n"
                                             }
                                           ],
                                           "uses_arguments": false,
                                           "variables": [
                                             "1000030 arguments",
-                                            "1000031 d1"
+                                            "1000031 n"
                                           ],
                                           "enclosed": [
                                             "1000002 readfile",
-                                            "1000028 second_file",
-                                            "1000029 third_file",
+                                            "1000028 t",
+                                            "1000029 a",
                                             "1000017 To_Upper_Case",
-                                            "1000027 first_file",
+                                            "1000027 l",
                                             "1000047 console",
-                                            "1000031 d1",
+                                            "1000031 n",
                                             "1000009 writefile"
                                           ],
                                           "body": [
@@ -609,8 +609,8 @@
                                                 "args": [
                                                   {
                                                     "_class": "AST_SymbolRef",
-                                                    "name": "second_file",
-                                                    "thedef": "1000028 second_file"
+                                                    "name": "t",
+                                                    "thedef": "1000028 t"
                                                   },
                                                   {
                                                     "_class": "AST_Function",
@@ -618,24 +618,24 @@
                                                     "argnames": [
                                                       {
                                                         "_class": "AST_SymbolFunarg",
-                                                        "name": "d2",
-                                                        "thedef": "1000033 d2"
+                                                        "name": "r",
+                                                        "thedef": "1000033 r"
                                                       }
                                                     ],
                                                     "uses_arguments": false,
                                                     "variables": [
                                                       "1000032 arguments",
-                                                      "1000033 d2"
+                                                      "1000033 r"
                                                     ],
                                                     "enclosed": [
                                                       "1000002 readfile",
-                                                      "1000029 third_file",
+                                                      "1000029 a",
                                                       "1000017 To_Upper_Case",
-                                                      "1000027 first_file",
-                                                      "1000028 second_file",
+                                                      "1000027 l",
+                                                      "1000028 t",
                                                       "1000047 console",
-                                                      "1000031 d1",
-                                                      "1000033 d2",
+                                                      "1000031 n",
+                                                      "1000033 r",
                                                       "1000009 writefile"
                                                     ],
                                                     "body": [
@@ -651,8 +651,8 @@
                                                           "args": [
                                                             {
                                                               "_class": "AST_SymbolRef",
-                                                              "name": "third_file",
-                                                              "thedef": "1000029 third_file"
+                                                              "name": "a",
+                                                              "thedef": "1000029 a"
                                                             },
                                                             {
                                                               "_class": "AST_Function",
@@ -660,30 +660,30 @@
                                                               "argnames": [
                                                                 {
                                                                   "_class": "AST_SymbolFunarg",
-                                                                  "name": "d3",
-                                                                  "thedef": "1000035 d3"
+                                                                  "name": "e",
+                                                                  "thedef": "1000035 e"
                                                                 }
                                                               ],
                                                               "uses_arguments": false,
                                                               "variables": [
                                                                 "1000034 arguments",
-                                                                "1000035 d3",
-                                                                "1000036 n_first",
-                                                                "1000037 n_snd",
-                                                                "1000038 n_thrd"
+                                                                "1000035 e",
+                                                                "1000036 o",
+                                                                "1000037 i",
+                                                                "1000038 f"
                                                               ],
                                                               "enclosed": [
                                                                 "1000017 To_Upper_Case",
-                                                                "1000027 first_file",
-                                                                "1000028 second_file",
-                                                                "1000029 third_file",
+                                                                "1000027 l",
+                                                                "1000028 t",
+                                                                "1000029 a",
                                                                 "1000047 console",
-                                                                "1000036 n_first",
-                                                                "1000031 d1",
-                                                                "1000037 n_snd",
-                                                                "1000033 d2",
-                                                                "1000038 n_thrd",
-                                                                "1000035 d3",
+                                                                "1000036 o",
+                                                                "1000031 n",
+                                                                "1000037 i",
+                                                                "1000033 r",
+                                                                "1000038 f",
+                                                                "1000035 e",
                                                                 "1000009 writefile"
                                                               ],
                                                               "body": [
@@ -694,8 +694,8 @@
                                                                       "_class": "AST_VarDef",
                                                                       "name": {
                                                                         "_class": "AST_SymbolVar",
-                                                                        "name": "n_first",
-                                                                        "thedef": "1000036 n_first"
+                                                                        "name": "o",
+                                                                        "thedef": "1000036 o"
                                                                       },
                                                                       "value": {
                                                                         "_class": "AST_Call",
@@ -707,8 +707,8 @@
                                                                         "args": [
                                                                           {
                                                                             "_class": "AST_SymbolRef",
-                                                                            "name": "first_file",
-                                                                            "thedef": "1000027 first_file"
+                                                                            "name": "l",
+                                                                            "thedef": "1000027 l"
                                                                           }
                                                                         ]
                                                                       }
@@ -722,8 +722,8 @@
                                                                       "_class": "AST_VarDef",
                                                                       "name": {
                                                                         "_class": "AST_SymbolVar",
-                                                                        "name": "n_snd",
-                                                                        "thedef": "1000037 n_snd"
+                                                                        "name": "i",
+                                                                        "thedef": "1000037 i"
                                                                       },
                                                                       "value": {
                                                                         "_class": "AST_Call",
@@ -735,8 +735,8 @@
                                                                         "args": [
                                                                           {
                                                                             "_class": "AST_SymbolRef",
-                                                                            "name": "second_file",
-                                                                            "thedef": "1000028 second_file"
+                                                                            "name": "t",
+                                                                            "thedef": "1000028 t"
                                                                           }
                                                                         ]
                                                                       }
@@ -750,8 +750,8 @@
                                                                       "_class": "AST_VarDef",
                                                                       "name": {
                                                                         "_class": "AST_SymbolVar",
-                                                                        "name": "n_thrd",
-                                                                        "thedef": "1000038 n_thrd"
+                                                                        "name": "f",
+                                                                        "thedef": "1000038 f"
                                                                       },
                                                                       "value": {
                                                                         "_class": "AST_Call",
@@ -763,8 +763,8 @@
                                                                         "args": [
                                                                           {
                                                                             "_class": "AST_SymbolRef",
-                                                                            "name": "third_file",
-                                                                            "thedef": "1000029 third_file"
+                                                                            "name": "a",
+                                                                            "thedef": "1000029 a"
                                                                           }
                                                                         ]
                                                                       }
@@ -787,13 +787,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "n_first",
-                                                                        "thedef": "1000036 n_first"
+                                                                        "name": "o",
+                                                                        "thedef": "1000036 o"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d1",
-                                                                        "thedef": "1000031 d1"
+                                                                        "name": "n",
+                                                                        "thedef": "1000031 n"
                                                                       }
                                                                     ]
                                                                   }
@@ -814,13 +814,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "n_snd",
-                                                                        "thedef": "1000037 n_snd"
+                                                                        "name": "i",
+                                                                        "thedef": "1000037 i"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d2",
-                                                                        "thedef": "1000033 d2"
+                                                                        "name": "r",
+                                                                        "thedef": "1000033 r"
                                                                       }
                                                                     ]
                                                                   }
@@ -841,13 +841,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "n_thrd",
-                                                                        "thedef": "1000038 n_thrd"
+                                                                        "name": "f",
+                                                                        "thedef": "1000038 f"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d3",
-                                                                        "thedef": "1000035 d3"
+                                                                        "name": "e",
+                                                                        "thedef": "1000035 e"
                                                                       }
                                                                     ]
                                                                   }
@@ -864,13 +864,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "first_file",
-                                                                        "thedef": "1000027 first_file"
+                                                                        "name": "l",
+                                                                        "thedef": "1000027 l"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d1",
-                                                                        "thedef": "1000031 d1"
+                                                                        "name": "n",
+                                                                        "thedef": "1000031 n"
                                                                       },
                                                                       {
                                                                         "_class": "AST_Function",
@@ -878,18 +878,18 @@
                                                                         "argnames": [
                                                                           {
                                                                             "_class": "AST_SymbolFunarg",
-                                                                            "name": "e1",
-                                                                            "thedef": "1000040 e1"
+                                                                            "name": "e",
+                                                                            "thedef": "1000040 e"
                                                                           }
                                                                         ],
                                                                         "uses_arguments": false,
                                                                         "variables": [
                                                                           "1000039 arguments",
-                                                                          "1000040 e1"
+                                                                          "1000040 e"
                                                                         ],
                                                                         "enclosed": [
                                                                           "1000047 console",
-                                                                          "1000040 e1"
+                                                                          "1000040 e"
                                                                         ],
                                                                         "body": [
                                                                           {
@@ -908,8 +908,8 @@
                                                                               "args": [
                                                                                 {
                                                                                   "_class": "AST_SymbolRef",
-                                                                                  "name": "e1",
-                                                                                  "thedef": "1000040 e1"
+                                                                                  "name": "e",
+                                                                                  "thedef": "1000040 e"
                                                                                 }
                                                                               ]
                                                                             }
@@ -931,13 +931,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "second_file",
-                                                                        "thedef": "1000028 second_file"
+                                                                        "name": "t",
+                                                                        "thedef": "1000028 t"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d2",
-                                                                        "thedef": "1000033 d2"
+                                                                        "name": "r",
+                                                                        "thedef": "1000033 r"
                                                                       },
                                                                       {
                                                                         "_class": "AST_Function",
@@ -945,18 +945,18 @@
                                                                         "argnames": [
                                                                           {
                                                                             "_class": "AST_SymbolFunarg",
-                                                                            "name": "e2",
-                                                                            "thedef": "1000042 e2"
+                                                                            "name": "e",
+                                                                            "thedef": "1000042 e"
                                                                           }
                                                                         ],
                                                                         "uses_arguments": false,
                                                                         "variables": [
                                                                           "1000041 arguments",
-                                                                          "1000042 e2"
+                                                                          "1000042 e"
                                                                         ],
                                                                         "enclosed": [
                                                                           "1000047 console",
-                                                                          "1000042 e2"
+                                                                          "1000042 e"
                                                                         ],
                                                                         "body": [
                                                                           {
@@ -975,8 +975,8 @@
                                                                               "args": [
                                                                                 {
                                                                                   "_class": "AST_SymbolRef",
-                                                                                  "name": "e2",
-                                                                                  "thedef": "1000042 e2"
+                                                                                  "name": "e",
+                                                                                  "thedef": "1000042 e"
                                                                                 }
                                                                               ]
                                                                             }
@@ -998,13 +998,13 @@
                                                                     "args": [
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "third_file",
-                                                                        "thedef": "1000029 third_file"
+                                                                        "name": "a",
+                                                                        "thedef": "1000029 a"
                                                                       },
                                                                       {
                                                                         "_class": "AST_SymbolRef",
-                                                                        "name": "d3",
-                                                                        "thedef": "1000035 d3"
+                                                                        "name": "e",
+                                                                        "thedef": "1000035 e"
                                                                       },
                                                                       {
                                                                         "_class": "AST_Function",
@@ -1012,18 +1012,18 @@
                                                                         "argnames": [
                                                                           {
                                                                             "_class": "AST_SymbolFunarg",
-                                                                            "name": "e3",
-                                                                            "thedef": "1000044 e3"
+                                                                            "name": "e",
+                                                                            "thedef": "1000044 e"
                                                                           }
                                                                         ],
                                                                         "uses_arguments": false,
                                                                         "variables": [
                                                                           "1000043 arguments",
-                                                                          "1000044 e3"
+                                                                          "1000044 e"
                                                                         ],
                                                                         "enclosed": [
                                                                           "1000047 console",
-                                                                          "1000044 e3"
+                                                                          "1000044 e"
                                                                         ],
                                                                         "body": [
                                                                           {
@@ -1042,8 +1042,8 @@
                                                                               "args": [
                                                                                 {
                                                                                   "_class": "AST_SymbolRef",
-                                                                                  "name": "e3",
-                                                                                  "thedef": "1000044 e3"
+                                                                                  "name": "e",
+                                                                                  "thedef": "1000044 e"
                                                                                 }
                                                                               ]
                                                                             }

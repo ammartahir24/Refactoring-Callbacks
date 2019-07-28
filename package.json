@@ -4,14 +4,14 @@
   "description": "project that refactors code according to callbacks",
   "main": "index.js",
   "dependencies": {
-    "uglify-js": "^3.5.15"
+    "uglify-js": "^3.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5"
   },
   "scripts": {
-    "convert-es5" : "babel test-data/orig -d test-data/es5",
+    "convert": "babel test-data/orig -d test-data/es5",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

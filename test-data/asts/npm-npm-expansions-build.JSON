@@ -74,7 +74,7 @@
             "right": {
               "_class": "AST_String",
               "value": "/expansions.txt",
-              "quote": "'"
+              "quote": "\""
             }
           }
         }
@@ -101,7 +101,7 @@
             "right": {
               "_class": "AST_String",
               "value": "/expansions",
-              "quote": "'"
+              "quote": "\""
             }
           }
         }
@@ -128,7 +128,7 @@
             "right": {
               "_class": "AST_String",
               "value": ".json",
-              "quote": "'"
+              "quote": "\""
             }
           }
         }
@@ -155,7 +155,7 @@
             "right": {
               "_class": "AST_String",
               "value": ".txt",
-              "quote": "'"
+              "quote": "\""
             }
           }
         }
@@ -211,7 +211,7 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "utf8",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -361,7 +361,7 @@
                           "right": {
                             "_class": "AST_String",
                             "value": "#",
-                            "quote": "'"
+                            "quote": "\""
                           }
                         }
                       }
@@ -378,24 +378,24 @@
                 "argnames": [
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "a",
-                    "thedef": "1000014 a"
+                    "name": "e",
+                    "thedef": "1000014 e"
                   },
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "b",
-                    "thedef": "1000015 b"
+                    "name": "t",
+                    "thedef": "1000015 t"
                   }
                 ],
                 "uses_arguments": false,
                 "variables": [
                   "1000013 arguments",
-                  "1000014 a",
-                  "1000015 b"
+                  "1000014 e",
+                  "1000015 t"
                 ],
                 "enclosed": [
-                  "1000014 a",
-                  "1000015 b"
+                  "1000014 e",
+                  "1000015 t"
                 ],
                 "body": [
                   {
@@ -410,8 +410,8 @@
                             "_class": "AST_Dot",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "a",
-                              "thedef": "1000014 a"
+                              "name": "e",
+                              "thedef": "1000014 e"
                             },
                             "property": "toLowerCase"
                           },
@@ -426,8 +426,8 @@
                             "_class": "AST_Dot",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "b",
-                              "thedef": "1000015 b"
+                              "name": "t",
+                              "thedef": "1000015 t"
                             },
                             "property": "toLowerCase"
                           },
@@ -528,24 +528,24 @@
                 "argnames": [
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "p",
-                    "thedef": "1000017 p"
+                    "name": "e",
+                    "thedef": "1000017 e"
                   },
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "c",
-                    "thedef": "1000018 c"
+                    "name": "t",
+                    "thedef": "1000018 t"
                   }
                 ],
                 "uses_arguments": false,
                 "variables": [
                   "1000016 arguments",
-                  "1000017 p",
-                  "1000018 c"
+                  "1000017 e",
+                  "1000018 t"
                 ],
                 "enclosed": [
-                  "1000017 p",
-                  "1000018 c"
+                  "1000017 e",
+                  "1000018 t"
                 ],
                 "body": [
                   {
@@ -558,19 +558,19 @@
                         "operator": "+",
                         "left": {
                           "_class": "AST_SymbolRef",
-                          "name": "p",
-                          "thedef": "1000017 p"
+                          "name": "e",
+                          "thedef": "1000017 e"
                         },
                         "right": {
                           "_class": "AST_SymbolRef",
-                          "name": "c",
-                          "thedef": "1000018 c"
+                          "name": "t",
+                          "thedef": "1000018 t"
                         }
                       },
                       "right": {
                         "_class": "AST_String",
                         "value": "\n",
-                        "quote": "'"
+                        "quote": "\""
                       }
                     }
                   }
@@ -595,7 +595,7 @@
                 "right": {
                   "_class": "AST_String",
                   "value": "\n",
-                  "quote": "'"
+                  "quote": "\""
                 }
               }
             ]

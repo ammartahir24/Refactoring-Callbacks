@@ -43,7 +43,7 @@
               {
                 "_class": "AST_String",
                 "value": "fs",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -66,26 +66,26 @@
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "file",
-                "thedef": "1000004 file"
+                "name": "n",
+                "thedef": "1000004 n"
               },
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "cb",
-                "thedef": "1000005 cb"
+                "name": "a",
+                "thedef": "1000005 a"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000003 arguments",
-              "1000004 file",
-              "1000005 cb"
+              "1000004 n",
+              "1000005 a"
             ],
             "enclosed": [
               "1000001 fs",
-              "1000004 file",
+              "1000004 n",
               "1000027 console",
-              "1000005 cb"
+              "1000005 a"
             ],
             "body": [
               {
@@ -104,8 +104,8 @@
                   "args": [
                     {
                       "_class": "AST_SymbolRef",
-                      "name": "file",
-                      "thedef": "1000004 file"
+                      "name": "n",
+                      "thedef": "1000004 n"
                     },
                     {
                       "_class": "AST_String",
@@ -118,26 +118,26 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "err",
-                          "thedef": "1000007 err"
+                          "name": "n",
+                          "thedef": "1000007 n"
                         },
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "data",
-                          "thedef": "1000008 data"
+                          "name": "a",
+                          "thedef": "1000008 a"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000006 arguments",
-                        "1000007 err",
-                        "1000008 data",
-                        "1000009 datal"
+                        "1000007 n",
+                        "1000008 a",
+                        "1000009 o"
                       ],
                       "enclosed": [
                         "1000027 console",
-                        "1000008 data",
-                        "1000009 datal"
+                        "1000008 a",
+                        "1000009 o"
                       ],
                       "body": [
                         {
@@ -169,15 +169,15 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "datal",
-                                "thedef": "1000009 datal"
+                                "name": "o",
+                                "thedef": "1000009 o"
                               },
                               "value": {
                                 "_class": "AST_Dot",
                                 "expression": {
                                   "_class": "AST_SymbolRef",
-                                  "name": "data",
-                                  "thedef": "1000008 data"
+                                  "name": "a",
+                                  "thedef": "1000008 a"
                                 },
                                 "property": "length"
                               }
@@ -200,8 +200,8 @@
                             "args": [
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "datal",
-                                "thedef": "1000009 datal"
+                                "name": "o",
+                                "thedef": "1000009 o"
                               }
                             ]
                           }
@@ -217,14 +217,14 @@
                   "_class": "AST_Call",
                   "expression": {
                     "_class": "AST_SymbolRef",
-                    "name": "cb",
-                    "thedef": "1000005 cb"
+                    "name": "a",
+                    "thedef": "1000005 a"
                   },
                   "args": [
                     {
                       "_class": "AST_String",
                       "value": "done",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   ]
                 }
@@ -248,29 +248,29 @@
             "_class": "AST_Function",
             "name": {
               "_class": "AST_SymbolLambda",
-              "name": "fact",
-              "thedef": "1000012 fact"
+              "name": "n",
+              "thedef": "1000012 n"
             },
             "argnames": [
               {
                 "_class": "AST_SymbolFunarg",
-                "name": "n",
-                "thedef": "1000013 n"
+                "name": "a",
+                "thedef": "1000013 a"
               }
             ],
             "uses_arguments": false,
             "variables": [
               "1000011 arguments",
-              "1000012 fact",
-              "1000013 n",
-              "1000014 q"
+              "1000012 n",
+              "1000013 a",
+              "1000014 o"
             ],
             "functions": [
-              "1000012 fact"
+              "1000012 n"
             ],
             "enclosed": [
-              "1000013 n",
-              "1000012 fact"
+              "1000013 a",
+              "1000012 n"
             ],
             "body": [
               {
@@ -280,8 +280,8 @@
                   "operator": "<",
                   "left": {
                     "_class": "AST_SymbolRef",
-                    "name": "n",
-                    "thedef": "1000013 n"
+                    "name": "a",
+                    "thedef": "1000013 a"
                   },
                   "right": {
                     "_class": "AST_Number",
@@ -299,16 +299,16 @@
                           "_class": "AST_VarDef",
                           "name": {
                             "_class": "AST_SymbolVar",
-                            "name": "q",
-                            "thedef": "1000014 q"
+                            "name": "o",
+                            "thedef": "1000014 o"
                           },
                           "value": {
                             "_class": "AST_Binary",
                             "operator": "-",
                             "left": {
                               "_class": "AST_SymbolRef",
-                              "name": "n",
-                              "thedef": "1000013 n"
+                              "name": "a",
+                              "thedef": "1000013 a"
                             },
                             "right": {
                               "_class": "AST_Number",
@@ -335,15 +335,15 @@
                   "operator": "*",
                   "left": {
                     "_class": "AST_SymbolRef",
-                    "name": "n",
-                    "thedef": "1000013 n"
+                    "name": "a",
+                    "thedef": "1000013 a"
                   },
                   "right": {
                     "_class": "AST_Call",
                     "expression": {
                       "_class": "AST_SymbolRef",
-                      "name": "fact",
-                      "thedef": "1000012 fact"
+                      "name": "n",
+                      "thedef": "1000012 n"
                     },
                     "args": [
                       {
@@ -351,8 +351,8 @@
                         "operator": "-",
                         "left": {
                           "_class": "AST_SymbolRef",
-                          "name": "n",
-                          "thedef": "1000013 n"
+                          "name": "a",
+                          "thedef": "1000013 a"
                         },
                         "right": {
                           "_class": "AST_Number",
@@ -385,20 +385,20 @@
             "uses_arguments": false,
             "variables": [
               "1000016 arguments",
-              "1000017 file",
-              "1000018 n",
-              "1000021 i",
-              "1000022 k",
-              "1000023 g"
+              "1000017 n",
+              "1000018 a",
+              "1000021 o",
+              "1000022 r",
+              "1000023 t"
             ],
             "enclosed": [
-              "1000018 n",
+              "1000018 a",
               "1000002 readfile",
-              "1000017 file",
+              "1000017 n",
               "1000027 console",
-              "1000021 i",
+              "1000021 o",
               "1000028 data",
-              "1000023 g",
+              "1000023 t",
               "1000029 list"
             ],
             "body": [
@@ -409,8 +409,8 @@
                     "_class": "AST_VarDef",
                     "name": {
                       "_class": "AST_SymbolVar",
-                      "name": "file",
-                      "thedef": "1000017 file"
+                      "name": "n",
+                      "thedef": "1000017 n"
                     },
                     "value": {
                       "_class": "AST_String",
@@ -427,8 +427,8 @@
                     "_class": "AST_VarDef",
                     "name": {
                       "_class": "AST_SymbolVar",
-                      "name": "n",
-                      "thedef": "1000018 n"
+                      "name": "a",
+                      "thedef": "1000018 a"
                     },
                     "value": {
                       "_class": "AST_String",
@@ -445,8 +445,8 @@
                   "operator": "=",
                   "left": {
                     "_class": "AST_SymbolRef",
-                    "name": "n",
-                    "thedef": "1000018 n"
+                    "name": "a",
+                    "thedef": "1000018 a"
                   },
                   "right": {
                     "_class": "AST_Binary",
@@ -456,19 +456,19 @@
                       "operator": "-",
                       "left": {
                         "_class": "AST_SymbolRef",
-                        "name": "n",
-                        "thedef": "1000018 n"
+                        "name": "a",
+                        "thedef": "1000018 a"
                       },
                       "right": {
                         "_class": "AST_SymbolRef",
-                        "name": "n",
-                        "thedef": "1000018 n"
+                        "name": "a",
+                        "thedef": "1000018 a"
                       }
                     },
                     "right": {
                       "_class": "AST_SymbolRef",
-                      "name": "n",
-                      "thedef": "1000018 n"
+                      "name": "a",
+                      "thedef": "1000018 a"
                     }
                   }
                 }
@@ -485,8 +485,8 @@
                   "args": [
                     {
                       "_class": "AST_SymbolRef",
-                      "name": "file",
-                      "thedef": "1000017 file"
+                      "name": "n",
+                      "thedef": "1000017 n"
                     },
                     {
                       "_class": "AST_Function",
@@ -494,19 +494,19 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "data",
-                          "thedef": "1000020 data"
+                          "name": "n",
+                          "thedef": "1000020 n"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000019 arguments",
-                        "1000020 data"
+                        "1000020 n"
                       ],
                       "enclosed": [
                         "1000027 console",
-                        "1000018 n",
-                        "1000020 data"
+                        "1000018 a",
+                        "1000020 n"
                       ],
                       "body": [
                         {
@@ -527,8 +527,8 @@
                                 "_class": "AST_Dot",
                                 "expression": {
                                   "_class": "AST_SymbolRef",
-                                  "name": "n",
-                                  "thedef": "1000018 n"
+                                  "name": "a",
+                                  "thedef": "1000018 a"
                                 },
                                 "property": "length"
                               }
@@ -551,8 +551,8 @@
                             "args": [
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "data",
-                                "thedef": "1000020 data"
+                                "name": "n",
+                                "thedef": "1000020 n"
                               }
                             ]
                           }
@@ -571,8 +571,8 @@
                       "_class": "AST_VarDef",
                       "name": {
                         "_class": "AST_SymbolVar",
-                        "name": "i",
-                        "thedef": "1000021 i"
+                        "name": "o",
+                        "thedef": "1000021 o"
                       },
                       "value": {
                         "_class": "AST_Number",
@@ -586,8 +586,8 @@
                   "operator": "<",
                   "left": {
                     "_class": "AST_SymbolRef",
-                    "name": "i",
-                    "thedef": "1000021 i"
+                    "name": "o",
+                    "thedef": "1000021 o"
                   },
                   "right": {
                     "_class": "AST_Dot",
@@ -604,8 +604,8 @@
                   "operator": "++",
                   "expression": {
                     "_class": "AST_SymbolRef",
-                    "name": "i",
-                    "thedef": "1000021 i"
+                    "name": "o",
+                    "thedef": "1000021 o"
                   }
                 },
                 "body": {
@@ -618,8 +618,8 @@
                           "_class": "AST_VarDef",
                           "name": {
                             "_class": "AST_SymbolVar",
-                            "name": "k",
-                            "thedef": "1000022 k"
+                            "name": "r",
+                            "thedef": "1000022 r"
                           },
                           "value": {
                             "_class": "AST_Number",
@@ -651,8 +651,8 @@
                             },
                             "property": {
                               "_class": "AST_SymbolRef",
-                              "name": "i",
-                              "thedef": "1000021 i"
+                              "name": "o",
+                              "thedef": "1000021 o"
                             }
                           }
                         ]
@@ -668,8 +668,8 @@
                     "_class": "AST_VarDef",
                     "name": {
                       "_class": "AST_SymbolVar",
-                      "name": "g",
-                      "thedef": "1000023 g"
+                      "name": "t",
+                      "thedef": "1000023 t"
                     },
                     "value": {
                       "_class": "AST_Number",
@@ -685,8 +685,8 @@
                   "operator": ">",
                   "left": {
                     "_class": "AST_SymbolRef",
-                    "name": "g",
-                    "thedef": "1000023 g"
+                    "name": "t",
+                    "thedef": "1000023 t"
                   },
                   "right": {
                     "_class": "AST_Number",
@@ -703,8 +703,8 @@
                         "operator": "--",
                         "expression": {
                           "_class": "AST_SymbolRef",
-                          "name": "g",
-                          "thedef": "1000023 g"
+                          "name": "t",
+                          "thedef": "1000023 t"
                         }
                       }
                     }
@@ -760,17 +760,17 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "i",
-                          "thedef": "1000025 i"
+                          "name": "n",
+                          "thedef": "1000025 n"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000024 arguments",
-                        "1000025 i"
+                        "1000025 n"
                       ],
                       "enclosed": [
-                        "1000025 i"
+                        "1000025 n"
                       ],
                       "body": [
                         {
@@ -780,8 +780,8 @@
                             "operator": "++",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "i",
-                              "thedef": "1000025 i"
+                              "name": "n",
+                              "thedef": "1000025 n"
                             }
                           }
                         }

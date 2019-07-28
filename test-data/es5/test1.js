@@ -1,4 +1,4 @@
-var fs = require('fs');
+const fs = require('fs');
 
 var readfile = function (name, cb) {
   fs.readFile(file, "utf-8", function (err, data) {

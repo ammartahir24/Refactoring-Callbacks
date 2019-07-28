@@ -1,0 +1,1 @@
+var fs=require("fs");var readfile=function(e,f){fs.readFile(file,"utf-8",function(e,n){f(n)})};var fname="a.txt";var fname2="b.txt";var fname3="ab.txt";readfile(fname,function(f){console.log(fname2);readfile(fname2,function(n){console.log(fname3);readfile(fname3,function(e){console.log(f);console.log(n);console.log(e)})})});

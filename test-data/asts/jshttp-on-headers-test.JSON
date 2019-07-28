@@ -58,7 +58,7 @@
               {
                 "_class": "AST_String",
                 "value": "assert",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -86,7 +86,7 @@
               {
                 "_class": "AST_String",
                 "value": "http",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -114,7 +114,7 @@
               {
                 "_class": "AST_String",
                 "value": "..",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -142,7 +142,7 @@
               {
                 "_class": "AST_String",
                 "value": "supertest",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -162,7 +162,7 @@
           {
             "_class": "AST_String",
             "value": "onHeaders(res, listener)",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -198,7 +198,7 @@
                     {
                       "_class": "AST_String",
                       "value": "should fire after setHeader",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -206,22 +206,22 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "done",
-                          "thedef": "1000007 done"
+                          "name": "e",
+                          "thedef": "1000007 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000006 arguments",
-                        "1000007 done",
-                        "1000008 server"
+                        "1000007 e",
+                        "1000008 t"
                       ],
                       "enclosed": [
                         "1000154 createServer",
                         "1000172 echoListener",
                         "1000004 request",
-                        "1000008 server",
-                        "1000007 done"
+                        "1000008 t",
+                        "1000007 e"
                       ],
                       "body": [
                         {
@@ -231,8 +231,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "server",
-                                "thedef": "1000008 server"
+                                "name": "t",
+                                "thedef": "1000008 t"
                               },
                               "value": {
                                 "_class": "AST_Call",
@@ -276,8 +276,8 @@
                                         "args": [
                                           {
                                             "_class": "AST_SymbolRef",
-                                            "name": "server",
-                                            "thedef": "1000008 server"
+                                            "name": "t",
+                                            "thedef": "1000008 t"
                                           }
                                         ]
                                       },
@@ -287,7 +287,7 @@
                                       {
                                         "_class": "AST_String",
                                         "value": "/",
-                                        "quote": "'"
+                                        "quote": "\""
                                       }
                                     ]
                                   },
@@ -297,12 +297,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Outgoing-Echo",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "test",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -315,8 +315,8 @@
                               },
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "done",
-                                "thedef": "1000007 done"
+                                "name": "e",
+                                "thedef": "1000007 e"
                               }
                             ]
                           }
@@ -339,7 +339,7 @@
                     {
                       "_class": "AST_String",
                       "value": "should fire before write",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -347,27 +347,27 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "done",
-                          "thedef": "1000010 done"
+                          "name": "e",
+                          "thedef": "1000010 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000009 arguments",
-                        "1000010 done",
-                        "1000011 server",
-                        "1000013 handler"
+                        "1000010 e",
+                        "1000011 t",
+                        "1000013 r"
                       ],
                       "functions": [
-                        "1000013 handler"
+                        "1000013 r"
                       ],
                       "enclosed": [
                         "1000154 createServer",
                         "1000172 echoListener",
-                        "1000013 handler",
+                        "1000013 r",
                         "1000004 request",
-                        "1000011 server",
-                        "1000010 done"
+                        "1000011 t",
+                        "1000010 e"
                       ],
                       "body": [
                         {
@@ -377,8 +377,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "server",
-                                "thedef": "1000011 server"
+                                "name": "t",
+                                "thedef": "1000011 t"
                               },
                               "value": {
                                 "_class": "AST_Call",
@@ -395,8 +395,8 @@
                                   },
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "handler",
-                                    "thedef": "1000013 handler"
+                                    "name": "r",
+                                    "thedef": "1000013 r"
                                   }
                                 ]
                               }
@@ -407,29 +407,29 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "handler",
-                            "thedef": "1000013 handler"
+                            "name": "r",
+                            "thedef": "1000013 r"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000014 req"
+                              "name": "e",
+                              "thedef": "1000014 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000015 res"
+                              "name": "t",
+                              "thedef": "1000015 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000012 arguments",
-                            "1000014 req",
-                            "1000015 res"
+                            "1000014 e",
+                            "1000015 t"
                           ],
                           "enclosed": [
-                            "1000015 res"
+                            "1000015 t"
                           ],
                           "body": [
                             {
@@ -440,8 +440,8 @@
                                   "_class": "AST_Dot",
                                   "expression": {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000015 res"
+                                    "name": "t",
+                                    "thedef": "1000015 t"
                                   },
                                   "property": "setHeader"
                                 },
@@ -449,12 +449,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Outgoing",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "test",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               }
@@ -467,8 +467,8 @@
                                   "_class": "AST_Dot",
                                   "expression": {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000015 res"
+                                    "name": "t",
+                                    "thedef": "1000015 t"
                                   },
                                   "property": "write"
                                 },
@@ -476,7 +476,7 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "1",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               }
@@ -507,8 +507,8 @@
                                         "args": [
                                           {
                                             "_class": "AST_SymbolRef",
-                                            "name": "server",
-                                            "thedef": "1000011 server"
+                                            "name": "t",
+                                            "thedef": "1000011 t"
                                           }
                                         ]
                                       },
@@ -518,7 +518,7 @@
                                       {
                                         "_class": "AST_String",
                                         "value": "/",
-                                        "quote": "'"
+                                        "quote": "\""
                                       }
                                     ]
                                   },
@@ -528,12 +528,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Outgoing-Echo",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "test",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -547,12 +547,12 @@
                               {
                                 "_class": "AST_String",
                                 "value": "1",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "done",
-                                "thedef": "1000010 done"
+                                "name": "e",
+                                "thedef": "1000010 e"
                               }
                             ]
                           }
@@ -575,7 +575,7 @@
                     {
                       "_class": "AST_String",
                       "value": "should fire with no headers",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -583,30 +583,30 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "done",
-                          "thedef": "1000017 done"
+                          "name": "e",
+                          "thedef": "1000017 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000016 arguments",
-                        "1000017 done",
-                        "1000018 server",
-                        "1000020 handler",
-                        "1000024 listener"
+                        "1000017 e",
+                        "1000018 t",
+                        "1000020 r",
+                        "1000024 i"
                       ],
                       "functions": [
-                        "1000020 handler",
-                        "1000024 listener"
+                        "1000020 r",
+                        "1000024 i"
                       ],
                       "enclosed": [
                         "1000154 createServer",
-                        "1000024 listener",
-                        "1000020 handler",
+                        "1000024 i",
+                        "1000020 r",
                         "1000176 Object",
                         "1000004 request",
-                        "1000018 server",
-                        "1000017 done"
+                        "1000018 t",
+                        "1000017 e"
                       ],
                       "body": [
                         {
@@ -616,8 +616,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "server",
-                                "thedef": "1000018 server"
+                                "name": "t",
+                                "thedef": "1000018 t"
                               },
                               "value": {
                                 "_class": "AST_Call",
@@ -629,13 +629,13 @@
                                 "args": [
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "listener",
-                                    "thedef": "1000024 listener"
+                                    "name": "i",
+                                    "thedef": "1000024 i"
                                   },
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "handler",
-                                    "thedef": "1000020 handler"
+                                    "name": "r",
+                                    "thedef": "1000020 r"
                                   }
                                 ]
                               }
@@ -646,26 +646,26 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "handler",
-                            "thedef": "1000020 handler"
+                            "name": "r",
+                            "thedef": "1000020 r"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000021 req"
+                              "name": "e",
+                              "thedef": "1000021 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000022 res"
+                              "name": "t",
+                              "thedef": "1000022 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000019 arguments",
-                            "1000021 req",
-                            "1000022 res"
+                            "1000021 e",
+                            "1000022 t"
                           ],
                           "body": []
                         },
@@ -673,26 +673,26 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "listener",
-                            "thedef": "1000024 listener"
+                            "name": "i",
+                            "thedef": "1000024 i"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000025 req"
+                              "name": "e",
+                              "thedef": "1000025 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000026 res"
+                              "name": "t",
+                              "thedef": "1000026 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000023 arguments",
-                            "1000025 req",
-                            "1000026 res"
+                            "1000025 e",
+                            "1000026 t"
                           ],
                           "enclosed": [
                             "1000176 Object"
@@ -714,7 +714,7 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Headers",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_Call",
@@ -756,7 +756,7 @@
                                       {
                                         "_class": "AST_String",
                                         "value": ",",
-                                        "quote": "'"
+                                        "quote": "\""
                                       }
                                     ]
                                   }
@@ -789,8 +789,8 @@
                                         "args": [
                                           {
                                             "_class": "AST_SymbolRef",
-                                            "name": "server",
-                                            "thedef": "1000018 server"
+                                            "name": "t",
+                                            "thedef": "1000018 t"
                                           }
                                         ]
                                       },
@@ -800,7 +800,7 @@
                                       {
                                         "_class": "AST_String",
                                         "value": "/",
-                                        "quote": "'"
+                                        "quote": "\""
                                       }
                                     ]
                                   },
@@ -810,12 +810,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Headers",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -828,8 +828,8 @@
                               },
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "done",
-                                "thedef": "1000017 done"
+                                "name": "e",
+                                "thedef": "1000017 e"
                               }
                             ]
                           }
@@ -852,7 +852,7 @@
                     {
                       "_class": "AST_String",
                       "value": "should fire only once",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -860,31 +860,31 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "done",
-                          "thedef": "1000028 done"
+                          "name": "t",
+                          "thedef": "1000028 t"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000027 arguments",
-                        "1000028 done",
-                        "1000029 count",
-                        "1000030 server",
-                        "1000032 handler",
-                        "1000037 listener"
+                        "1000028 t",
+                        "1000029 r",
+                        "1000030 e",
+                        "1000032 i",
+                        "1000037 n"
                       ],
                       "functions": [
-                        "1000032 handler",
-                        "1000037 listener"
+                        "1000032 i",
+                        "1000037 n"
                       ],
                       "enclosed": [
                         "1000154 createServer",
-                        "1000037 listener",
-                        "1000032 handler",
-                        "1000029 count",
+                        "1000037 n",
+                        "1000032 i",
+                        "1000029 r",
                         "1000004 request",
-                        "1000030 server",
-                        "1000028 done",
+                        "1000030 e",
+                        "1000028 t",
                         "1000001 assert"
                       ],
                       "body": [
@@ -895,8 +895,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "count",
-                                "thedef": "1000029 count"
+                                "name": "r",
+                                "thedef": "1000029 r"
                               },
                               "value": {
                                 "_class": "AST_Number",
@@ -912,8 +912,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "server",
-                                "thedef": "1000030 server"
+                                "name": "e",
+                                "thedef": "1000030 e"
                               },
                               "value": {
                                 "_class": "AST_Call",
@@ -925,13 +925,13 @@
                                 "args": [
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "listener",
-                                    "thedef": "1000037 listener"
+                                    "name": "n",
+                                    "thedef": "1000037 n"
                                   },
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "handler",
-                                    "thedef": "1000032 handler"
+                                    "name": "i",
+                                    "thedef": "1000032 i"
                                   }
                                 ]
                               }
@@ -942,29 +942,30 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "handler",
-                            "thedef": "1000032 handler"
+                            "name": "i",
+                            "thedef": "1000032 i"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000033 req"
+                              "name": "e",
+                              "thedef": "1000033 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000034 res"
+                              "name": "t",
+                              "thedef": "1000034 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000031 arguments",
-                            "1000033 req",
-                            "1000034 res"
+                            "1000033 e",
+                            "1000034 t"
                           ],
                           "enclosed": [
-                            "1000034 res"
+                            "1000034 t",
+                            "1000033 e"
                           ],
                           "body": [
                             {
@@ -975,8 +976,8 @@
                                   "_class": "AST_Dot",
                                   "expression": {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000034 res"
+                                    "name": "t",
+                                    "thedef": "1000034 t"
                                   },
                                   "property": "writeHead"
                                 },
@@ -1009,8 +1010,8 @@
                                       "_class": "AST_Dot",
                                       "expression": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "res",
-                                        "thedef": "1000034 res"
+                                        "name": "t",
+                                        "thedef": "1000034 t"
                                       },
                                       "property": "writeHead"
                                     },
@@ -1030,29 +1031,29 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "listener",
-                            "thedef": "1000037 listener"
+                            "name": "n",
+                            "thedef": "1000037 n"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000038 req"
+                              "name": "e",
+                              "thedef": "1000038 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000039 res"
+                              "name": "t",
+                              "thedef": "1000039 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000036 arguments",
-                            "1000038 req",
-                            "1000039 res"
+                            "1000038 e",
+                            "1000039 t"
                           ],
                           "enclosed": [
-                            "1000029 count"
+                            "1000029 r"
                           ],
                           "body": [
                             {
@@ -1062,8 +1063,8 @@
                                 "operator": "++",
                                 "expression": {
                                   "_class": "AST_SymbolRef",
-                                  "name": "count",
-                                  "thedef": "1000029 count"
+                                  "name": "r",
+                                  "thedef": "1000029 r"
                                 }
                               }
                             }
@@ -1089,8 +1090,8 @@
                                     "args": [
                                       {
                                         "_class": "AST_SymbolRef",
-                                        "name": "server",
-                                        "thedef": "1000030 server"
+                                        "name": "e",
+                                        "thedef": "1000030 e"
                                       }
                                     ]
                                   },
@@ -1100,7 +1101,7 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "/",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -1117,28 +1118,28 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "err",
-                                    "thedef": "1000041 err"
+                                    "name": "e",
+                                    "thedef": "1000041 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000040 arguments",
-                                  "1000041 err"
+                                  "1000041 e"
                                 ],
                                 "enclosed": [
-                                  "1000041 err",
-                                  "1000028 done",
+                                  "1000041 e",
+                                  "1000028 t",
                                   "1000001 assert",
-                                  "1000029 count"
+                                  "1000029 r"
                                 ],
                                 "body": [
                                   {
                                     "_class": "AST_If",
                                     "condition": {
                                       "_class": "AST_SymbolRef",
-                                      "name": "err",
-                                      "thedef": "1000041 err"
+                                      "name": "e",
+                                      "thedef": "1000041 e"
                                     },
                                     "alternative": null,
                                     "body": {
@@ -1147,14 +1148,14 @@
                                         "_class": "AST_Call",
                                         "expression": {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000028 done"
+                                          "name": "t",
+                                          "thedef": "1000028 t"
                                         },
                                         "args": [
                                           {
                                             "_class": "AST_SymbolRef",
-                                            "name": "err",
-                                            "thedef": "1000041 err"
+                                            "name": "e",
+                                            "thedef": "1000041 e"
                                           }
                                         ]
                                       }
@@ -1176,8 +1177,8 @@
                                       "args": [
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "count",
-                                          "thedef": "1000029 count"
+                                          "name": "r",
+                                          "thedef": "1000029 r"
                                         },
                                         {
                                           "_class": "AST_Number",
@@ -1192,8 +1193,8 @@
                                       "_class": "AST_Call",
                                       "expression": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "done",
-                                        "thedef": "1000028 done"
+                                        "name": "t",
+                                        "thedef": "1000028 t"
                                       },
                                       "args": []
                                     }
@@ -1221,7 +1222,7 @@
                     {
                       "_class": "AST_String",
                       "value": "should fire in reverse order",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -1229,29 +1230,29 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "done",
-                          "thedef": "1000043 done"
+                          "name": "e",
+                          "thedef": "1000043 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000042 arguments",
-                        "1000043 done",
-                        "1000044 server",
-                        "1000046 handler"
+                        "1000043 e",
+                        "1000044 t",
+                        "1000046 r"
                       ],
                       "functions": [
-                        "1000046 handler"
+                        "1000046 r"
                       ],
                       "enclosed": [
                         "1000154 createServer",
                         "1000172 echoListener",
-                        "1000046 handler",
+                        "1000046 r",
                         "1000003 onHeaders",
                         "1000163 appendHeader",
                         "1000004 request",
-                        "1000044 server",
-                        "1000043 done"
+                        "1000044 t",
+                        "1000043 e"
                       ],
                       "body": [
                         {
@@ -1261,8 +1262,8 @@
                               "_class": "AST_VarDef",
                               "name": {
                                 "_class": "AST_SymbolVar",
-                                "name": "server",
-                                "thedef": "1000044 server"
+                                "name": "t",
+                                "thedef": "1000044 t"
                               },
                               "value": {
                                 "_class": "AST_Call",
@@ -1279,8 +1280,8 @@
                                   },
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "handler",
-                                    "thedef": "1000046 handler"
+                                    "name": "r",
+                                    "thedef": "1000046 r"
                                   }
                                 ]
                               }
@@ -1291,30 +1292,30 @@
                           "_class": "AST_Defun",
                           "name": {
                             "_class": "AST_SymbolDefun",
-                            "name": "handler",
-                            "thedef": "1000046 handler"
+                            "name": "r",
+                            "thedef": "1000046 r"
                           },
                           "argnames": [
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "req",
-                              "thedef": "1000047 req"
+                              "name": "e",
+                              "thedef": "1000047 e"
                             },
                             {
                               "_class": "AST_SymbolFunarg",
-                              "name": "res",
-                              "thedef": "1000048 res"
+                              "name": "t",
+                              "thedef": "1000048 t"
                             }
                           ],
                           "uses_arguments": false,
                           "variables": [
                             "1000045 arguments",
-                            "1000047 req",
-                            "1000048 res"
+                            "1000047 e",
+                            "1000048 t"
                           ],
                           "enclosed": [
                             "1000003 onHeaders",
-                            "1000048 res",
+                            "1000048 t",
                             "1000163 appendHeader"
                           ],
                           "body": [
@@ -1330,8 +1331,8 @@
                                 "args": [
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000048 res"
+                                    "name": "t",
+                                    "thedef": "1000048 t"
                                   },
                                   {
                                     "_class": "AST_Call",
@@ -1362,8 +1363,8 @@
                                 "args": [
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000048 res"
+                                    "name": "t",
+                                    "thedef": "1000048 t"
                                   },
                                   {
                                     "_class": "AST_Call",
@@ -1394,8 +1395,8 @@
                                 "args": [
                                   {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000048 res"
+                                    "name": "t",
+                                    "thedef": "1000048 t"
                                   },
                                   {
                                     "_class": "AST_Call",
@@ -1422,8 +1423,8 @@
                                   "_class": "AST_Dot",
                                   "expression": {
                                     "_class": "AST_SymbolRef",
-                                    "name": "res",
-                                    "thedef": "1000048 res"
+                                    "name": "t",
+                                    "thedef": "1000048 t"
                                   },
                                   "property": "setHeader"
                                 },
@@ -1431,12 +1432,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Outgoing",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "test",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               }
@@ -1467,8 +1468,8 @@
                                         "args": [
                                           {
                                             "_class": "AST_SymbolRef",
-                                            "name": "server",
-                                            "thedef": "1000044 server"
+                                            "name": "t",
+                                            "thedef": "1000044 t"
                                           }
                                         ]
                                       },
@@ -1478,7 +1479,7 @@
                                       {
                                         "_class": "AST_String",
                                         "value": "/",
-                                        "quote": "'"
+                                        "quote": "\""
                                       }
                                     ]
                                   },
@@ -1488,12 +1489,12 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "X-Outgoing-Echo",
-                                    "quote": "'"
+                                    "quote": "\""
                                   },
                                   {
                                     "_class": "AST_String",
                                     "value": "test,3,2,1",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -1506,8 +1507,8 @@
                               },
                               {
                                 "_class": "AST_SymbolRef",
-                                "name": "done",
-                                "thedef": "1000043 done"
+                                "name": "e",
+                                "thedef": "1000043 e"
                               }
                             ]
                           }
@@ -1530,7 +1531,7 @@
                     {
                       "_class": "AST_String",
                       "value": "arguments",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -1562,7 +1563,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "res",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -1591,7 +1592,7 @@
                                         {
                                           "_class": "AST_String",
                                           "value": "should be required",
-                                          "quote": "'"
+                                          "quote": "\""
                                         },
                                         {
                                           "_class": "AST_Function",
@@ -1665,7 +1666,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -1694,7 +1695,7 @@
                                         {
                                           "_class": "AST_String",
                                           "value": "should be required",
-                                          "quote": "'"
+                                          "quote": "\""
                                         },
                                         {
                                           "_class": "AST_Function",
@@ -1702,21 +1703,21 @@
                                           "argnames": [
                                             {
                                               "_class": "AST_SymbolFunarg",
-                                              "name": "done",
-                                              "thedef": "1000054 done"
+                                              "name": "e",
+                                              "thedef": "1000054 e"
                                             }
                                           ],
                                           "uses_arguments": false,
                                           "variables": [
                                             "1000053 arguments",
-                                            "1000054 done",
-                                            "1000055 server"
+                                            "1000054 e",
+                                            "1000055 t"
                                           ],
                                           "enclosed": [
                                             "1000154 createServer",
                                             "1000004 request",
-                                            "1000055 server",
-                                            "1000054 done"
+                                            "1000055 t",
+                                            "1000054 e"
                                           ],
                                           "body": [
                                             {
@@ -1726,8 +1727,8 @@
                                                   "_class": "AST_VarDef",
                                                   "name": {
                                                     "_class": "AST_SymbolVar",
-                                                    "name": "server",
-                                                    "thedef": "1000055 server"
+                                                    "name": "t",
+                                                    "thedef": "1000055 t"
                                                   },
                                                   "value": {
                                                     "_class": "AST_Call",
@@ -1761,8 +1762,8 @@
                                                         "args": [
                                                           {
                                                             "_class": "AST_SymbolRef",
-                                                            "name": "server",
-                                                            "thedef": "1000055 server"
+                                                            "name": "t",
+                                                            "thedef": "1000055 t"
                                                           }
                                                         ]
                                                       },
@@ -1772,7 +1773,7 @@
                                                       {
                                                         "_class": "AST_String",
                                                         "value": "/",
-                                                        "quote": "'"
+                                                        "quote": "\""
                                                       }
                                                     ]
                                                   },
@@ -1791,8 +1792,8 @@
                                                   },
                                                   {
                                                     "_class": "AST_SymbolRef",
-                                                    "name": "done",
-                                                    "thedef": "1000054 done"
+                                                    "name": "e",
+                                                    "thedef": "1000054 e"
                                                   }
                                                 ]
                                               }
@@ -1815,7 +1816,7 @@
                                         {
                                           "_class": "AST_String",
                                           "value": "should only accept function",
-                                          "quote": "'"
+                                          "quote": "\""
                                         },
                                         {
                                           "_class": "AST_Function",
@@ -1823,21 +1824,21 @@
                                           "argnames": [
                                             {
                                               "_class": "AST_SymbolFunarg",
-                                              "name": "done",
-                                              "thedef": "1000057 done"
+                                              "name": "e",
+                                              "thedef": "1000057 e"
                                             }
                                           ],
                                           "uses_arguments": false,
                                           "variables": [
                                             "1000056 arguments",
-                                            "1000057 done",
-                                            "1000058 server"
+                                            "1000057 e",
+                                            "1000058 t"
                                           ],
                                           "enclosed": [
                                             "1000154 createServer",
                                             "1000004 request",
-                                            "1000058 server",
-                                            "1000057 done"
+                                            "1000058 t",
+                                            "1000057 e"
                                           ],
                                           "body": [
                                             {
@@ -1847,8 +1848,8 @@
                                                   "_class": "AST_VarDef",
                                                   "name": {
                                                     "_class": "AST_SymbolVar",
-                                                    "name": "server",
-                                                    "thedef": "1000058 server"
+                                                    "name": "t",
+                                                    "thedef": "1000058 t"
                                                   },
                                                   "value": {
                                                     "_class": "AST_Call",
@@ -1887,8 +1888,8 @@
                                                         "args": [
                                                           {
                                                             "_class": "AST_SymbolRef",
-                                                            "name": "server",
-                                                            "thedef": "1000058 server"
+                                                            "name": "t",
+                                                            "thedef": "1000058 t"
                                                           }
                                                         ]
                                                       },
@@ -1898,7 +1899,7 @@
                                                       {
                                                         "_class": "AST_String",
                                                         "value": "/",
-                                                        "quote": "'"
+                                                        "quote": "\""
                                                       }
                                                     ]
                                                   },
@@ -1917,8 +1918,8 @@
                                                   },
                                                   {
                                                     "_class": "AST_SymbolRef",
-                                                    "name": "done",
-                                                    "thedef": "1000057 done"
+                                                    "name": "e",
+                                                    "thedef": "1000057 e"
                                                   }
                                                 ]
                                               }
@@ -1951,7 +1952,7 @@
                     {
                       "_class": "AST_String",
                       "value": "setHeader",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -1981,7 +1982,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should be available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -1989,22 +1990,22 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000061 done"
+                                    "name": "e",
+                                    "thedef": "1000061 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000060 arguments",
-                                  "1000061 done",
-                                  "1000062 server"
+                                  "1000061 e",
+                                  "1000062 t"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
                                   "1000172 echoListener",
                                   "1000004 request",
-                                  "1000062 server",
-                                  "1000061 done"
+                                  "1000062 t",
+                                  "1000061 e"
                                 ],
                                 "body": [
                                   {
@@ -2014,8 +2015,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000062 server"
+                                          "name": "t",
+                                          "thedef": "1000062 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -2059,8 +2060,8 @@
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "server",
-                                                      "thedef": "1000062 server"
+                                                      "name": "t",
+                                                      "thedef": "1000062 t"
                                                     }
                                                   ]
                                                 },
@@ -2070,7 +2071,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "/",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -2080,12 +2081,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -2098,8 +2099,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000061 done"
+                                          "name": "e",
+                                          "thedef": "1000061 e"
                                         }
                                       ]
                                     }
@@ -2127,7 +2128,7 @@
                     {
                       "_class": "AST_String",
                       "value": "writeHead(status)",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -2159,7 +2160,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should make status available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -2167,29 +2168,29 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000065 done"
+                                    "name": "e",
+                                    "thedef": "1000065 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000064 arguments",
-                                  "1000065 done",
-                                  "1000066 server",
-                                  "1000068 handler",
-                                  "1000072 listener"
+                                  "1000065 e",
+                                  "1000066 t",
+                                  "1000068 r",
+                                  "1000072 i"
                                 ],
                                 "functions": [
-                                  "1000068 handler",
-                                  "1000072 listener"
+                                  "1000068 r",
+                                  "1000072 i"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
-                                  "1000072 listener",
-                                  "1000068 handler",
+                                  "1000072 i",
+                                  "1000068 r",
                                   "1000004 request",
-                                  "1000066 server",
-                                  "1000065 done"
+                                  "1000066 t",
+                                  "1000065 e"
                                 ],
                                 "body": [
                                   {
@@ -2199,8 +2200,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000066 server"
+                                          "name": "t",
+                                          "thedef": "1000066 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -2212,13 +2213,13 @@
                                           "args": [
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "listener",
-                                              "thedef": "1000072 listener"
+                                              "name": "i",
+                                              "thedef": "1000072 i"
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000068 handler"
+                                              "name": "r",
+                                              "thedef": "1000068 r"
                                             }
                                           ]
                                         }
@@ -2229,29 +2230,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000068 handler"
+                                      "name": "r",
+                                      "thedef": "1000068 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000069 req"
+                                        "name": "e",
+                                        "thedef": "1000069 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000070 res"
+                                        "name": "t",
+                                        "thedef": "1000070 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000067 arguments",
-                                      "1000069 req",
-                                      "1000070 res"
+                                      "1000069 e",
+                                      "1000070 t"
                                     ],
                                     "enclosed": [
-                                      "1000070 res"
+                                      "1000070 t"
                                     ],
                                     "body": [
                                       {
@@ -2262,8 +2263,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000070 res"
+                                              "name": "t",
+                                              "thedef": "1000070 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -2281,26 +2282,26 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "listener",
-                                      "thedef": "1000072 listener"
+                                      "name": "i",
+                                      "thedef": "1000072 i"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000073 req"
+                                        "name": "e",
+                                        "thedef": "1000073 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000074 res"
+                                        "name": "t",
+                                        "thedef": "1000074 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000071 arguments",
-                                      "1000073 req",
-                                      "1000074 res"
+                                      "1000073 e",
+                                      "1000074 t"
                                     ],
                                     "body": [
                                       {
@@ -2319,7 +2320,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Dot",
@@ -2358,8 +2359,8 @@
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "server",
-                                                      "thedef": "1000066 server"
+                                                      "name": "t",
+                                                      "thedef": "1000066 t"
                                                     }
                                                   ]
                                                 },
@@ -2369,7 +2370,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "/",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -2379,12 +2380,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "201",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -2397,8 +2398,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000065 done"
+                                          "name": "e",
+                                          "thedef": "1000065 e"
                                         }
                                       ]
                                     }
@@ -2421,7 +2422,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should allow manipulation of status in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -2429,29 +2430,29 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000076 done"
+                                    "name": "e",
+                                    "thedef": "1000076 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000075 arguments",
-                                  "1000076 done",
-                                  "1000077 server",
-                                  "1000079 handler",
-                                  "1000083 listener"
+                                  "1000076 e",
+                                  "1000077 t",
+                                  "1000079 r",
+                                  "1000083 i"
                                 ],
                                 "functions": [
-                                  "1000079 handler",
-                                  "1000083 listener"
+                                  "1000079 r",
+                                  "1000083 i"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
-                                  "1000083 listener",
-                                  "1000079 handler",
+                                  "1000083 i",
+                                  "1000079 r",
                                   "1000004 request",
-                                  "1000077 server",
-                                  "1000076 done"
+                                  "1000077 t",
+                                  "1000076 e"
                                 ],
                                 "body": [
                                   {
@@ -2461,8 +2462,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000077 server"
+                                          "name": "t",
+                                          "thedef": "1000077 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -2474,13 +2475,13 @@
                                           "args": [
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "listener",
-                                              "thedef": "1000083 listener"
+                                              "name": "i",
+                                              "thedef": "1000083 i"
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000079 handler"
+                                              "name": "r",
+                                              "thedef": "1000079 r"
                                             }
                                           ]
                                         }
@@ -2491,29 +2492,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000079 handler"
+                                      "name": "r",
+                                      "thedef": "1000079 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000080 req"
+                                        "name": "e",
+                                        "thedef": "1000080 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000081 res"
+                                        "name": "t",
+                                        "thedef": "1000081 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000078 arguments",
-                                      "1000080 req",
-                                      "1000081 res"
+                                      "1000080 e",
+                                      "1000081 t"
                                     ],
                                     "enclosed": [
-                                      "1000081 res"
+                                      "1000081 t"
                                     ],
                                     "body": [
                                       {
@@ -2524,8 +2525,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000081 res"
+                                              "name": "t",
+                                              "thedef": "1000081 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -2543,26 +2544,26 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "listener",
-                                      "thedef": "1000083 listener"
+                                      "name": "i",
+                                      "thedef": "1000083 i"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000084 req"
+                                        "name": "e",
+                                        "thedef": "1000084 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000085 res"
+                                        "name": "t",
+                                        "thedef": "1000085 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000082 arguments",
-                                      "1000084 req",
-                                      "1000085 res"
+                                      "1000084 e",
+                                      "1000085 t"
                                     ],
                                     "body": [
                                       {
@@ -2581,7 +2582,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Dot",
@@ -2639,8 +2640,8 @@
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "server",
-                                                      "thedef": "1000077 server"
+                                                      "name": "t",
+                                                      "thedef": "1000077 t"
                                                     }
                                                   ]
                                                 },
@@ -2650,7 +2651,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "/",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -2660,12 +2661,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "201",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -2678,8 +2679,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000076 done"
+                                          "name": "e",
+                                          "thedef": "1000076 e"
                                         }
                                       ]
                                     }
@@ -2702,7 +2703,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should pass-through core error",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -2710,27 +2711,27 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000087 done"
+                                    "name": "e",
+                                    "thedef": "1000087 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000086 arguments",
-                                  "1000087 done",
-                                  "1000088 server",
-                                  "1000090 handler"
+                                  "1000087 e",
+                                  "1000088 t",
+                                  "1000090 r"
                                 ],
                                 "functions": [
-                                  "1000090 handler"
+                                  "1000090 r"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
                                   "1000163 appendHeader",
-                                  "1000090 handler",
+                                  "1000090 r",
                                   "1000004 request",
-                                  "1000088 server",
-                                  "1000087 done"
+                                  "1000088 t",
+                                  "1000087 e"
                                 ],
                                 "body": [
                                   {
@@ -2740,8 +2741,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000088 server"
+                                          "name": "t",
+                                          "thedef": "1000088 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -2767,8 +2768,8 @@
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000090 handler"
+                                              "name": "r",
+                                              "thedef": "1000090 r"
                                             }
                                           ]
                                         }
@@ -2779,29 +2780,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000090 handler"
+                                      "name": "r",
+                                      "thedef": "1000090 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000091 req"
+                                        "name": "e",
+                                        "thedef": "1000091 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000092 res"
+                                        "name": "t",
+                                        "thedef": "1000092 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000089 arguments",
-                                      "1000091 req",
-                                      "1000092 res"
+                                      "1000091 e",
+                                      "1000092 t"
                                     ],
                                     "enclosed": [
-                                      "1000092 res"
+                                      "1000092 t"
                                     ],
                                     "body": [
                                       {
@@ -2812,8 +2813,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000092 res"
+                                              "name": "t",
+                                              "thedef": "1000092 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -2842,8 +2843,8 @@
                                               "args": [
                                                 {
                                                   "_class": "AST_SymbolRef",
-                                                  "name": "server",
-                                                  "thedef": "1000088 server"
+                                                  "name": "t",
+                                                  "thedef": "1000088 t"
                                                 }
                                               ]
                                             },
@@ -2853,7 +2854,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "/",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -2866,8 +2867,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000087 done"
+                                          "name": "e",
+                                          "thedef": "1000087 e"
                                         }
                                       ]
                                     }
@@ -2890,7 +2891,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should retain return value",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -2898,23 +2899,23 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000094 done"
+                                    "name": "r",
+                                    "thedef": "1000094 r"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000093 arguments",
-                                  "1000094 done",
-                                  "1000095 server"
+                                  "1000094 r",
+                                  "1000095 i"
                                 ],
                                 "enclosed": [
                                   "1000002 http",
                                   "1000003 onHeaders",
                                   "1000163 appendHeader",
                                   "1000004 request",
-                                  "1000095 server",
-                                  "1000094 done"
+                                  "1000095 i",
+                                  "1000094 r"
                                 ],
                                 "body": [
                                   {
@@ -2924,8 +2925,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000095 server"
+                                          "name": "i",
+                                          "thedef": "1000095 i"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -2945,25 +2946,25 @@
                                               "argnames": [
                                                 {
                                                   "_class": "AST_SymbolFunarg",
-                                                  "name": "req",
-                                                  "thedef": "1000097 req"
+                                                  "name": "e",
+                                                  "thedef": "1000097 e"
                                                 },
                                                 {
                                                   "_class": "AST_SymbolFunarg",
-                                                  "name": "res",
-                                                  "thedef": "1000098 res"
+                                                  "name": "t",
+                                                  "thedef": "1000098 t"
                                                 }
                                               ],
                                               "uses_arguments": false,
                                               "variables": [
                                                 "1000096 arguments",
-                                                "1000097 req",
-                                                "1000098 res"
+                                                "1000097 e",
+                                                "1000098 t"
                                               ],
                                               "enclosed": [
-                                                "1000097 req",
+                                                "1000097 e",
                                                 "1000003 onHeaders",
-                                                "1000098 res",
+                                                "1000098 t",
                                                 "1000163 appendHeader"
                                               ],
                                               "body": [
@@ -2976,15 +2977,15 @@
                                                       "_class": "AST_Dot",
                                                       "expression": {
                                                         "_class": "AST_SymbolRef",
-                                                        "name": "req",
-                                                        "thedef": "1000097 req"
+                                                        "name": "e",
+                                                        "thedef": "1000097 e"
                                                       },
                                                       "property": "url"
                                                     },
                                                     "right": {
                                                       "_class": "AST_String",
                                                       "value": "/attach",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     }
                                                   },
                                                   "alternative": null,
@@ -3003,8 +3004,8 @@
                                                           "args": [
                                                             {
                                                               "_class": "AST_SymbolRef",
-                                                              "name": "res",
-                                                              "thedef": "1000098 res"
+                                                              "name": "t",
+                                                              "thedef": "1000098 t"
                                                             },
                                                             {
                                                               "_class": "AST_Call",
@@ -3034,8 +3035,8 @@
                                                       "_class": "AST_Dot",
                                                       "expression": {
                                                         "_class": "AST_SymbolRef",
-                                                        "name": "res",
-                                                        "thedef": "1000098 res"
+                                                        "name": "t",
+                                                        "thedef": "1000098 t"
                                                       },
                                                       "property": "end"
                                                     },
@@ -3049,8 +3050,8 @@
                                                             "_class": "AST_Dot",
                                                             "expression": {
                                                               "_class": "AST_SymbolRef",
-                                                              "name": "res",
-                                                              "thedef": "1000098 res"
+                                                              "name": "t",
+                                                              "thedef": "1000098 t"
                                                             },
                                                             "property": "writeHead"
                                                           },
@@ -3092,8 +3093,8 @@
                                               "args": [
                                                 {
                                                   "_class": "AST_SymbolRef",
-                                                  "name": "server",
-                                                  "thedef": "1000095 server"
+                                                  "name": "i",
+                                                  "thedef": "1000095 i"
                                                 }
                                               ]
                                             },
@@ -3103,7 +3104,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "/",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -3120,35 +3121,35 @@
                                           "argnames": [
                                             {
                                               "_class": "AST_SymbolFunarg",
-                                              "name": "err",
-                                              "thedef": "1000100 err"
+                                              "name": "e",
+                                              "thedef": "1000100 e"
                                             },
                                             {
                                               "_class": "AST_SymbolFunarg",
-                                              "name": "res",
-                                              "thedef": "1000101 res"
+                                              "name": "t",
+                                              "thedef": "1000101 t"
                                             }
                                           ],
                                           "uses_arguments": false,
                                           "variables": [
                                             "1000099 arguments",
-                                            "1000100 err",
-                                            "1000101 res"
+                                            "1000100 e",
+                                            "1000101 t"
                                           ],
                                           "enclosed": [
-                                            "1000100 err",
-                                            "1000094 done",
+                                            "1000100 e",
+                                            "1000094 r",
                                             "1000004 request",
-                                            "1000095 server",
-                                            "1000101 res"
+                                            "1000095 i",
+                                            "1000101 t"
                                           ],
                                           "body": [
                                             {
                                               "_class": "AST_If",
                                               "condition": {
                                                 "_class": "AST_SymbolRef",
-                                                "name": "err",
-                                                "thedef": "1000100 err"
+                                                "name": "e",
+                                                "thedef": "1000100 e"
                                               },
                                               "alternative": null,
                                               "body": {
@@ -3157,14 +3158,14 @@
                                                   "_class": "AST_Call",
                                                   "expression": {
                                                     "_class": "AST_SymbolRef",
-                                                    "name": "done",
-                                                    "thedef": "1000094 done"
+                                                    "name": "r",
+                                                    "thedef": "1000094 r"
                                                   },
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "err",
-                                                      "thedef": "1000100 err"
+                                                      "name": "e",
+                                                      "thedef": "1000100 e"
                                                     }
                                                   ]
                                                 }
@@ -3190,8 +3191,8 @@
                                                         "args": [
                                                           {
                                                             "_class": "AST_SymbolRef",
-                                                            "name": "server",
-                                                            "thedef": "1000095 server"
+                                                            "name": "i",
+                                                            "thedef": "1000095 i"
                                                           }
                                                         ]
                                                       },
@@ -3201,7 +3202,7 @@
                                                       {
                                                         "_class": "AST_String",
                                                         "value": "/attach",
-                                                        "quote": "'"
+                                                        "quote": "\""
                                                       }
                                                     ]
                                                   },
@@ -3216,15 +3217,15 @@
                                                     "_class": "AST_Dot",
                                                     "expression": {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "res",
-                                                      "thedef": "1000101 res"
+                                                      "name": "t",
+                                                      "thedef": "1000101 t"
                                                     },
                                                     "property": "text"
                                                   },
                                                   {
                                                     "_class": "AST_SymbolRef",
-                                                    "name": "done",
-                                                    "thedef": "1000094 done"
+                                                    "name": "r",
+                                                    "thedef": "1000094 r"
                                                   }
                                                 ]
                                               }
@@ -3257,7 +3258,7 @@
                     {
                       "_class": "AST_String",
                       "value": "writeHead(status, reason)",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -3287,7 +3288,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should be available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -3295,27 +3296,27 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000104 done"
+                                    "name": "e",
+                                    "thedef": "1000104 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000103 arguments",
-                                  "1000104 done",
-                                  "1000105 server",
-                                  "1000107 handler"
+                                  "1000104 e",
+                                  "1000105 t",
+                                  "1000107 r"
                                 ],
                                 "functions": [
-                                  "1000107 handler"
+                                  "1000107 r"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
                                   "1000172 echoListener",
-                                  "1000107 handler",
+                                  "1000107 r",
                                   "1000004 request",
-                                  "1000105 server",
-                                  "1000104 done"
+                                  "1000105 t",
+                                  "1000104 e"
                                 ],
                                 "body": [
                                   {
@@ -3325,8 +3326,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000105 server"
+                                          "name": "t",
+                                          "thedef": "1000105 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -3343,8 +3344,8 @@
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000107 handler"
+                                              "name": "r",
+                                              "thedef": "1000107 r"
                                             }
                                           ]
                                         }
@@ -3355,29 +3356,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000107 handler"
+                                      "name": "r",
+                                      "thedef": "1000107 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000108 req"
+                                        "name": "e",
+                                        "thedef": "1000108 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000109 res"
+                                        "name": "t",
+                                        "thedef": "1000109 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000106 arguments",
-                                      "1000108 req",
-                                      "1000109 res"
+                                      "1000108 e",
+                                      "1000109 t"
                                     ],
                                     "enclosed": [
-                                      "1000109 res"
+                                      "1000109 t"
                                     ],
                                     "body": [
                                       {
@@ -3388,8 +3389,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000109 res"
+                                              "name": "t",
+                                              "thedef": "1000109 t"
                                             },
                                             "property": "setHeader"
                                           },
@@ -3397,12 +3398,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         }
@@ -3415,8 +3416,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000109 res"
+                                              "name": "t",
+                                              "thedef": "1000109 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -3428,7 +3429,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "OK",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         }
@@ -3459,8 +3460,8 @@
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "server",
-                                                      "thedef": "1000105 server"
+                                                      "name": "t",
+                                                      "thedef": "1000105 t"
                                                     }
                                                   ]
                                                 },
@@ -3470,7 +3471,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "/",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -3480,12 +3481,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -3498,8 +3499,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000104 done"
+                                          "name": "e",
+                                          "thedef": "1000104 e"
                                         }
                                       ]
                                     }
@@ -3527,7 +3528,7 @@
                     {
                       "_class": "AST_String",
                       "value": "writeHead(status, reason, obj)",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -3557,7 +3558,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should be available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -3565,27 +3566,27 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000112 done"
+                                    "name": "e",
+                                    "thedef": "1000112 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000111 arguments",
-                                  "1000112 done",
-                                  "1000113 server",
-                                  "1000115 handler"
+                                  "1000112 e",
+                                  "1000113 t",
+                                  "1000115 r"
                                 ],
                                 "functions": [
-                                  "1000115 handler"
+                                  "1000115 r"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
                                   "1000172 echoListener",
-                                  "1000115 handler",
+                                  "1000115 r",
                                   "1000004 request",
-                                  "1000113 server",
-                                  "1000112 done"
+                                  "1000113 t",
+                                  "1000112 e"
                                 ],
                                 "body": [
                                   {
@@ -3595,8 +3596,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000113 server"
+                                          "name": "t",
+                                          "thedef": "1000113 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -3613,8 +3614,8 @@
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000115 handler"
+                                              "name": "r",
+                                              "thedef": "1000115 r"
                                             }
                                           ]
                                         }
@@ -3625,29 +3626,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000115 handler"
+                                      "name": "r",
+                                      "thedef": "1000115 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000116 req"
+                                        "name": "e",
+                                        "thedef": "1000116 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000117 res"
+                                        "name": "t",
+                                        "thedef": "1000117 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000114 arguments",
-                                      "1000116 req",
-                                      "1000117 res"
+                                      "1000116 e",
+                                      "1000117 t"
                                     ],
                                     "enclosed": [
-                                      "1000117 res"
+                                      "1000117 t"
                                     ],
                                     "body": [
                                       {
@@ -3658,8 +3659,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000117 res"
+                                              "name": "t",
+                                              "thedef": "1000117 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -3671,19 +3672,19 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "OK",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Object",
                                               "properties": [
                                                 {
                                                   "_class": "AST_ObjectKeyVal",
-                                                  "quote": "'",
+                                                  "quote": "\"",
                                                   "key": "X-Outgoing",
                                                   "value": {
                                                     "_class": "AST_String",
                                                     "value": "test",
-                                                    "quote": "'"
+                                                    "quote": "\""
                                                   }
                                                 }
                                               ]
@@ -3717,8 +3718,8 @@
                                                   "args": [
                                                     {
                                                       "_class": "AST_SymbolRef",
-                                                      "name": "server",
-                                                      "thedef": "1000113 server"
+                                                      "name": "t",
+                                                      "thedef": "1000113 t"
                                                     }
                                                   ]
                                                 },
@@ -3728,7 +3729,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "/",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -3738,12 +3739,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -3756,8 +3757,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000112 done"
+                                          "name": "e",
+                                          "thedef": "1000112 e"
                                         }
                                       ]
                                     }
@@ -3785,7 +3786,7 @@
                     {
                       "_class": "AST_String",
                       "value": "writeHead(status, obj)",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -3814,7 +3815,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should be available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -3822,29 +3823,29 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000120 done"
+                                    "name": "e",
+                                    "thedef": "1000120 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000119 arguments",
-                                  "1000120 done",
-                                  "1000121 server",
-                                  "1000123 handler",
-                                  "1000127 listener"
+                                  "1000120 e",
+                                  "1000121 t",
+                                  "1000123 r",
+                                  "1000127 i"
                                 ],
                                 "functions": [
-                                  "1000123 handler",
-                                  "1000127 listener"
+                                  "1000123 r",
+                                  "1000127 i"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
-                                  "1000127 listener",
-                                  "1000123 handler",
+                                  "1000127 i",
+                                  "1000123 r",
                                   "1000004 request",
-                                  "1000121 server",
-                                  "1000120 done"
+                                  "1000121 t",
+                                  "1000120 e"
                                 ],
                                 "body": [
                                   {
@@ -3854,8 +3855,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000121 server"
+                                          "name": "t",
+                                          "thedef": "1000121 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -3867,13 +3868,13 @@
                                           "args": [
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "listener",
-                                              "thedef": "1000127 listener"
+                                              "name": "i",
+                                              "thedef": "1000127 i"
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000123 handler"
+                                              "name": "r",
+                                              "thedef": "1000123 r"
                                             }
                                           ]
                                         }
@@ -3884,29 +3885,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000123 handler"
+                                      "name": "r",
+                                      "thedef": "1000123 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000124 req"
+                                        "name": "e",
+                                        "thedef": "1000124 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000125 res"
+                                        "name": "t",
+                                        "thedef": "1000125 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000122 arguments",
-                                      "1000124 req",
-                                      "1000125 res"
+                                      "1000124 e",
+                                      "1000125 t"
                                     ],
                                     "enclosed": [
-                                      "1000125 res"
+                                      "1000125 t"
                                     ],
                                     "body": [
                                       {
@@ -3917,8 +3918,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000125 res"
+                                              "name": "t",
+                                              "thedef": "1000125 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -3932,12 +3933,12 @@
                                               "properties": [
                                                 {
                                                   "_class": "AST_ObjectKeyVal",
-                                                  "quote": "'",
+                                                  "quote": "\"",
                                                   "key": "X-Outgoing",
                                                   "value": {
                                                     "_class": "AST_String",
                                                     "value": "test",
-                                                    "quote": "'"
+                                                    "quote": "\""
                                                   }
                                                 }
                                               ]
@@ -3951,26 +3952,26 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "listener",
-                                      "thedef": "1000127 listener"
+                                      "name": "i",
+                                      "thedef": "1000127 i"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000128 req"
+                                        "name": "e",
+                                        "thedef": "1000128 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000129 res"
+                                        "name": "t",
+                                        "thedef": "1000129 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000126 arguments",
-                                      "1000128 req",
-                                      "1000129 res"
+                                      "1000128 e",
+                                      "1000129 t"
                                     ],
                                     "body": [
                                       {
@@ -3989,7 +3990,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Dot",
@@ -4018,7 +4019,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Call",
@@ -4034,7 +4035,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Outgoing",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             }
@@ -4071,8 +4072,8 @@
                                                       "args": [
                                                         {
                                                           "_class": "AST_SymbolRef",
-                                                          "name": "server",
-                                                          "thedef": "1000121 server"
+                                                          "name": "t",
+                                                          "thedef": "1000121 t"
                                                         }
                                                       ]
                                                     },
@@ -4082,7 +4083,7 @@
                                                     {
                                                       "_class": "AST_String",
                                                       "value": "/",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     }
                                                   ]
                                                 },
@@ -4092,12 +4093,12 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Status",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 },
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "201",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -4107,12 +4108,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -4125,8 +4126,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000120 done"
+                                          "name": "e",
+                                          "thedef": "1000120 e"
                                         }
                                       ]
                                     }
@@ -4149,7 +4150,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should handle falsy keys",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -4157,29 +4158,29 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000131 done"
+                                    "name": "e",
+                                    "thedef": "1000131 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000130 arguments",
-                                  "1000131 done",
-                                  "1000132 server",
-                                  "1000134 handler",
-                                  "1000138 listener"
+                                  "1000131 e",
+                                  "1000132 t",
+                                  "1000134 r",
+                                  "1000138 i"
                                 ],
                                 "functions": [
-                                  "1000134 handler",
-                                  "1000138 listener"
+                                  "1000134 r",
+                                  "1000138 i"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
-                                  "1000138 listener",
-                                  "1000134 handler",
+                                  "1000138 i",
+                                  "1000134 r",
                                   "1000004 request",
-                                  "1000132 server",
-                                  "1000131 done"
+                                  "1000132 t",
+                                  "1000131 e"
                                 ],
                                 "body": [
                                   {
@@ -4189,8 +4190,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000132 server"
+                                          "name": "t",
+                                          "thedef": "1000132 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -4202,13 +4203,13 @@
                                           "args": [
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "listener",
-                                              "thedef": "1000138 listener"
+                                              "name": "i",
+                                              "thedef": "1000138 i"
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000134 handler"
+                                              "name": "r",
+                                              "thedef": "1000134 r"
                                             }
                                           ]
                                         }
@@ -4219,29 +4220,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000134 handler"
+                                      "name": "r",
+                                      "thedef": "1000134 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000135 req"
+                                        "name": "e",
+                                        "thedef": "1000135 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000136 res"
+                                        "name": "t",
+                                        "thedef": "1000136 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000133 arguments",
-                                      "1000135 req",
-                                      "1000136 res"
+                                      "1000135 e",
+                                      "1000136 t"
                                     ],
                                     "enclosed": [
-                                      "1000136 res"
+                                      "1000136 t"
                                     ],
                                     "body": [
                                       {
@@ -4252,8 +4253,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000136 res"
+                                              "name": "t",
+                                              "thedef": "1000136 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -4267,22 +4268,22 @@
                                               "properties": [
                                                 {
                                                   "_class": "AST_ObjectKeyVal",
-                                                  "quote": "'",
+                                                  "quote": "\"",
                                                   "key": "X-Outgoing",
                                                   "value": {
                                                     "_class": "AST_String",
                                                     "value": "test",
-                                                    "quote": "'"
+                                                    "quote": "\""
                                                   }
                                                 },
                                                 {
                                                   "_class": "AST_ObjectKeyVal",
-                                                  "quote": "'",
+                                                  "quote": "\"",
                                                   "key": "",
                                                   "value": {
                                                     "_class": "AST_String",
                                                     "value": "test",
-                                                    "quote": "'"
+                                                    "quote": "\""
                                                   }
                                                 }
                                               ]
@@ -4296,26 +4297,26 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "listener",
-                                      "thedef": "1000138 listener"
+                                      "name": "i",
+                                      "thedef": "1000138 i"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000139 req"
+                                        "name": "e",
+                                        "thedef": "1000139 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000140 res"
+                                        "name": "t",
+                                        "thedef": "1000140 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000137 arguments",
-                                      "1000139 req",
-                                      "1000140 res"
+                                      "1000139 e",
+                                      "1000140 t"
                                     ],
                                     "body": [
                                       {
@@ -4334,7 +4335,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Dot",
@@ -4363,7 +4364,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Call",
@@ -4379,7 +4380,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Outgoing",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             }
@@ -4416,8 +4417,8 @@
                                                       "args": [
                                                         {
                                                           "_class": "AST_SymbolRef",
-                                                          "name": "server",
-                                                          "thedef": "1000132 server"
+                                                          "name": "t",
+                                                          "thedef": "1000132 t"
                                                         }
                                                       ]
                                                     },
@@ -4427,7 +4428,7 @@
                                                     {
                                                       "_class": "AST_String",
                                                       "value": "/",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     }
                                                   ]
                                                 },
@@ -4437,12 +4438,12 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Status",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 },
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "201",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -4452,12 +4453,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -4470,8 +4471,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000131 done"
+                                          "name": "e",
+                                          "thedef": "1000131 e"
                                         }
                                       ]
                                     }
@@ -4499,7 +4500,7 @@
                     {
                       "_class": "AST_String",
                       "value": "writeHead(status, arr)",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -4528,7 +4529,7 @@
                               {
                                 "_class": "AST_String",
                                 "value": "should be available in listener",
-                                "quote": "'"
+                                "quote": "\""
                               },
                               {
                                 "_class": "AST_Function",
@@ -4536,29 +4537,29 @@
                                 "argnames": [
                                   {
                                     "_class": "AST_SymbolFunarg",
-                                    "name": "done",
-                                    "thedef": "1000143 done"
+                                    "name": "e",
+                                    "thedef": "1000143 e"
                                   }
                                 ],
                                 "uses_arguments": false,
                                 "variables": [
                                   "1000142 arguments",
-                                  "1000143 done",
-                                  "1000144 server",
-                                  "1000146 handler",
-                                  "1000150 listener"
+                                  "1000143 e",
+                                  "1000144 t",
+                                  "1000146 r",
+                                  "1000150 i"
                                 ],
                                 "functions": [
-                                  "1000146 handler",
-                                  "1000150 listener"
+                                  "1000146 r",
+                                  "1000150 i"
                                 ],
                                 "enclosed": [
                                   "1000154 createServer",
-                                  "1000150 listener",
-                                  "1000146 handler",
+                                  "1000150 i",
+                                  "1000146 r",
                                   "1000004 request",
-                                  "1000144 server",
-                                  "1000143 done"
+                                  "1000144 t",
+                                  "1000143 e"
                                 ],
                                 "body": [
                                   {
@@ -4568,8 +4569,8 @@
                                         "_class": "AST_VarDef",
                                         "name": {
                                           "_class": "AST_SymbolVar",
-                                          "name": "server",
-                                          "thedef": "1000144 server"
+                                          "name": "t",
+                                          "thedef": "1000144 t"
                                         },
                                         "value": {
                                           "_class": "AST_Call",
@@ -4581,13 +4582,13 @@
                                           "args": [
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "listener",
-                                              "thedef": "1000150 listener"
+                                              "name": "i",
+                                              "thedef": "1000150 i"
                                             },
                                             {
                                               "_class": "AST_SymbolRef",
-                                              "name": "handler",
-                                              "thedef": "1000146 handler"
+                                              "name": "r",
+                                              "thedef": "1000146 r"
                                             }
                                           ]
                                         }
@@ -4598,29 +4599,29 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "handler",
-                                      "thedef": "1000146 handler"
+                                      "name": "r",
+                                      "thedef": "1000146 r"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000147 req"
+                                        "name": "e",
+                                        "thedef": "1000147 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000148 res"
+                                        "name": "t",
+                                        "thedef": "1000148 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000145 arguments",
-                                      "1000147 req",
-                                      "1000148 res"
+                                      "1000147 e",
+                                      "1000148 t"
                                     ],
                                     "enclosed": [
-                                      "1000148 res"
+                                      "1000148 t"
                                     ],
                                     "body": [
                                       {
@@ -4631,8 +4632,8 @@
                                             "_class": "AST_Dot",
                                             "expression": {
                                               "_class": "AST_SymbolRef",
-                                              "name": "res",
-                                              "thedef": "1000148 res"
+                                              "name": "t",
+                                              "thedef": "1000148 t"
                                             },
                                             "property": "writeHead"
                                           },
@@ -4650,12 +4651,12 @@
                                                     {
                                                       "_class": "AST_String",
                                                       "value": "X-Outgoing",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     },
                                                     {
                                                       "_class": "AST_String",
                                                       "value": "test",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     }
                                                   ]
                                                 }
@@ -4670,26 +4671,26 @@
                                     "_class": "AST_Defun",
                                     "name": {
                                       "_class": "AST_SymbolDefun",
-                                      "name": "listener",
-                                      "thedef": "1000150 listener"
+                                      "name": "i",
+                                      "thedef": "1000150 i"
                                     },
                                     "argnames": [
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "req",
-                                        "thedef": "1000151 req"
+                                        "name": "e",
+                                        "thedef": "1000151 e"
                                       },
                                       {
                                         "_class": "AST_SymbolFunarg",
-                                        "name": "res",
-                                        "thedef": "1000152 res"
+                                        "name": "t",
+                                        "thedef": "1000152 t"
                                       }
                                     ],
                                     "uses_arguments": false,
                                     "variables": [
                                       "1000149 arguments",
-                                      "1000151 req",
-                                      "1000152 res"
+                                      "1000151 e",
+                                      "1000152 t"
                                     ],
                                     "body": [
                                       {
@@ -4708,7 +4709,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Status",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Dot",
@@ -4737,7 +4738,7 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_Call",
@@ -4753,7 +4754,7 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Outgoing",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             }
@@ -4790,8 +4791,8 @@
                                                       "args": [
                                                         {
                                                           "_class": "AST_SymbolRef",
-                                                          "name": "server",
-                                                          "thedef": "1000144 server"
+                                                          "name": "t",
+                                                          "thedef": "1000144 t"
                                                         }
                                                       ]
                                                     },
@@ -4801,7 +4802,7 @@
                                                     {
                                                       "_class": "AST_String",
                                                       "value": "/",
-                                                      "quote": "'"
+                                                      "quote": "\""
                                                     }
                                                   ]
                                                 },
@@ -4811,12 +4812,12 @@
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "X-Status",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 },
                                                 {
                                                   "_class": "AST_String",
                                                   "value": "201",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               ]
                                             },
@@ -4826,12 +4827,12 @@
                                             {
                                               "_class": "AST_String",
                                               "value": "X-Outgoing-Echo",
-                                              "quote": "'"
+                                              "quote": "\""
                                             },
                                             {
                                               "_class": "AST_String",
                                               "value": "test",
-                                              "quote": "'"
+                                              "quote": "\""
                                             }
                                           ]
                                         },
@@ -4844,8 +4845,8 @@
                                         },
                                         {
                                           "_class": "AST_SymbolRef",
-                                          "name": "done",
-                                          "thedef": "1000143 done"
+                                          "name": "e",
+                                          "thedef": "1000143 e"
                                         }
                                       ]
                                     }
@@ -4875,29 +4876,29 @@
       "argnames": [
         {
           "_class": "AST_SymbolFunarg",
-          "name": "listener",
-          "thedef": "1000155 listener"
+          "name": "r",
+          "thedef": "1000155 r"
         },
         {
           "_class": "AST_SymbolFunarg",
-          "name": "handler",
-          "thedef": "1000156 handler"
+          "name": "e",
+          "thedef": "1000156 e"
         }
       ],
       "uses_arguments": false,
       "variables": [
         "1000153 arguments",
-        "1000155 listener",
-        "1000156 handler",
-        "1000157 fn"
+        "1000155 r",
+        "1000156 e",
+        "1000157 i"
       ],
       "enclosed": [
-        "1000156 handler",
+        "1000156 e",
         "1000168 echoHandler",
         "1000002 http",
         "1000003 onHeaders",
-        "1000155 listener",
-        "1000157 fn"
+        "1000155 r",
+        "1000157 i"
       ],
       "body": [
         {
@@ -4907,16 +4908,16 @@
               "_class": "AST_VarDef",
               "name": {
                 "_class": "AST_SymbolVar",
-                "name": "fn",
-                "thedef": "1000157 fn"
+                "name": "i",
+                "thedef": "1000157 i"
               },
               "value": {
                 "_class": "AST_Binary",
                 "operator": "||",
                 "left": {
                   "_class": "AST_SymbolRef",
-                  "name": "handler",
-                  "thedef": "1000156 handler"
+                  "name": "e",
+                  "thedef": "1000156 e"
                 },
                 "right": {
                   "_class": "AST_SymbolRef",
@@ -4947,27 +4948,27 @@
                 "argnames": [
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "req",
-                    "thedef": "1000159 req"
+                    "name": "e",
+                    "thedef": "1000159 e"
                   },
                   {
                     "_class": "AST_SymbolFunarg",
-                    "name": "res",
-                    "thedef": "1000160 res"
+                    "name": "t",
+                    "thedef": "1000160 t"
                   }
                 ],
                 "uses_arguments": false,
                 "variables": [
                   "1000158 arguments",
-                  "1000159 req",
-                  "1000160 res"
+                  "1000159 e",
+                  "1000160 t"
                 ],
                 "enclosed": [
                   "1000003 onHeaders",
-                  "1000160 res",
-                  "1000155 listener",
-                  "1000157 fn",
-                  "1000159 req"
+                  "1000160 t",
+                  "1000155 r",
+                  "1000157 i",
+                  "1000159 e"
                 ],
                 "body": [
                   {
@@ -4976,8 +4977,8 @@
                       "_class": "AST_Catch",
                       "argname": {
                         "_class": "AST_SymbolCatch",
-                        "name": "err",
-                        "thedef": "1000161 err"
+                        "name": "e",
+                        "thedef": "1000161 e"
                       },
                       "body": [
                         {
@@ -4989,8 +4990,8 @@
                               "_class": "AST_Dot",
                               "expression": {
                                 "_class": "AST_SymbolRef",
-                                "name": "res",
-                                "thedef": "1000160 res"
+                                "name": "t",
+                                "thedef": "1000160 t"
                               },
                               "property": "statusCode"
                             },
@@ -5008,8 +5009,8 @@
                               "_class": "AST_Dot",
                               "expression": {
                                 "_class": "AST_SymbolRef",
-                                "name": "res",
-                                "thedef": "1000160 res"
+                                "name": "t",
+                                "thedef": "1000160 t"
                               },
                               "property": "write"
                             },
@@ -5018,8 +5019,8 @@
                                 "_class": "AST_Dot",
                                 "expression": {
                                   "_class": "AST_SymbolRef",
-                                  "name": "err",
-                                  "thedef": "1000161 err"
+                                  "name": "e",
+                                  "thedef": "1000161 e"
                                 },
                                 "property": "message"
                               }
@@ -5039,8 +5040,8 @@
                               "_class": "AST_Dot",
                               "expression": {
                                 "_class": "AST_SymbolRef",
-                                "name": "res",
-                                "thedef": "1000160 res"
+                                "name": "t",
+                                "thedef": "1000160 t"
                               },
                               "property": "end"
                             },
@@ -5062,13 +5063,13 @@
                           "args": [
                             {
                               "_class": "AST_SymbolRef",
-                              "name": "res",
-                              "thedef": "1000160 res"
+                              "name": "t",
+                              "thedef": "1000160 t"
                             },
                             {
                               "_class": "AST_SymbolRef",
-                              "name": "listener",
-                              "thedef": "1000155 listener"
+                              "name": "r",
+                              "thedef": "1000155 r"
                             }
                           ]
                         }
@@ -5079,19 +5080,19 @@
                           "_class": "AST_Call",
                           "expression": {
                             "_class": "AST_SymbolRef",
-                            "name": "fn",
-                            "thedef": "1000157 fn"
+                            "name": "i",
+                            "thedef": "1000157 i"
                           },
                           "args": [
                             {
                               "_class": "AST_SymbolRef",
-                              "name": "req",
-                              "thedef": "1000159 req"
+                              "name": "e",
+                              "thedef": "1000159 e"
                             },
                             {
                               "_class": "AST_SymbolRef",
-                              "name": "res",
-                              "thedef": "1000160 res"
+                              "name": "t",
+                              "thedef": "1000160 t"
                             }
                           ]
                         }
@@ -5105,8 +5106,8 @@
                             "_class": "AST_Dot",
                             "expression": {
                               "_class": "AST_SymbolRef",
-                              "name": "res",
-                              "thedef": "1000160 res"
+                              "name": "t",
+                              "thedef": "1000160 t"
                             },
                             "property": "statusCode"
                           },
@@ -5135,17 +5136,17 @@
       "argnames": [
         {
           "_class": "AST_SymbolFunarg",
-          "name": "num",
-          "thedef": "1000164 num"
+          "name": "t",
+          "thedef": "1000164 t"
         }
       ],
       "uses_arguments": false,
       "variables": [
         "1000162 arguments",
-        "1000164 num"
+        "1000164 t"
       ],
       "enclosed": [
-        "1000164 num"
+        "1000164 t"
       ],
       "body": [
         {
@@ -5154,20 +5155,20 @@
             "_class": "AST_Function",
             "name": {
               "_class": "AST_SymbolLambda",
-              "name": "onHeaders",
-              "thedef": "1000166 onHeaders"
+              "name": "e",
+              "thedef": "1000166 e"
             },
             "argnames": [],
             "uses_arguments": false,
             "variables": [
               "1000165 arguments",
-              "1000166 onHeaders"
+              "1000166 e"
             ],
             "functions": [
-              "1000166 onHeaders"
+              "1000166 e"
             ],
             "enclosed": [
-              "1000164 num"
+              "1000164 t"
             ],
             "body": [
               {
@@ -5186,7 +5187,7 @@
                     {
                       "_class": "AST_String",
                       "value": "X-Outgoing",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Binary",
@@ -5208,20 +5209,20 @@
                             {
                               "_class": "AST_String",
                               "value": "X-Outgoing",
-                              "quote": "'"
+                              "quote": "\""
                             }
                           ]
                         },
                         "right": {
                           "_class": "AST_String",
                           "value": ",",
-                          "quote": "'"
+                          "quote": "\""
                         }
                       },
                       "right": {
                         "_class": "AST_SymbolRef",
-                        "name": "num",
-                        "thedef": "1000164 num"
+                        "name": "t",
+                        "thedef": "1000164 t"
                       }
                     }
                   ]
@@ -5242,23 +5243,23 @@
       "argnames": [
         {
           "_class": "AST_SymbolFunarg",
-          "name": "req",
-          "thedef": "1000169 req"
+          "name": "e",
+          "thedef": "1000169 e"
         },
         {
           "_class": "AST_SymbolFunarg",
-          "name": "res",
-          "thedef": "1000170 res"
+          "name": "t",
+          "thedef": "1000170 t"
         }
       ],
       "uses_arguments": false,
       "variables": [
         "1000167 arguments",
-        "1000169 req",
-        "1000170 res"
+        "1000169 e",
+        "1000170 t"
       ],
       "enclosed": [
-        "1000170 res"
+        "1000170 t"
       ],
       "body": [
         {
@@ -5269,8 +5270,8 @@
               "_class": "AST_Dot",
               "expression": {
                 "_class": "AST_SymbolRef",
-                "name": "res",
-                "thedef": "1000170 res"
+                "name": "t",
+                "thedef": "1000170 t"
               },
               "property": "setHeader"
             },
@@ -5278,12 +5279,12 @@
               {
                 "_class": "AST_String",
                 "value": "X-Outgoing",
-                "quote": "'"
+                "quote": "\""
               },
               {
                 "_class": "AST_String",
                 "value": "test",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -5319,7 +5320,7 @@
               {
                 "_class": "AST_String",
                 "value": "X-Outgoing-Echo",
-                "quote": "'"
+                "quote": "\""
               },
               {
                 "_class": "AST_Call",
@@ -5335,7 +5336,7 @@
                   {
                     "_class": "AST_String",
                     "value": "X-Outgoing",
-                    "quote": "'"
+                    "quote": "\""
                   }
                 ]
               }

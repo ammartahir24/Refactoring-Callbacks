@@ -1,0 +1,3394 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000052 require",
+    "1000053 console",
+    "1000054 __dirname",
+    "1000055 process"
+  ],
+  "variables": [
+    "1000001 gulp",
+    "1000002 path",
+    "1000003 babel",
+    "1000004 clean",
+    "1000005 gulpWebpack",
+    "1000006 webpackConfig",
+    "1000007 eslint",
+    "1000008 uglify",
+    "1000009 rename",
+    "1000010 exec",
+    "1000011 Karma",
+    "1000012 mocha",
+    "1000013 runSequence",
+    "1000014 gulpIstanbul",
+    "1000015 isparta",
+    "1000016 sourcemaps",
+    "1000017 packageJSON",
+    "1000018 gzip",
+    "1000019 unzip"
+  ],
+  "enclosed": [
+    "1000052 require",
+    "1000001 gulp",
+    "1000004 clean",
+    "1000016 sourcemaps",
+    "1000003 babel",
+    "1000019 unzip",
+    "1000005 gulpWebpack",
+    "1000006 webpackConfig",
+    "1000009 rename",
+    "1000017 packageJSON",
+    "1000018 gzip",
+    "1000008 uglify",
+    "1000007 eslint",
+    "1000010 exec",
+    "1000053 console",
+    "1000014 gulpIstanbul",
+    "1000015 isparta",
+    "1000011 Karma",
+    "1000002 path",
+    "1000054 __dirname",
+    "1000012 mocha",
+    "1000013 runSequence",
+    "1000055 process"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "path",
+            "thedef": "1000002 path"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "path",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "babel",
+            "thedef": "1000003 babel"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-babel",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "clean",
+            "thedef": "1000004 clean"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-clean",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "gulpWebpack",
+            "thedef": "1000005 gulpWebpack"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "webpack-stream",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "webpackConfig",
+            "thedef": "1000006 webpackConfig"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./webpack.config",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "eslint",
+            "thedef": "1000007 eslint"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-eslint",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "uglify",
+            "thedef": "1000008 uglify"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-uglify",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "rename",
+            "thedef": "1000009 rename"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-rename",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "exec",
+            "thedef": "1000010 exec"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "require",
+                "thedef": "1000052 require"
+              },
+              "args": [
+                {
+                  "_class": "AST_String",
+                  "value": "child_process",
+                  "quote": "\""
+                }
+              ]
+            },
+            "property": "exec"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "Karma",
+            "thedef": "1000011 Karma"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "require",
+                "thedef": "1000052 require"
+              },
+              "args": [
+                {
+                  "_class": "AST_String",
+                  "value": "karma",
+                  "quote": "\""
+                }
+              ]
+            },
+            "property": "Server"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "mocha",
+            "thedef": "1000012 mocha"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-mocha",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "runSequence",
+            "thedef": "1000013 runSequence"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "run-sequence",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "gulpIstanbul",
+            "thedef": "1000014 gulpIstanbul"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-istanbul",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "isparta",
+            "thedef": "1000015 isparta"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "isparta",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "sourcemaps",
+            "thedef": "1000016 sourcemaps"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-sourcemaps",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "packageJSON",
+            "thedef": "1000017 packageJSON"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./package.json",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "gzip",
+            "thedef": "1000018 gzip"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-gzip",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "unzip",
+            "thedef": "1000019 unzip"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000052 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "gulp-unzip",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "clean",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000020 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000004 clean"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "src"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Array",
+                          "elements": [
+                            {
+                              "_class": "AST_String",
+                              "value": "lib",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": "dist",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": "coverage",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": "upload",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "read",
+                              "value": {
+                                "_class": "AST_False"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "clean",
+                        "thedef": "1000004 clean"
+                      },
+                      "args": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "babel",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000021 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000016 sourcemaps",
+              "1000003 babel"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "gulp",
+                                      "thedef": "1000001 gulp"
+                                    },
+                                    "property": "src"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "src/**/*.js",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                },
+                                "property": "pipe"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "sourcemaps",
+                                      "thedef": "1000016 sourcemaps"
+                                    },
+                                    "property": "init"
+                                  },
+                                  "args": []
+                                }
+                              ]
+                            },
+                            "property": "pipe"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "babel",
+                                "thedef": "1000003 babel"
+                              },
+                              "args": []
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "sourcemaps",
+                              "thedef": "1000016 sourcemaps"
+                            },
+                            "property": "write"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": ".",
+                              "quote": "\""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "lib",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "unzip_titanium_sdk",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000022 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000019 unzip"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "resources/titanium.zip",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "unzip",
+                            "thedef": "1000019 unzip"
+                          },
+                          "args": []
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "resources/",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "compile_web",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000023 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000005 gulpWebpack",
+              "1000006 webpackConfig"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "src/web/index.js",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "gulpWebpack",
+                            "thedef": "1000005 gulpWebpack"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "webpackConfig",
+                              "thedef": "1000006 webpackConfig"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "dist/web",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "compile_titanium",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000024 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000005 gulpWebpack",
+              "1000006 webpackConfig"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "src/titanium/index.js",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "gulpWebpack",
+                            "thedef": "1000005 gulpWebpack"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "webpackConfig",
+                              "thedef": "1000006 webpackConfig"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "dist/titanium",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "create_version",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000025 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000009 rename",
+              "1000017 packageJSON"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "dist/web/pubnub.js",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "rename",
+                            "thedef": "1000009 rename"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Binary",
+                              "operator": "+",
+                              "left": {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_String",
+                                  "value": "pubnub.",
+                                  "quote": "\""
+                                },
+                                "right": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "packageJSON",
+                                    "thedef": "1000017 packageJSON"
+                                  },
+                                  "property": "version"
+                                }
+                              },
+                              "right": {
+                                "_class": "AST_String",
+                                "value": ".js",
+                                "quote": "\""
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "upload/normal",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "create_version_gzip",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000026 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000018 gzip"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "upload/normal/*.js",
+                              "quote": "\""
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "gzip",
+                            "thedef": "1000018 gzip"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "append",
+                                  "value": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "upload/gzip",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "uglify_web",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000027 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000008 uglify",
+              "1000009 rename",
+              "1000017 packageJSON"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "gulp",
+                                          "thedef": "1000001 gulp"
+                                        },
+                                        "property": "src"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "dist/web/pubnub.js",
+                                          "quote": "\""
+                                        }
+                                      ]
+                                    },
+                                    "property": "pipe"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "uglify",
+                                        "thedef": "1000008 uglify"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Object",
+                                          "properties": [
+                                            {
+                                              "_class": "AST_ObjectKeyVal",
+                                              "key": "mangle",
+                                              "value": {
+                                                "_class": "AST_True"
+                                              }
+                                            },
+                                            {
+                                              "_class": "AST_ObjectKeyVal",
+                                              "key": "compress",
+                                              "value": {
+                                                "_class": "AST_True"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "property": "pipe"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "rename",
+                                    "thedef": "1000009 rename"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "pubnub.min.js",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "property": "pipe"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "gulp",
+                                  "thedef": "1000001 gulp"
+                                },
+                                "property": "dest"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_String",
+                                  "value": "dist/web",
+                                  "quote": "\""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "rename",
+                            "thedef": "1000009 rename"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Binary",
+                              "operator": "+",
+                              "left": {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_String",
+                                  "value": "pubnub.",
+                                  "quote": "\""
+                                },
+                                "right": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "packageJSON",
+                                    "thedef": "1000017 packageJSON"
+                                  },
+                                  "property": "version"
+                                }
+                              },
+                              "right": {
+                                "_class": "AST_String",
+                                "value": ".min.js",
+                                "quote": "\""
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "upload/normal",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "uglify_titanium",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000028 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000008 uglify",
+              "1000009 rename"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "gulp",
+                                  "thedef": "1000001 gulp"
+                                },
+                                "property": "src"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_String",
+                                  "value": "dist/titanium/pubnub.js",
+                                  "quote": "\""
+                                }
+                              ]
+                            },
+                            "property": "pipe"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "uglify",
+                                "thedef": "1000008 uglify"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Object",
+                                  "properties": [
+                                    {
+                                      "_class": "AST_ObjectKeyVal",
+                                      "key": "mangle",
+                                      "value": {
+                                        "_class": "AST_True"
+                                      }
+                                    },
+                                    {
+                                      "_class": "AST_ObjectKeyVal",
+                                      "key": "compress",
+                                      "value": {
+                                        "_class": "AST_True"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "rename",
+                            "thedef": "1000009 rename"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "pubnub.min.js",
+                              "quote": "\""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "dest"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "dist/titanium",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "lint_code",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Array",
+            "elements": []
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000029 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000007 eslint"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "gulp",
+                                  "thedef": "1000001 gulp"
+                                },
+                                "property": "src"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Array",
+                                  "elements": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "src/**/*.js",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "property": "pipe"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "eslint",
+                                "thedef": "1000007 eslint"
+                              },
+                              "args": []
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "eslint",
+                              "thedef": "1000007 eslint"
+                            },
+                            "property": "format"
+                          },
+                          "args": []
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "eslint",
+                          "thedef": "1000007 eslint"
+                        },
+                        "property": "failAfterError"
+                      },
+                      "args": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "lint_tests",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Array",
+            "elements": []
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000030 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000007 eslint"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "gulp",
+                                  "thedef": "1000001 gulp"
+                                },
+                                "property": "src"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Array",
+                                  "elements": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "test/**/*.js",
+                                      "quote": "\""
+                                    },
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "!test/dist/*.js",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "property": "pipe"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "eslint",
+                                "thedef": "1000007 eslint"
+                              },
+                              "args": []
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "eslint",
+                              "thedef": "1000007 eslint"
+                            },
+                            "property": "format"
+                          },
+                          "args": []
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "eslint",
+                          "thedef": "1000007 eslint"
+                        },
+                        "property": "failAfterError"
+                      },
+                      "args": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "lint",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Array",
+            "elements": [
+              {
+                "_class": "AST_String",
+                "value": "lint_code",
+                "quote": "\""
+              },
+              {
+                "_class": "AST_String",
+                "value": "lint_tests",
+                "quote": "\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "flow",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "p",
+                "thedef": "1000032 p"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000031 arguments",
+              "1000032 p"
+            ],
+            "enclosed": [
+              "1000010 exec",
+              "1000053 console",
+              "1000032 p"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "exec",
+                    "thedef": "1000010 exec"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "./node_modules/.bin/flow --show-all-errors",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000034 e"
+                        },
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "t",
+                          "thedef": "1000035 t"
+                        },
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "r",
+                          "thedef": "1000036 r"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000033 arguments",
+                        "1000034 e",
+                        "1000035 t",
+                        "1000036 r"
+                      ],
+                      "enclosed": [
+                        "1000053 console",
+                        "1000035 t",
+                        "1000036 r",
+                        "1000032 p",
+                        "1000034 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "console",
+                                "thedef": "1000053 console"
+                              },
+                              "property": "log"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000035 t"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "console",
+                                "thedef": "1000053 console"
+                              },
+                              "property": "log"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000036 r"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "p",
+                              "thedef": "1000032 p"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000034 e"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "validate",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Array",
+            "elements": [
+              {
+                "_class": "AST_String",
+                "value": "lint",
+                "quote": "\""
+              },
+              {
+                "_class": "AST_String",
+                "value": "flow",
+                "quote": "\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "pre-test",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000037 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000014 gulpIstanbul",
+              "1000015 isparta"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Array",
+                              "elements": [
+                                {
+                                  "_class": "AST_String",
+                                  "value": "src/**/*.js",
+                                  "quote": "\""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "gulpIstanbul",
+                            "thedef": "1000014 gulpIstanbul"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "instrumenter",
+                                  "value": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "isparta",
+                                      "thedef": "1000015 isparta"
+                                    },
+                                    "property": "Instrumenter"
+                                  }
+                                },
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "includeAllSources",
+                                  "value": {
+                                    "_class": "AST_True"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulpIstanbul",
+                          "thedef": "1000014 gulpIstanbul"
+                        },
+                        "property": "hookRequire"
+                      },
+                      "args": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test_web",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000039 e"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000038 arguments",
+              "1000039 e"
+            ],
+            "enclosed": [
+              "1000011 Karma",
+              "1000002 path",
+              "1000054 __dirname",
+              "1000039 e"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "Karma",
+                        "thedef": "1000011 Karma"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "configFile",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "path",
+                                    "thedef": "1000002 path"
+                                  },
+                                  "property": "join"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "__dirname",
+                                    "thedef": "1000054 __dirname"
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "/karma/web.config.js",
+                                    "quote": "\""
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "e",
+                          "thedef": "1000039 e"
+                        }
+                      ]
+                    },
+                    "property": "start"
+                  },
+                  "args": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test_node",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000040 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000012 mocha",
+              "1000014 gulpIstanbul"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Array",
+                              "elements": [
+                                {
+                                  "_class": "AST_String",
+                                  "value": "test/**/*.test.js",
+                                  "quote": "\""
+                                },
+                                {
+                                  "_class": "AST_String",
+                                  "value": "!test/dist/*.js",
+                                  "quote": "\""
+                                }
+                              ]
+                            },
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "read",
+                                  "value": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "mocha",
+                            "thedef": "1000012 mocha"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "reporter",
+                                  "value": {
+                                    "_class": "AST_String",
+                                    "value": "spec",
+                                    "quote": "\""
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulpIstanbul",
+                          "thedef": "1000014 gulpIstanbul"
+                        },
+                        "property": "writeReports"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "reporters",
+                              "value": {
+                                "_class": "AST_Array",
+                                "elements": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "json",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "lcov",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "text",
+                                    "quote": "\""
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test_titanium",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Array",
+            "elements": [
+              {
+                "_class": "AST_String",
+                "value": "unzip_titanium_sdk",
+                "quote": "\""
+              }
+            ]
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000042 e"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000041 arguments",
+              "1000042 e"
+            ],
+            "enclosed": [
+              "1000011 Karma",
+              "1000002 path",
+              "1000054 __dirname",
+              "1000042 e"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "Karma",
+                        "thedef": "1000011 Karma"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "configFile",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "path",
+                                    "thedef": "1000002 path"
+                                  },
+                                  "property": "join"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "__dirname",
+                                    "thedef": "1000054 __dirname"
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "/karma/titanium.config.js",
+                                    "quote": "\""
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "e",
+                          "thedef": "1000042 e"
+                        }
+                      ]
+                    },
+                    "property": "start"
+                  },
+                  "args": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test_react-native",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000043 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000012 mocha",
+              "1000014 gulpIstanbul"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "gulp",
+                              "thedef": "1000001 gulp"
+                            },
+                            "property": "src"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_String",
+                              "value": "test/dist/react-native.test.js",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "read",
+                                  "value": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "pipe"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "mocha",
+                            "thedef": "1000012 mocha"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "reporter",
+                                  "value": {
+                                    "_class": "AST_String",
+                                    "value": "spec",
+                                    "quote": "\""
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulpIstanbul",
+                          "thedef": "1000014 gulpIstanbul"
+                        },
+                        "property": "writeReports"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "reporters",
+                              "value": {
+                                "_class": "AST_Array",
+                                "elements": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "json",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "lcov",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "text",
+                                    "quote": "\""
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test_release",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000044 arguments"
+            ],
+            "enclosed": [
+              "1000001 gulp",
+              "1000012 mocha"
+            ],
+            "body": [
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "gulp",
+                          "thedef": "1000001 gulp"
+                        },
+                        "property": "src"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "test/release/**/*.test.js",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "read",
+                              "value": {
+                                "_class": "AST_False"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "pipe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "mocha",
+                        "thedef": "1000012 mocha"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Object",
+                          "properties": [
+                            {
+                              "_class": "AST_ObjectKeyVal",
+                              "key": "reporter",
+                              "value": {
+                                "_class": "AST_String",
+                                "value": "spec",
+                                "quote": "\""
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "test",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000046 e"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000045 arguments",
+              "1000046 e"
+            ],
+            "enclosed": [
+              "1000013 runSequence",
+              "1000055 process"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "runSequence",
+                    "thedef": "1000013 runSequence"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pre-test",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "test_node",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "test_web",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "test_titanium",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "test_react-native",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "test_release",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "validate",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000047 arguments"
+                      ],
+                      "enclosed": [
+                        "1000055 process"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "process",
+                                "thedef": "1000055 process"
+                              },
+                              "property": "exit"
+                            },
+                            "args": []
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "webpack",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000049 e"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000048 arguments",
+              "1000049 e"
+            ],
+            "enclosed": [
+              "1000013 runSequence",
+              "1000049 e"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "runSequence",
+                    "thedef": "1000013 runSequence"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "compile_web",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "compile_titanium",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "e",
+                      "thedef": "1000049 e"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "gulp",
+            "thedef": "1000001 gulp"
+          },
+          "property": "task"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "compile",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000051 e"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000050 arguments",
+              "1000051 e"
+            ],
+            "enclosed": [
+              "1000013 runSequence",
+              "1000051 e"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "runSequence",
+                    "thedef": "1000013 runSequence"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "clean",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "babel",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "webpack",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "uglify_web",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "uglify_titanium",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "create_version",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "create_version_gzip",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "e",
+                      "thedef": "1000051 e"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

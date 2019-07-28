@@ -46,7 +46,7 @@
               {
                 "_class": "AST_String",
                 "value": "assert",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -74,7 +74,7 @@
               {
                 "_class": "AST_String",
                 "value": "mime-db",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -102,7 +102,7 @@
               {
                 "_class": "AST_String",
                 "value": "../",
-                "quote": "'"
+                "quote": "\""
               }
             ]
           }
@@ -131,7 +131,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "text/penguins",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -152,7 +152,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "text/html",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -173,7 +173,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "text/plain",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -194,7 +194,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "text/jade",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -215,7 +215,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "something/text",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -238,7 +238,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "something/frog+TEXT",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -259,7 +259,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "type/json;askjkl+json",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -282,7 +282,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "type/+json",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -324,7 +324,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "can/worms+xml;blaaaah",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -345,7 +345,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "data/xml",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -368,7 +368,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "asdf/nope",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -391,7 +391,7 @@
                     "value": {
                       "_class": "AST_String",
                       "value": "cats",
-                      "quote": "'"
+                      "quote": "\""
                     }
                   },
                   {
@@ -463,7 +463,7 @@
           {
             "_class": "AST_String",
             "value": "Testing if spec lookups are correct.",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -494,7 +494,7 @@
                     {
                       "_class": "AST_String",
                       "value": "All DB `compressible` types should reflect in compressible",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -503,11 +503,11 @@
                       "uses_arguments": false,
                       "variables": [
                         "1000007 arguments",
-                        "1000008 type"
+                        "1000008 e"
                       ],
                       "enclosed": [
                         "1000002 db",
-                        "1000008 type",
+                        "1000008 e",
                         "1000026 undefined",
                         "1000001 assert",
                         "1000003 compressible"
@@ -522,8 +522,8 @@
                                 "_class": "AST_VarDef",
                                 "name": {
                                   "_class": "AST_SymbolVar",
-                                  "name": "type",
-                                  "thedef": "1000008 type"
+                                  "name": "e",
+                                  "thedef": "1000008 e"
                                 },
                                 "value": null
                               }
@@ -553,8 +553,8 @@
                                       },
                                       "property": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "type",
-                                        "thedef": "1000008 type"
+                                        "name": "e",
+                                        "thedef": "1000008 e"
                                       }
                                     },
                                     "property": "compressible"
@@ -593,8 +593,8 @@
                                             "args": [
                                               {
                                                 "_class": "AST_SymbolRef",
-                                                "name": "type",
-                                                "thedef": "1000008 type"
+                                                "name": "e",
+                                                "thedef": "1000008 e"
                                               }
                                             ]
                                           },
@@ -609,8 +609,8 @@
                                               },
                                               "property": {
                                                 "_class": "AST_SymbolRef",
-                                                "name": "type",
-                                                "thedef": "1000008 type"
+                                                "name": "e",
+                                                "thedef": "1000008 e"
                                               }
                                             },
                                             "property": "compressible"
@@ -647,7 +647,7 @@
           {
             "_class": "AST_String",
             "value": "Testing if the regex works as intended.",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -684,18 +684,18 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "example",
-                          "thedef": "1000011 example"
+                          "name": "e",
+                          "thedef": "1000011 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000010 arguments",
-                        "1000011 example"
+                        "1000011 e"
                       ],
                       "enclosed": [
                         "1000028 it",
-                        "1000011 example",
+                        "1000011 e",
                         "1000001 assert",
                         "1000003 compressible"
                       ],
@@ -723,15 +723,15 @@
                                       "_class": "AST_Dot",
                                       "expression": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "example",
-                                        "thedef": "1000011 example"
+                                        "name": "e",
+                                        "thedef": "1000011 e"
                                       },
                                       "property": "type"
                                     },
                                     "right": {
                                       "_class": "AST_String",
                                       "value": " should",
-                                      "quote": "'"
+                                      "quote": "\""
                                     }
                                   },
                                   "right": {
@@ -740,27 +740,27 @@
                                       "_class": "AST_Dot",
                                       "expression": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "example",
-                                        "thedef": "1000011 example"
+                                        "name": "e",
+                                        "thedef": "1000011 e"
                                       },
                                       "property": "should"
                                     },
                                     "consequent": {
                                       "_class": "AST_String",
                                       "value": " ",
-                                      "quote": "'"
+                                      "quote": "\""
                                     },
                                     "alternative": {
                                       "_class": "AST_String",
                                       "value": " not ",
-                                      "quote": "'"
+                                      "quote": "\""
                                     }
                                   }
                                 },
                                 "right": {
                                   "_class": "AST_String",
                                   "value": "be compressible",
-                                  "quote": "'"
+                                  "quote": "\""
                                 }
                               },
                               {
@@ -774,7 +774,7 @@
                                 "enclosed": [
                                   "1000001 assert",
                                   "1000003 compressible",
-                                  "1000011 example"
+                                  "1000011 e"
                                 ],
                                 "body": [
                                   {
@@ -803,8 +803,8 @@
                                               "_class": "AST_Dot",
                                               "expression": {
                                                 "_class": "AST_SymbolRef",
-                                                "name": "example",
-                                                "thedef": "1000011 example"
+                                                "name": "e",
+                                                "thedef": "1000011 e"
                                               },
                                               "property": "type"
                                             }
@@ -814,8 +814,8 @@
                                           "_class": "AST_Dot",
                                           "expression": {
                                             "_class": "AST_SymbolRef",
-                                            "name": "example",
-                                            "thedef": "1000011 example"
+                                            "name": "e",
+                                            "thedef": "1000011 e"
                                           },
                                           "property": "should"
                                         }
@@ -850,7 +850,7 @@
           {
             "_class": "AST_String",
             "value": "Testing if charsets are handled correctly.",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -881,7 +881,7 @@
                     {
                       "_class": "AST_String",
                       "value": "Charsets should be stripped off without issue",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -890,11 +890,11 @@
                       "uses_arguments": false,
                       "variables": [
                         "1000014 arguments",
-                        "1000015 type"
+                        "1000015 e"
                       ],
                       "enclosed": [
                         "1000002 db",
-                        "1000015 type",
+                        "1000015 e",
                         "1000026 undefined",
                         "1000001 assert",
                         "1000003 compressible"
@@ -909,8 +909,8 @@
                                 "_class": "AST_VarDef",
                                 "name": {
                                   "_class": "AST_SymbolVar",
-                                  "name": "type",
-                                  "thedef": "1000015 type"
+                                  "name": "e",
+                                  "thedef": "1000015 e"
                                 },
                                 "value": null
                               }
@@ -940,8 +940,8 @@
                                       },
                                       "property": {
                                         "_class": "AST_SymbolRef",
-                                        "name": "type",
-                                        "thedef": "1000015 type"
+                                        "name": "e",
+                                        "thedef": "1000015 e"
                                       }
                                     },
                                     "property": "compressible"
@@ -983,13 +983,13 @@
                                                 "operator": "+",
                                                 "left": {
                                                   "_class": "AST_SymbolRef",
-                                                  "name": "type",
-                                                  "thedef": "1000015 type"
+                                                  "name": "e",
+                                                  "thedef": "1000015 e"
                                                 },
                                                 "right": {
                                                   "_class": "AST_String",
                                                   "value": "; charset=utf-8",
-                                                  "quote": "'"
+                                                  "quote": "\""
                                                 }
                                               }
                                             ]
@@ -1005,8 +1005,8 @@
                                               },
                                               "property": {
                                                 "_class": "AST_SymbolRef",
-                                                "name": "type",
-                                                "thedef": "1000015 type"
+                                                "name": "e",
+                                                "thedef": "1000015 e"
                                               }
                                             },
                                             "property": "compressible"
@@ -1043,7 +1043,7 @@
           {
             "_class": "AST_String",
             "value": "Ensuring invalid types do not cause errors.",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -1073,7 +1073,7 @@
                     {
                       "_class": "AST_String",
                       "value": "No arguments should return false without error",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -1142,18 +1142,18 @@
                       "argnames": [
                         {
                           "_class": "AST_SymbolFunarg",
-                          "name": "invalid",
-                          "thedef": "1000019 invalid"
+                          "name": "e",
+                          "thedef": "1000019 e"
                         }
                       ],
                       "uses_arguments": false,
                       "variables": [
                         "1000018 arguments",
-                        "1000019 invalid"
+                        "1000019 e"
                       ],
                       "enclosed": [
                         "1000028 it",
-                        "1000019 invalid",
+                        "1000019 e",
                         "1000001 assert",
                         "1000003 compressible"
                       ],
@@ -1173,13 +1173,13 @@
                                 "operator": "+",
                                 "left": {
                                   "_class": "AST_SymbolRef",
-                                  "name": "invalid",
-                                  "thedef": "1000019 invalid"
+                                  "name": "e",
+                                  "thedef": "1000019 e"
                                 },
                                 "right": {
                                   "_class": "AST_String",
                                   "value": " should return false without error",
-                                  "quote": "'"
+                                  "quote": "\""
                                 }
                               },
                               {
@@ -1193,7 +1193,7 @@
                                 "enclosed": [
                                   "1000001 assert",
                                   "1000003 compressible",
-                                  "1000019 invalid"
+                                  "1000019 e"
                                 ],
                                 "body": [
                                   {
@@ -1221,7 +1221,7 @@
                                           "enclosed": [
                                             "1000001 assert",
                                             "1000003 compressible",
-                                            "1000019 invalid"
+                                            "1000019 e"
                                           ],
                                           "body": [
                                             {
@@ -1248,8 +1248,8 @@
                                                     "args": [
                                                       {
                                                         "_class": "AST_SymbolRef",
-                                                        "name": "invalid",
-                                                        "thedef": "1000019 invalid"
+                                                        "name": "e",
+                                                        "thedef": "1000019 e"
                                                       }
                                                     ]
                                                   },
@@ -1292,7 +1292,7 @@
           {
             "_class": "AST_String",
             "value": "Ensuring types are always stripped correctly.",
-            "quote": "'"
+            "quote": "\""
           },
           {
             "_class": "AST_Function",
@@ -1321,7 +1321,7 @@
                     {
                       "_class": "AST_String",
                       "value": "Uppercase types should work",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
@@ -1361,7 +1361,7 @@
                                   {
                                     "_class": "AST_String",
                                     "value": "TEXT/HTML",
-                                    "quote": "'"
+                                    "quote": "\""
                                   }
                                 ]
                               },
@@ -1424,7 +1424,7 @@
                     {
                       "_class": "AST_String",
                       "value": "White-spaced types should work",
-                      "quote": "'"
+                      "quote": "\""
                     },
                     {
                       "_class": "AST_Function",
