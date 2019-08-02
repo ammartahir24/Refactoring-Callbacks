@@ -18,17 +18,13 @@ var To_Upper_Case = function(data){
 	return data.toUpperCase()
 }
 
-var Append_To_Name = function(pre,post){
-	return pre+post
-}
-
 var split_to_array = function(strng){
 	return strng.split(" ")
 }
 
-var convert_files = function(list){
+var readfiles_from_list = function(list){
 	list.forEach(function (i){
-		readfile(i, function(d){
+		readfile(i, function(data){
 			var data = split_to_array(d)
 			var first_file = data[0]
 			var second_file = data[1]
@@ -36,23 +32,20 @@ var convert_files = function(list){
 			readfile(first_file, function(d1){
 				readfile(second_file, function(d2){
 					readfile(third_file, function(d3){
-						var name_1 = Append_To_Name("1".first_file)
-						var name_2 = Append_To_Name("2".second_file)
-						var name_3 = Append_To_Name("3".third_file)
-						var d1_cap = To_Upper_Case(d1)
-						var d2_cap = To_Upper_Case(d2)
-						var d3_cap = To_Upper_Case(d3)
-						console.log(name_1,d1_cap)
-						console.log(name_2,d2_cap)
-						console.log(name_3,d3_cap)
-						writefile(name_1,d1_cap,function(e){
-							console.log(e)
+						var d_first = To_Upper_Case(d1)
+						var d_snd = To_Upper_Case(d2)
+						var d_thrd = To_Upper_Case(d3)
+						console.log(first_file,d_first)
+						console.log(second_file,d_snd)
+						console.log(third_file,d_thrd)
+						writefile(first_file,d_first,function(e1){
+							console.log(e1)
 						})
-						writefile(name_2,d2_cap,function(e){
-							console.log(e)
+						writefile(second_file,d_snd,function(e2){
+							console.log(e2)
 						})
-						writefile(name_3,d3_cap,function(e){
-							console.log(e)
+						writefile(third_file,d_thrd,function(e3){
+							console.log(e3)
 						})
 					})
 				})
@@ -61,4 +54,4 @@ var convert_files = function(list){
 	})
 }
 
-convert_files(list_of_files);
+readfiles_from_list(list_of_files);
