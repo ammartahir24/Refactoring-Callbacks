@@ -25,6 +25,7 @@ var Append_To_Name = function(pre,post){
 var convert_files = function(list){
 	list.forEach(function (i){
 		readfile(i, function(data){
+			data = data.split(" ")
 			var first_file = data[0]
 			var second_file = data[1]
 			var third_file = data[2]
