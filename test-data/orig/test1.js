@@ -22,10 +22,14 @@ var Append_To_Name = function(pre,post){
 	return pre+post
 }
 
+var split_to_array = function(strng){
+	return strng.split(" ")
+}
+
 var convert_files = function(list){
 	list.forEach(function (i){
-		readfile(i, function(data){
-			data = data.split(" ")
+		readfile(i, function(d){
+			var data = split_to_array(d)
 			var first_file = data[0]
 			var second_file = data[1]
 			var third_file = data[2]
