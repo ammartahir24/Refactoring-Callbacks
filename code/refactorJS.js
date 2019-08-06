@@ -28,6 +28,7 @@ const astToCode = {
 	compress: false,
 	mangle: false,
 	output: {
+		beautify : true,
 		ast: true,
 		code: true
 	}	
@@ -592,10 +593,11 @@ async function prog(fname){
 			refactor(cdata["body"],cdata["body"],"main","main",ast['ast']['body'],ast['ast']['body'],0);
 			console.log("---------refactored code--------------------")
 			var resultCode = await convertAstToCode(resultAst.ast)
-			codelines = resultCode.code.split(';')
-			for(var i=0; i<codelines.length; i++){
-				console.log(codelines[i])
-			}
+			console.log(resultCode.code)
+			// codelines = resultCode.code.split(';')
+			// for(var i=0; i<codelines.length; i++){
+			// 	console.log(codelines[i])
+			// }
 			console.log("---------Refactored function count----------")
 			for (var key in refac_funcs){
 				console.log(key,":",refac_funcs[key])
