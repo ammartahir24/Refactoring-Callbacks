@@ -1,0 +1,1021 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000026 require",
+    "1000027 clearTimeout",
+    "1000028 setTimeout",
+    "1000029 console"
+  ],
+  "variables": [
+    "1000001 exec",
+    "1000002 chokidar",
+    "1000004 grep",
+    "1000010 timeout",
+    "1000011 is_making",
+    "1000012 run_on_end",
+    "1000014 do_make",
+    "1000021 main"
+  ],
+  "functions": [
+    "1000004 grep",
+    "1000014 do_make",
+    "1000021 main"
+  ],
+  "enclosed": [
+    "1000026 require",
+    "1000010 timeout",
+    "1000027 clearTimeout",
+    "1000011 is_making",
+    "1000012 run_on_end",
+    "1000028 setTimeout",
+    "1000001 exec",
+    "1000029 console",
+    "1000004 grep",
+    "1000014 do_make",
+    "1000002 chokidar",
+    "1000021 main"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "exec",
+            "thedef": "1000001 exec"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "require",
+                "thedef": "1000026 require"
+              },
+              "args": [
+                {
+                  "_class": "AST_String",
+                  "value": "child_process",
+                  "quote": "\""
+                }
+              ]
+            },
+            "property": "exec"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "chokidar",
+            "thedef": "1000002 chokidar"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000026 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "chokidar",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "grep",
+        "thedef": "1000004 grep"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "e",
+          "thedef": "1000005 e"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000003 arguments",
+        "1000005 e"
+      ],
+      "enclosed": [
+        "1000005 e"
+      ],
+      "body": [
+        {
+          "_class": "AST_Return",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_Call",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "e",
+                        "thedef": "1000005 e"
+                      },
+                      "property": "split"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_RegExp",
+                        "value": {
+                          "raw_source": "[\\r\\n]"
+                        }
+                      }
+                    ]
+                  },
+                  "property": "filter"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [
+                      {
+                        "_class": "AST_SymbolFunarg",
+                        "name": "e",
+                        "thedef": "1000007 e"
+                      }
+                    ],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000006 arguments",
+                      "1000007 e",
+                      "1000008 n",
+                      "1000009 r"
+                    ],
+                    "enclosed": [
+                      "1000009 r",
+                      "1000008 n",
+                      "1000007 e"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_Var",
+                        "definitions": [
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "n",
+                              "thedef": "1000008 n"
+                            },
+                            "value": {
+                              "_class": "AST_Array",
+                              "elements": [
+                                {
+                                  "_class": "AST_RegExp",
+                                  "value": {
+                                    "raw_source": "nothing to be done"
+                                  }
+                                },
+                                {
+                                  "_class": "AST_RegExp",
+                                  "value": {
+                                    "raw_source": "(entering|leaving) directory"
+                                  }
+                                },
+                                {
+                                  "_class": "AST_RegExp",
+                                  "value": {
+                                    "raw_source": "^[ \\s]*$"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "_class": "AST_For",
+                        "init": {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "r",
+                                "thedef": "1000009 r"
+                              },
+                              "value": {
+                                "_class": "AST_Number",
+                                "value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "condition": {
+                          "_class": "AST_Binary",
+                          "operator": "<",
+                          "left": {
+                            "_class": "AST_SymbolRef",
+                            "name": "r",
+                            "thedef": "1000009 r"
+                          },
+                          "right": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "n",
+                              "thedef": "1000008 n"
+                            },
+                            "property": "length"
+                          }
+                        },
+                        "step": {
+                          "_class": "AST_UnaryPostfix",
+                          "operator": "++",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "r",
+                            "thedef": "1000009 r"
+                          }
+                        },
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_If",
+                              "condition": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "e",
+                                    "thedef": "1000007 e"
+                                  },
+                                  "property": "match"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Sub",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "n",
+                                      "thedef": "1000008 n"
+                                    },
+                                    "property": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "r",
+                                      "thedef": "1000009 r"
+                                    }
+                                  }
+                                ]
+                              },
+                              "alternative": null,
+                              "body": {
+                                "_class": "AST_Return",
+                                "value": {
+                                  "_class": "AST_False"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Return",
+                        "value": {
+                          "_class": "AST_True"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "property": "join"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "\n",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "timeout",
+            "thedef": "1000010 timeout"
+          },
+          "value": {
+            "_class": "AST_Null"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "is_making",
+            "thedef": "1000011 is_making"
+          },
+          "value": {
+            "_class": "AST_False"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "run_on_end",
+            "thedef": "1000012 run_on_end"
+          },
+          "value": {
+            "_class": "AST_False"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "do_make",
+        "thedef": "1000014 do_make"
+      },
+      "argnames": [],
+      "uses_arguments": false,
+      "variables": [
+        "1000013 arguments"
+      ],
+      "enclosed": [
+        "1000010 timeout",
+        "1000027 clearTimeout",
+        "1000011 is_making",
+        "1000012 run_on_end",
+        "1000028 setTimeout",
+        "1000001 exec",
+        "1000029 console",
+        "1000004 grep",
+        "1000014 do_make"
+      ],
+      "body": [
+        {
+          "_class": "AST_If",
+          "condition": {
+            "_class": "AST_SymbolRef",
+            "name": "timeout",
+            "thedef": "1000010 timeout"
+          },
+          "alternative": null,
+          "body": {
+            "_class": "AST_SimpleStatement",
+            "body": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "clearTimeout",
+                "thedef": "1000027 clearTimeout"
+              },
+              "args": [
+                {
+                  "_class": "AST_SymbolRef",
+                  "name": "timeout",
+                  "thedef": "1000010 timeout"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "_class": "AST_If",
+          "condition": {
+            "_class": "AST_SymbolRef",
+            "name": "is_making",
+            "thedef": "1000011 is_making"
+          },
+          "alternative": null,
+          "body": {
+            "_class": "AST_BlockStatement",
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_SymbolRef",
+                    "name": "run_on_end",
+                    "thedef": "1000012 run_on_end"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              },
+              {
+                "_class": "AST_Return",
+                "value": null
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_SimpleStatement",
+          "body": {
+            "_class": "AST_Assign",
+            "operator": "=",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "timeout",
+              "thedef": "1000010 timeout"
+            },
+            "right": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "setTimeout",
+                "thedef": "1000028 setTimeout"
+              },
+              "args": [
+                {
+                  "_class": "AST_Function",
+                  "name": null,
+                  "argnames": [],
+                  "uses_arguments": false,
+                  "variables": [
+                    "1000015 arguments"
+                  ],
+                  "enclosed": [
+                    "1000010 timeout",
+                    "1000011 is_making",
+                    "1000001 exec",
+                    "1000029 console",
+                    "1000004 grep",
+                    "1000012 run_on_end",
+                    "1000014 do_make"
+                  ],
+                  "body": [
+                    {
+                      "_class": "AST_SimpleStatement",
+                      "body": {
+                        "_class": "AST_Assign",
+                        "operator": "=",
+                        "left": {
+                          "_class": "AST_SymbolRef",
+                          "name": "timeout",
+                          "thedef": "1000010 timeout"
+                        },
+                        "right": {
+                          "_class": "AST_Null"
+                        }
+                      }
+                    },
+                    {
+                      "_class": "AST_SimpleStatement",
+                      "body": {
+                        "_class": "AST_Assign",
+                        "operator": "=",
+                        "left": {
+                          "_class": "AST_SymbolRef",
+                          "name": "is_making",
+                          "thedef": "1000011 is_making"
+                        },
+                        "right": {
+                          "_class": "AST_True"
+                        }
+                      }
+                    },
+                    {
+                      "_class": "AST_SimpleStatement",
+                      "body": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "exec",
+                          "thedef": "1000001 exec"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_String",
+                            "value": "c:/msys2/usr/bin/make",
+                            "quote": "\""
+                          },
+                          {
+                            "_class": "AST_Function",
+                            "name": null,
+                            "argnames": [
+                              {
+                                "_class": "AST_SymbolFunarg",
+                                "name": "e",
+                                "thedef": "1000017 e"
+                              },
+                              {
+                                "_class": "AST_SymbolFunarg",
+                                "name": "n",
+                                "thedef": "1000018 n"
+                              },
+                              {
+                                "_class": "AST_SymbolFunarg",
+                                "name": "r",
+                                "thedef": "1000019 r"
+                              }
+                            ],
+                            "uses_arguments": false,
+                            "variables": [
+                              "1000016 arguments",
+                              "1000017 e",
+                              "1000018 n",
+                              "1000019 r"
+                            ],
+                            "enclosed": [
+                              "1000017 e",
+                              "1000029 console",
+                              "1000018 n",
+                              "1000004 grep",
+                              "1000019 r",
+                              "1000011 is_making",
+                              "1000012 run_on_end",
+                              "1000014 do_make"
+                            ],
+                            "body": [
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "e",
+                                  "thedef": "1000017 e"
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_SimpleStatement",
+                                  "body": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "console",
+                                        "thedef": "1000029 console"
+                                      },
+                                      "property": "error"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "error: ",
+                                        "quote": "\""
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "e",
+                                        "thedef": "1000017 e"
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "n",
+                                  "thedef": "1000018 n"
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_BlockStatement",
+                                  "body": [
+                                    {
+                                      "_class": "AST_SimpleStatement",
+                                      "body": {
+                                        "_class": "AST_Assign",
+                                        "operator": "=",
+                                        "left": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "n",
+                                          "thedef": "1000018 n"
+                                        },
+                                        "right": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "grep",
+                                                "thedef": "1000004 grep"
+                                              },
+                                              "args": [
+                                                {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "n",
+                                                  "thedef": "1000018 n"
+                                                }
+                                              ]
+                                            },
+                                            "property": "trim"
+                                          },
+                                          "args": []
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "_class": "AST_If",
+                                      "condition": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "n",
+                                        "thedef": "1000018 n"
+                                      },
+                                      "alternative": null,
+                                      "body": {
+                                        "_class": "AST_SimpleStatement",
+                                        "body": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "console",
+                                              "thedef": "1000029 console"
+                                            },
+                                            "property": "log"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "n",
+                                              "thedef": "1000018 n"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000019 r"
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_SimpleStatement",
+                                  "body": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "console",
+                                        "thedef": "1000029 console"
+                                      },
+                                      "property": "error"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "r",
+                                        "thedef": "1000019 r"
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "_class": "AST_SimpleStatement",
+                                "body": {
+                                  "_class": "AST_Assign",
+                                  "operator": "=",
+                                  "left": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "is_making",
+                                    "thedef": "1000011 is_making"
+                                  },
+                                  "right": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              },
+                              {
+                                "_class": "AST_If",
+                                "condition": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "run_on_end",
+                                  "thedef": "1000012 run_on_end"
+                                },
+                                "alternative": null,
+                                "body": {
+                                  "_class": "AST_SimpleStatement",
+                                  "body": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "do_make",
+                                      "thedef": "1000014 do_make"
+                                    },
+                                    "args": []
+                                  }
+                                }
+                              },
+                              {
+                                "_class": "AST_SimpleStatement",
+                                "body": {
+                                  "_class": "AST_Assign",
+                                  "operator": "=",
+                                  "left": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "run_on_end",
+                                    "thedef": "1000012 run_on_end"
+                                  },
+                                  "right": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_class": "AST_Number",
+                  "value": 100
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "main",
+        "thedef": "1000021 main"
+      },
+      "argnames": [],
+      "uses_arguments": false,
+      "variables": [
+        "1000020 arguments",
+        "1000022 e"
+      ],
+      "enclosed": [
+        "1000029 console",
+        "1000014 do_make",
+        "1000002 chokidar",
+        "1000022 e"
+      ],
+      "body": [
+        {
+          "_class": "AST_Var",
+          "definitions": [
+            {
+              "_class": "AST_VarDef",
+              "name": {
+                "_class": "AST_SymbolVar",
+                "name": "e",
+                "thedef": "1000022 e"
+              },
+              "value": {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "ignored",
+                    "value": {
+                      "_class": "AST_Array",
+                      "elements": [
+                        {
+                          "_class": "AST_RegExp",
+                          "value": {
+                            "raw_source": "(^|[\\/\\\\])\\.."
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "ignoreInitial",
+                    "value": {
+                      "_class": "AST_True"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "_class": "AST_SimpleStatement",
+          "body": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "console",
+                "thedef": "1000029 console"
+              },
+              "property": "log"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "Start fs monitor",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_SimpleStatement",
+          "body": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "do_make",
+              "thedef": "1000014 do_make"
+            },
+            "args": []
+          }
+        },
+        {
+          "_class": "AST_SimpleStatement",
+          "body": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "chokidar",
+                    "thedef": "1000002 chokidar"
+                  },
+                  "property": "watch"
+                },
+                "args": [
+                  {
+                    "_class": "AST_String",
+                    "value": ".",
+                    "quote": "\""
+                  },
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "e",
+                    "thedef": "1000022 e"
+                  }
+                ]
+              },
+              "property": "on"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "all",
+                "quote": "\""
+              },
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "e",
+                    "thedef": "1000024 e"
+                  },
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "n",
+                    "thedef": "1000025 n"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000023 arguments",
+                  "1000024 e",
+                  "1000025 n"
+                ],
+                "enclosed": [
+                  "1000029 console",
+                  "1000024 e",
+                  "1000025 n",
+                  "1000014 do_make"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_SimpleStatement",
+                    "body": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "console",
+                          "thedef": "1000029 console"
+                        },
+                        "property": "log"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "fs: ",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "e",
+                          "thedef": "1000024 e"
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "n",
+                          "thedef": "1000025 n"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_SimpleStatement",
+                    "body": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "do_make",
+                        "thedef": "1000014 do_make"
+                      },
+                      "args": []
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "main",
+          "thedef": "1000021 main"
+        },
+        "args": []
+      }
+    }
+  ]
+}

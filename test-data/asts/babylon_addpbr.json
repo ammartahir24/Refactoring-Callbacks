@@ -1,0 +1,3286 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000059 BABYLON",
+    "1000060 scene",
+    "1000061 registerButtonUI",
+    "1000062 setRangeValues",
+    "1000063 registerRangeUI",
+    "1000064 colorGradingTexture"
+  ],
+  "variables": [
+    "1000001 preparePBR"
+  ],
+  "enclosed": [
+    "1000059 BABYLON",
+    "1000060 scene",
+    "1000061 registerButtonUI",
+    "1000062 setRangeValues",
+    "1000063 registerRangeUI",
+    "1000064 colorGradingTexture"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "preparePBR",
+            "thedef": "1000001 preparePBR"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000002 arguments",
+              "1000003 r",
+              "1000004 e",
+              "1000005 t",
+              "1000006 n",
+              "1000007 o"
+            ],
+            "enclosed": [
+              "1000059 BABYLON",
+              "1000060 scene",
+              "1000003 r",
+              "1000004 e",
+              "1000005 t",
+              "1000007 o",
+              "1000006 n",
+              "1000061 registerButtonUI",
+              "1000062 setRangeValues",
+              "1000063 registerRangeUI",
+              "1000064 colorGradingTexture"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "value": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "BABYLON",
+                          "thedef": "1000059 BABYLON"
+                        },
+                        "property": "PBRMaterial"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "pbr",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "scene",
+                          "thedef": "1000060 scene"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "albedoTexture"
+                  },
+                  "right": {
+                    "_class": "AST_New",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "BABYLON",
+                        "thedef": "1000059 BABYLON"
+                      },
+                      "property": "Texture"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_String",
+                        "value": "/Playground/textures/amiga.jpg",
+                        "quote": "\""
+                      },
+                      {
+                        "_class": "AST_SymbolRef",
+                        "name": "scene",
+                        "thedef": "1000060 scene"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "r",
+                        "thedef": "1000003 r"
+                      },
+                      "property": "albedoTexture"
+                    },
+                    "property": "uScale"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 5
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "r",
+                        "thedef": "1000003 r"
+                      },
+                      "property": "albedoTexture"
+                    },
+                    "property": "vScale"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 5
+                  }
+                }
+              },
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "e",
+                      "thedef": "1000004 e"
+                    },
+                    "value": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "BABYLON",
+                          "thedef": "1000059 BABYLON"
+                        },
+                        "property": "HDRCubeTexture"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "/Playground/textures/environment.hdr",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "scene",
+                          "thedef": "1000060 scene"
+                        },
+                        {
+                          "_class": "AST_Number",
+                          "value": 512
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "reflectionTexture"
+                  },
+                  "right": {
+                    "_class": "AST_SymbolRef",
+                    "name": "e",
+                    "thedef": "1000004 e"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "refractionTexture"
+                  },
+                  "right": {
+                    "_class": "AST_SymbolRef",
+                    "name": "e",
+                    "thedef": "1000004 e"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "linkRefractionWithTransparency"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "indexOfRefraction"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 0.52
+                  }
+                }
+              },
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "t",
+                      "thedef": "1000005 t"
+                    },
+                    "value": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "BABYLON",
+                          "thedef": "1000059 BABYLON"
+                        },
+                        "property": "Texture"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "/Playground/textures/colorGrade.png",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "scene",
+                          "thedef": "1000060 scene"
+                        },
+                        {
+                          "_class": "AST_True"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "cameraColorGradingTexture"
+                  },
+                  "right": {
+                    "_class": "AST_SymbolRef",
+                    "name": "t",
+                    "thedef": "1000005 t"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "colorGradingEnabled"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "reflectivityColor"
+                  },
+                  "right": {
+                    "_class": "AST_New",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "BABYLON",
+                        "thedef": "1000059 BABYLON"
+                      },
+                      "property": "Color3"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_Number",
+                        "value": 0.3
+                      },
+                      {
+                        "_class": "AST_Number",
+                        "value": 0.3
+                      },
+                      {
+                        "_class": "AST_Number",
+                        "value": 0.3
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000003 r"
+                    },
+                    "property": "microSurface"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 0.9
+                  }
+                }
+              },
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "n",
+                      "thedef": "1000006 n"
+                    },
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "BABYLON",
+                            "thedef": "1000059 BABYLON"
+                          },
+                          "property": "Mesh"
+                        },
+                        "property": "CreateBox"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "hdrSkyBox",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_Number",
+                          "value": 1000
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "scene",
+                          "thedef": "1000060 scene"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "value": {
+                      "_class": "AST_New",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "BABYLON",
+                          "thedef": "1000059 BABYLON"
+                        },
+                        "property": "PBRMaterial"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "skyBox",
+                          "quote": "\""
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "scene",
+                          "thedef": "1000060 scene"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "backFaceCulling"
+                  },
+                  "right": {
+                    "_class": "AST_False"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "reflectionTexture"
+                  },
+                  "right": {
+                    "_class": "AST_Call",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "e",
+                        "thedef": "1000004 e"
+                      },
+                      "property": "clone"
+                    },
+                    "args": []
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "o",
+                        "thedef": "1000007 o"
+                      },
+                      "property": "reflectionTexture"
+                    },
+                    "property": "coordinatesMode"
+                  },
+                  "right": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "BABYLON",
+                        "thedef": "1000059 BABYLON"
+                      },
+                      "property": "Texture"
+                    },
+                    "property": "SKYBOX_MODE"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "microSurface"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 1
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "specularColor"
+                  },
+                  "right": {
+                    "_class": "AST_New",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "BABYLON",
+                        "thedef": "1000059 BABYLON"
+                      },
+                      "property": "Color3"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_Number",
+                        "value": 1
+                      },
+                      {
+                        "_class": "AST_Number",
+                        "value": 1
+                      },
+                      {
+                        "_class": "AST_Number",
+                        "value": 1
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "disableLighting"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "cameraExposure"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 0.6
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "cameraContrast"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 1.6
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000007 o"
+                    },
+                    "property": "directIntensity"
+                  },
+                  "right": {
+                    "_class": "AST_Number",
+                    "value": 0
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "n",
+                      "thedef": "1000006 n"
+                    },
+                    "property": "material"
+                  },
+                  "right": {
+                    "_class": "AST_SymbolRef",
+                    "name": "o",
+                    "thedef": "1000007 o"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "n",
+                      "thedef": "1000006 n"
+                    },
+                    "property": "infiniteDistance"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "n",
+                      "thedef": "1000006 n"
+                    },
+                    "property": "setEnabled"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_False"
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Default",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000008 arguments"
+                      ],
+                      "enclosed": [
+                        "1000062 setRangeValues"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "setRangeValues",
+                              "thedef": "1000062 setRangeValues"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Object",
+                                "properties": [
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "directIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "emissiveIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "environmentIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "specularIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadowIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadeIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraExposure",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraContrast",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "microSurface",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.9
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.3
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.3
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.3
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorLevel",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Env Irradiance",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000009 arguments"
+                      ],
+                      "enclosed": [
+                        "1000062 setRangeValues",
+                        "1000006 n"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "setRangeValues",
+                              "thedef": "1000062 setRangeValues"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Object",
+                                "properties": [
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "directIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "emissiveIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "environmentIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "specularIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadowIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadeIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraExposure",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraContrast",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "microSurface",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorLevel",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "n",
+                                "thedef": "1000006 n"
+                              },
+                              "property": "setEnabled"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_True"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Rough Gold",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000010 arguments"
+                      ],
+                      "enclosed": [
+                        "1000062 setRangeValues"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "setRangeValues",
+                              "thedef": "1000062 setRangeValues"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Object",
+                                "properties": [
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "directIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1.3439461727881254
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "emissiveIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "environmentIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.3685013699580344
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "specularIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadowIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadeIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraExposure",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.7153261887420668
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraContrast",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1.6474178892241538
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "microSurface",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.42269274789303946
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.8453854957860789
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.5093989525890475
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorLevel",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Plastic",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000011 arguments"
+                      ],
+                      "enclosed": [
+                        "1000062 setRangeValues"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "setRangeValues",
+                              "thedef": "1000062 setRangeValues"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Object",
+                                "properties": [
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "directIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.9971213540040931
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "emissiveIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "environmentIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.3685013699580344
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "specularIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadowIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.975444802830091
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "ShadeIntensity",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.8020323934380749
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraExposure",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.7586792910900708
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "cameraContrast",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1.5823882357021477
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "microSurface",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.8562237713730799
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.05
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.05
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "reflectivityColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.05
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorR",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.20592723615301922
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorG",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 0.942929976069088
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorB",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_ObjectKeyVal",
+                                    "key": "albedoColorLevel",
+                                    "value": {
+                                      "_class": "AST_Number",
+                                      "value": 1
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "alpha",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000013 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000012 arguments",
+                        "1000013 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000013 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "alpha"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000013 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000014 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "alpha"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "directIntensity",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000016 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000015 arguments",
+                        "1000016 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000016 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "directIntensity"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000016 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000017 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "directIntensity"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "emissiveIntensity",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000019 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000018 arguments",
+                        "1000019 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000019 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "emissiveIntensity"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000019 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000020 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "emissiveIntensity"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "environmentIntensity",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000022 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000021 arguments",
+                        "1000022 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000022 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "environmentIntensity"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000022 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000023 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "environmentIntensity"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "specularIntensity",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000025 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000024 arguments",
+                        "1000025 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000025 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "specularIntensity"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000025 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000026 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "specularIntensity"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "cameraExposure",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000028 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000027 arguments",
+                        "1000028 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000028 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "cameraExposure"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000028 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000029 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "cameraExposure"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "cameraContrast",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 2
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000031 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000030 arguments",
+                        "1000031 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000031 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "cameraContrast"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000031 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000032 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "cameraContrast"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "microSurface",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000034 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000033 arguments",
+                        "1000034 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000034 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "microSurface"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000034 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000035 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000003 r"
+                            },
+                            "property": "microSurface"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "reflectivityColorR",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000037 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000036 arguments",
+                        "1000037 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000037 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "reflectivityColor"
+                              },
+                              "property": "r"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000037 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000038 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "reflectivityColor"
+                            },
+                            "property": "r"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "reflectivityColorG",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000040 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000039 arguments",
+                        "1000040 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000040 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "reflectivityColor"
+                              },
+                              "property": "g"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000040 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000041 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "reflectivityColor"
+                            },
+                            "property": "g"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "reflectivityColorB",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000043 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000042 arguments",
+                        "1000043 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000043 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "reflectivityColor"
+                              },
+                              "property": "b"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000043 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000044 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "reflectivityColor"
+                            },
+                            "property": "b"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "albedoColorR",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000046 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000045 arguments",
+                        "1000046 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000046 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "albedoColor"
+                              },
+                              "property": "r"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000046 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000047 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "albedoColor"
+                            },
+                            "property": "r"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "albedoColorG",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000049 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000048 arguments",
+                        "1000049 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000049 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "albedoColor"
+                              },
+                              "property": "g"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000049 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000050 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "albedoColor"
+                            },
+                            "property": "g"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "albedoColorB",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000052 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000051 arguments",
+                        "1000052 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000052 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "albedoColor"
+                              },
+                              "property": "b"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000052 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000053 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "albedoColor"
+                            },
+                            "property": "b"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerRangeUI",
+                    "thedef": "1000063 registerRangeUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "albedoColorLevel",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 0
+                    },
+                    {
+                      "_class": "AST_Number",
+                      "value": 1
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000055 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000054 arguments",
+                        "1000055 e"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000055 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "albedoTexture"
+                              },
+                              "property": "level"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000055 e"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000056 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "albedoTexture"
+                            },
+                            "property": "level"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Toggle Skybox",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000057 arguments"
+                      ],
+                      "enclosed": [
+                        "1000006 n"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "n",
+                                "thedef": "1000006 n"
+                              },
+                              "property": "setEnabled"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_UnaryPrefix",
+                                "operator": "!",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "n",
+                                      "thedef": "1000006 n"
+                                    },
+                                    "property": "isEnabled"
+                                  },
+                                  "args": []
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "registerButtonUI",
+                    "thedef": "1000061 registerButtonUI"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "pbr",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_String",
+                      "value": "Color Grading",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000058 arguments"
+                      ],
+                      "enclosed": [
+                        "1000003 r",
+                        "1000064 colorGradingTexture"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000003 r"
+                              },
+                              "property": "cameraColorGradingTexture"
+                            },
+                            "right": {
+                              "_class": "AST_Conditional",
+                              "condition": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000003 r"
+                                },
+                                "property": "cameraColorGradingTexture"
+                              },
+                              "consequent": {
+                                "_class": "AST_Null"
+                              },
+                              "alternative": {
+                                "_class": "AST_SymbolRef",
+                                "name": "colorGradingTexture",
+                                "thedef": "1000064 colorGradingTexture"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_SymbolRef",
+                  "name": "r",
+                  "thedef": "1000003 r"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

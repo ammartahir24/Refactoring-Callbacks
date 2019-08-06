@@ -1,0 +1,2072 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000042 jQuery",
+    "1000043 Date",
+    "1000044 document",
+    "1000045 encodeURIComponent",
+    "1000046 decodeURIComponent",
+    "1000047 undefined"
+  ],
+  "enclosed": [
+    "1000042 jQuery",
+    "1000043 Date",
+    "1000044 document",
+    "1000045 encodeURIComponent",
+    "1000046 decodeURIComponent",
+    "1000047 undefined"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "jQuery",
+            "thedef": "1000042 jQuery"
+          },
+          "property": "cookie"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "e",
+              "thedef": "1000002 e"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "i",
+              "thedef": "1000003 i"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "t",
+              "thedef": "1000004 t"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000001 arguments",
+            "1000002 e",
+            "1000003 i",
+            "1000004 t",
+            "1000005 o",
+            "1000006 n",
+            "1000007 r",
+            "1000008 s",
+            "1000009 p",
+            "1000010 u",
+            "1000011 a",
+            "1000012 c",
+            "1000013 f"
+          ],
+          "enclosed": [
+            "1000003 i",
+            "1000004 t",
+            "1000006 n",
+            "1000043 Date",
+            "1000005 o",
+            "1000044 document",
+            "1000002 e",
+            "1000045 encodeURIComponent",
+            "1000007 r",
+            "1000008 s",
+            "1000009 p",
+            "1000012 c",
+            "1000011 a",
+            "1000042 jQuery",
+            "1000013 f",
+            "1000010 u",
+            "1000046 decodeURIComponent"
+          ],
+          "body": [
+            {
+              "_class": "AST_If",
+              "condition": {
+                "_class": "AST_Binary",
+                "operator": "!=",
+                "left": {
+                  "_class": "AST_UnaryPrefix",
+                  "operator": "typeof",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "i",
+                    "thedef": "1000003 i"
+                  }
+                },
+                "right": {
+                  "_class": "AST_String",
+                  "value": "undefined",
+                  "quote": "\""
+                }
+              },
+              "alternative": {
+                "_class": "AST_If",
+                "condition": {
+                  "_class": "AST_Binary",
+                  "operator": "!=",
+                  "left": {
+                    "_class": "AST_UnaryPrefix",
+                    "operator": "typeof",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "e",
+                      "thedef": "1000002 e"
+                    }
+                  },
+                  "right": {
+                    "_class": "AST_String",
+                    "value": "undefined",
+                    "quote": "\""
+                  }
+                },
+                "alternative": {
+                  "_class": "AST_BlockStatement",
+                  "body": [
+                    {
+                      "_class": "AST_Var",
+                      "definitions": [
+                        {
+                          "_class": "AST_VarDef",
+                          "name": {
+                            "_class": "AST_SymbolVar",
+                            "name": "a",
+                            "thedef": "1000011 a"
+                          },
+                          "value": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "document",
+                                  "thedef": "1000044 document"
+                                },
+                                "property": "cookie"
+                              },
+                              "property": "split"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": ";",
+                                "quote": "\""
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_For",
+                      "init": {
+                        "_class": "AST_Var",
+                        "definitions": [
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "c",
+                              "thedef": "1000012 c"
+                            },
+                            "value": {
+                              "_class": "AST_Number",
+                              "value": 0
+                            }
+                          }
+                        ]
+                      },
+                      "condition": {
+                        "_class": "AST_Binary",
+                        "operator": "<",
+                        "left": {
+                          "_class": "AST_SymbolRef",
+                          "name": "c",
+                          "thedef": "1000012 c"
+                        },
+                        "right": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "a",
+                            "thedef": "1000011 a"
+                          },
+                          "property": "length"
+                        }
+                      },
+                      "step": {
+                        "_class": "AST_UnaryPostfix",
+                        "operator": "++",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "c",
+                          "thedef": "1000012 c"
+                        }
+                      },
+                      "body": {
+                        "_class": "AST_BlockStatement",
+                        "body": [
+                          {
+                            "_class": "AST_SimpleStatement",
+                            "body": {
+                              "_class": "AST_Assign",
+                              "operator": "=",
+                              "left": {
+                                "_class": "AST_Sub",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "a",
+                                  "thedef": "1000011 a"
+                                },
+                                "property": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "c",
+                                  "thedef": "1000012 c"
+                                }
+                              },
+                              "right": {
+                                "_class": "AST_Sub",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "jQuery",
+                                          "thedef": "1000042 jQuery"
+                                        },
+                                        "property": "trim"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Sub",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "a",
+                                            "thedef": "1000011 a"
+                                          },
+                                          "property": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "c",
+                                            "thedef": "1000012 c"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "property": "split"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "=",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                },
+                                "property": {
+                                  "_class": "AST_Number",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "_class": "AST_Return",
+                      "value": {
+                        "_class": "AST_SymbolRef",
+                        "name": "a",
+                        "thedef": "1000011 a"
+                      }
+                    }
+                  ]
+                },
+                "body": {
+                  "_class": "AST_BlockStatement",
+                  "body": [
+                    {
+                      "_class": "AST_Var",
+                      "definitions": [
+                        {
+                          "_class": "AST_VarDef",
+                          "name": {
+                            "_class": "AST_SymbolVar",
+                            "name": "u",
+                            "thedef": "1000010 u"
+                          },
+                          "value": {
+                            "_class": "AST_Null"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_If",
+                      "condition": {
+                        "_class": "AST_Binary",
+                        "operator": "&&",
+                        "left": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "document",
+                            "thedef": "1000044 document"
+                          },
+                          "property": "cookie"
+                        },
+                        "right": {
+                          "_class": "AST_Binary",
+                          "operator": "!=",
+                          "left": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "document",
+                              "thedef": "1000044 document"
+                            },
+                            "property": "cookie"
+                          },
+                          "right": {
+                            "_class": "AST_String",
+                            "value": "",
+                            "quote": "\""
+                          }
+                        }
+                      },
+                      "alternative": null,
+                      "body": {
+                        "_class": "AST_BlockStatement",
+                        "body": [
+                          {
+                            "_class": "AST_Var",
+                            "definitions": [
+                              {
+                                "_class": "AST_VarDef",
+                                "name": {
+                                  "_class": "AST_SymbolVar",
+                                  "name": "a",
+                                  "thedef": "1000011 a"
+                                },
+                                "value": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "document",
+                                        "thedef": "1000044 document"
+                                      },
+                                      "property": "cookie"
+                                    },
+                                    "property": "split"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": ";",
+                                      "quote": "\""
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "_class": "AST_For",
+                            "init": {
+                              "_class": "AST_Var",
+                              "definitions": [
+                                {
+                                  "_class": "AST_VarDef",
+                                  "name": {
+                                    "_class": "AST_SymbolVar",
+                                    "name": "c",
+                                    "thedef": "1000012 c"
+                                  },
+                                  "value": {
+                                    "_class": "AST_Number",
+                                    "value": 0
+                                  }
+                                }
+                              ]
+                            },
+                            "condition": {
+                              "_class": "AST_Binary",
+                              "operator": "<",
+                              "left": {
+                                "_class": "AST_SymbolRef",
+                                "name": "c",
+                                "thedef": "1000012 c"
+                              },
+                              "right": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "a",
+                                  "thedef": "1000011 a"
+                                },
+                                "property": "length"
+                              }
+                            },
+                            "step": {
+                              "_class": "AST_UnaryPostfix",
+                              "operator": "++",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "c",
+                                "thedef": "1000012 c"
+                              }
+                            },
+                            "body": {
+                              "_class": "AST_BlockStatement",
+                              "body": [
+                                {
+                                  "_class": "AST_Var",
+                                  "definitions": [
+                                    {
+                                      "_class": "AST_VarDef",
+                                      "name": {
+                                        "_class": "AST_SymbolVar",
+                                        "name": "f",
+                                        "thedef": "1000013 f"
+                                      },
+                                      "value": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "jQuery",
+                                            "thedef": "1000042 jQuery"
+                                          },
+                                          "property": "trim"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Sub",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "a",
+                                              "thedef": "1000011 a"
+                                            },
+                                            "property": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "c",
+                                              "thedef": "1000012 c"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "_class": "AST_If",
+                                  "condition": {
+                                    "_class": "AST_Binary",
+                                    "operator": "==",
+                                    "left": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "f",
+                                          "thedef": "1000013 f"
+                                        },
+                                        "property": "substring"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 0
+                                        },
+                                        {
+                                          "_class": "AST_Binary",
+                                          "operator": "+",
+                                          "left": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "e",
+                                              "thedef": "1000002 e"
+                                            },
+                                            "property": "length"
+                                          },
+                                          "right": {
+                                            "_class": "AST_Number",
+                                            "value": 1
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "right": {
+                                      "_class": "AST_Binary",
+                                      "operator": "+",
+                                      "left": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "e",
+                                        "thedef": "1000002 e"
+                                      },
+                                      "right": {
+                                        "_class": "AST_String",
+                                        "value": "=",
+                                        "quote": "\""
+                                      }
+                                    }
+                                  },
+                                  "alternative": null,
+                                  "body": {
+                                    "_class": "AST_BlockStatement",
+                                    "body": [
+                                      {
+                                        "_class": "AST_SimpleStatement",
+                                        "body": {
+                                          "_class": "AST_Assign",
+                                          "operator": "=",
+                                          "left": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "u",
+                                            "thedef": "1000010 u"
+                                          },
+                                          "right": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "decodeURIComponent",
+                                              "thedef": "1000046 decodeURIComponent"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Call",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "f",
+                                                    "thedef": "1000013 f"
+                                                  },
+                                                  "property": "substring"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_Binary",
+                                                    "operator": "+",
+                                                    "left": {
+                                                      "_class": "AST_Dot",
+                                                      "expression": {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "e",
+                                                        "thedef": "1000002 e"
+                                                      },
+                                                      "property": "length"
+                                                    },
+                                                    "right": {
+                                                      "_class": "AST_Number",
+                                                      "value": 1
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "_class": "AST_Break",
+                                        "label": null
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "_class": "AST_Return",
+                      "value": {
+                        "_class": "AST_SymbolRef",
+                        "name": "u",
+                        "thedef": "1000010 u"
+                      }
+                    }
+                  ]
+                }
+              },
+              "body": {
+                "_class": "AST_BlockStatement",
+                "body": [
+                  {
+                    "_class": "AST_SimpleStatement",
+                    "body": {
+                      "_class": "AST_Assign",
+                      "operator": "=",
+                      "left": {
+                        "_class": "AST_SymbolRef",
+                        "name": "t",
+                        "thedef": "1000004 t"
+                      },
+                      "right": {
+                        "_class": "AST_Binary",
+                        "operator": "||",
+                        "left": {
+                          "_class": "AST_SymbolRef",
+                          "name": "t",
+                          "thedef": "1000004 t"
+                        },
+                        "right": {
+                          "_class": "AST_Object",
+                          "properties": []
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "_class": "AST_If",
+                    "condition": {
+                      "_class": "AST_Binary",
+                      "operator": "===",
+                      "left": {
+                        "_class": "AST_SymbolRef",
+                        "name": "i",
+                        "thedef": "1000003 i"
+                      },
+                      "right": {
+                        "_class": "AST_Null"
+                      }
+                    },
+                    "alternative": null,
+                    "body": {
+                      "_class": "AST_BlockStatement",
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_SymbolRef",
+                              "name": "i",
+                              "thedef": "1000003 i"
+                            },
+                            "right": {
+                              "_class": "AST_String",
+                              "value": "",
+                              "quote": "\""
+                            }
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000004 t"
+                              },
+                              "property": "expires"
+                            },
+                            "right": {
+                              "_class": "AST_UnaryPrefix",
+                              "operator": "-",
+                              "expression": {
+                                "_class": "AST_Number",
+                                "value": 1
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_Var",
+                    "definitions": [
+                      {
+                        "_class": "AST_VarDef",
+                        "name": {
+                          "_class": "AST_SymbolVar",
+                          "name": "o",
+                          "thedef": "1000005 o"
+                        },
+                        "value": {
+                          "_class": "AST_String",
+                          "value": "",
+                          "quote": "\""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_class": "AST_If",
+                    "condition": {
+                      "_class": "AST_Binary",
+                      "operator": "&&",
+                      "left": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "t",
+                          "thedef": "1000004 t"
+                        },
+                        "property": "expires"
+                      },
+                      "right": {
+                        "_class": "AST_Binary",
+                        "operator": "||",
+                        "left": {
+                          "_class": "AST_Binary",
+                          "operator": "==",
+                          "left": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "typeof",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000004 t"
+                              },
+                              "property": "expires"
+                            }
+                          },
+                          "right": {
+                            "_class": "AST_String",
+                            "value": "number",
+                            "quote": "\""
+                          }
+                        },
+                        "right": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "t",
+                              "thedef": "1000004 t"
+                            },
+                            "property": "expires"
+                          },
+                          "property": "toUTCString"
+                        }
+                      }
+                    },
+                    "alternative": null,
+                    "body": {
+                      "_class": "AST_BlockStatement",
+                      "body": [
+                        {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "n",
+                                "thedef": "1000006 n"
+                              },
+                              "value": null
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_If",
+                          "condition": {
+                            "_class": "AST_Binary",
+                            "operator": "==",
+                            "left": {
+                              "_class": "AST_UnaryPrefix",
+                              "operator": "typeof",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "t",
+                                  "thedef": "1000004 t"
+                                },
+                                "property": "expires"
+                              }
+                            },
+                            "right": {
+                              "_class": "AST_String",
+                              "value": "number",
+                              "quote": "\""
+                            }
+                          },
+                          "alternative": {
+                            "_class": "AST_BlockStatement",
+                            "body": [
+                              {
+                                "_class": "AST_SimpleStatement",
+                                "body": {
+                                  "_class": "AST_Assign",
+                                  "operator": "=",
+                                  "left": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "n",
+                                    "thedef": "1000006 n"
+                                  },
+                                  "right": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "t",
+                                      "thedef": "1000004 t"
+                                    },
+                                    "property": "expires"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "body": {
+                            "_class": "AST_BlockStatement",
+                            "body": [
+                              {
+                                "_class": "AST_SimpleStatement",
+                                "body": {
+                                  "_class": "AST_Assign",
+                                  "operator": "=",
+                                  "left": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "n",
+                                    "thedef": "1000006 n"
+                                  },
+                                  "right": {
+                                    "_class": "AST_New",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "Date",
+                                      "thedef": "1000043 Date"
+                                    },
+                                    "args": []
+                                  }
+                                }
+                              },
+                              {
+                                "_class": "AST_SimpleStatement",
+                                "body": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "n",
+                                      "thedef": "1000006 n"
+                                    },
+                                    "property": "setTime"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_Binary",
+                                      "operator": "+",
+                                      "left": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "n",
+                                            "thedef": "1000006 n"
+                                          },
+                                          "property": "getTime"
+                                        },
+                                        "args": []
+                                      },
+                                      "right": {
+                                        "_class": "AST_Binary",
+                                        "operator": "*",
+                                        "left": {
+                                          "_class": "AST_Binary",
+                                          "operator": "*",
+                                          "left": {
+                                            "_class": "AST_Binary",
+                                            "operator": "*",
+                                            "left": {
+                                              "_class": "AST_Binary",
+                                              "operator": "*",
+                                              "left": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "t",
+                                                  "thedef": "1000004 t"
+                                                },
+                                                "property": "expires"
+                                              },
+                                              "right": {
+                                                "_class": "AST_Number",
+                                                "value": 24
+                                              }
+                                            },
+                                            "right": {
+                                              "_class": "AST_Number",
+                                              "value": 60
+                                            }
+                                          },
+                                          "right": {
+                                            "_class": "AST_Number",
+                                            "value": 60
+                                          }
+                                        },
+                                        "right": {
+                                          "_class": "AST_Number",
+                                          "value": 1000
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_SymbolRef",
+                              "name": "o",
+                              "thedef": "1000005 o"
+                            },
+                            "right": {
+                              "_class": "AST_Binary",
+                              "operator": "+",
+                              "left": {
+                                "_class": "AST_String",
+                                "value": "; expires=",
+                                "quote": "\""
+                              },
+                              "right": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "n",
+                                    "thedef": "1000006 n"
+                                  },
+                                  "property": "toUTCString"
+                                },
+                                "args": []
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_Var",
+                    "definitions": [
+                      {
+                        "_class": "AST_VarDef",
+                        "name": {
+                          "_class": "AST_SymbolVar",
+                          "name": "r",
+                          "thedef": "1000007 r"
+                        },
+                        "value": {
+                          "_class": "AST_Conditional",
+                          "condition": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "t",
+                              "thedef": "1000004 t"
+                            },
+                            "property": "path"
+                          },
+                          "consequent": {
+                            "_class": "AST_Binary",
+                            "operator": "+",
+                            "left": {
+                              "_class": "AST_String",
+                              "value": "; path=",
+                              "quote": "\""
+                            },
+                            "right": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000004 t"
+                              },
+                              "property": "path"
+                            }
+                          },
+                          "alternative": {
+                            "_class": "AST_String",
+                            "value": "",
+                            "quote": "\""
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_class": "AST_Var",
+                    "definitions": [
+                      {
+                        "_class": "AST_VarDef",
+                        "name": {
+                          "_class": "AST_SymbolVar",
+                          "name": "s",
+                          "thedef": "1000008 s"
+                        },
+                        "value": {
+                          "_class": "AST_Conditional",
+                          "condition": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "t",
+                              "thedef": "1000004 t"
+                            },
+                            "property": "domain"
+                          },
+                          "consequent": {
+                            "_class": "AST_Binary",
+                            "operator": "+",
+                            "left": {
+                              "_class": "AST_String",
+                              "value": "; domain=",
+                              "quote": "\""
+                            },
+                            "right": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000004 t"
+                              },
+                              "property": "domain"
+                            }
+                          },
+                          "alternative": {
+                            "_class": "AST_String",
+                            "value": "",
+                            "quote": "\""
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_class": "AST_Var",
+                    "definitions": [
+                      {
+                        "_class": "AST_VarDef",
+                        "name": {
+                          "_class": "AST_SymbolVar",
+                          "name": "p",
+                          "thedef": "1000009 p"
+                        },
+                        "value": {
+                          "_class": "AST_Conditional",
+                          "condition": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "t",
+                              "thedef": "1000004 t"
+                            },
+                            "property": "secure"
+                          },
+                          "consequent": {
+                            "_class": "AST_String",
+                            "value": "; secure",
+                            "quote": "\""
+                          },
+                          "alternative": {
+                            "_class": "AST_String",
+                            "value": "",
+                            "quote": "\""
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_class": "AST_SimpleStatement",
+                    "body": {
+                      "_class": "AST_Assign",
+                      "operator": "=",
+                      "left": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "document",
+                          "thedef": "1000044 document"
+                        },
+                        "property": "cookie"
+                      },
+                      "right": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Array",
+                            "elements": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000002 e"
+                              },
+                              {
+                                "_class": "AST_String",
+                                "value": "=",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "encodeURIComponent",
+                                  "thedef": "1000045 encodeURIComponent"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "i",
+                                    "thedef": "1000003 i"
+                                  }
+                                ]
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "o",
+                                "thedef": "1000005 o"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "r",
+                                "thedef": "1000007 r"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "s",
+                                "thedef": "1000008 s"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "p",
+                                "thedef": "1000009 p"
+                              }
+                            ]
+                          },
+                          "property": "join"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_String",
+                            "value": "",
+                            "quote": "\""
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "o",
+              "thedef": "1000015 o"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000014 arguments",
+            "1000015 o"
+          ],
+          "enclosed": [
+            "1000015 o",
+            "1000047 undefined"
+          ],
+          "body": [
+            {
+              "_class": "AST_SimpleStatement",
+              "body": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "o",
+                      "thedef": "1000015 o"
+                    },
+                    "property": "polypage"
+                  },
+                  "property": "extension"
+                },
+                "args": [
+                  {
+                    "_class": "AST_String",
+                    "value": "Cookie",
+                    "quote": "\""
+                  },
+                  {
+                    "_class": "AST_Object",
+                    "properties": [
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "expires",
+                        "value": {
+                          "_class": "AST_Null"
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "namespace",
+                        "value": {
+                          "_class": "AST_String",
+                          "value": "pp_",
+                          "quote": "\""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_class": "AST_Object",
+                    "properties": [
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "init",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000017 e"
+                          },
+                          "argnames": [],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000016 arguments",
+                            "1000017 e"
+                          ],
+                          "functions": [
+                            "1000017 e"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_This",
+                                    "name": "this"
+                                  },
+                                  "property": "checkForCookieSupport"
+                                },
+                                "args": []
+                              }
+                            },
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_This",
+                                    "name": "this"
+                                  },
+                                  "property": "setInitialStateFromCookie"
+                                },
+                                "args": []
+                              }
+                            },
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_This",
+                                    "name": "this"
+                                  },
+                                  "property": "bindStateChangeListener"
+                                },
+                                "args": []
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "checkForCookieSupport",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000019 e"
+                          },
+                          "argnames": [],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000018 arguments",
+                            "1000019 e"
+                          ],
+                          "functions": [
+                            "1000019 e"
+                          ],
+                          "enclosed": [
+                            "1000015 o",
+                            "1000047 undefined"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_If",
+                              "condition": {
+                                "_class": "AST_Binary",
+                                "operator": "===",
+                                "left": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "o",
+                                    "thedef": "1000015 o"
+                                  },
+                                  "property": "cookie"
+                                },
+                                "right": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "undefined",
+                                  "thedef": "1000047 undefined"
+                                }
+                              },
+                              "alternative": null,
+                              "body": {
+                                "_class": "AST_Throw",
+                                "value": {
+                                  "_class": "AST_String",
+                                  "value": "The jQuery Cookie plugin is required to use the ppCookie() extension but was not found at $.cookie()",
+                                  "quote": "\""
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "setInitialStateFromCookie",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000021 e"
+                          },
+                          "argnames": [],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000020 arguments",
+                            "1000021 e",
+                            "1000022 i",
+                            "1000023 t",
+                            "1000024 o",
+                            "1000025 n"
+                          ],
+                          "functions": [
+                            "1000021 e"
+                          ],
+                          "enclosed": [
+                            "1000022 i",
+                            "1000023 t",
+                            "1000024 o",
+                            "1000025 n"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Var",
+                              "definitions": [
+                                {
+                                  "_class": "AST_VarDef",
+                                  "name": {
+                                    "_class": "AST_SymbolVar",
+                                    "name": "i",
+                                    "thedef": "1000022 i"
+                                  },
+                                  "value": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "polypage"
+                                      },
+                                      "property": "statesList"
+                                    },
+                                    "args": []
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "_class": "AST_ForIn",
+                              "init": {
+                                "_class": "AST_Var",
+                                "definitions": [
+                                  {
+                                    "_class": "AST_VarDef",
+                                    "name": {
+                                      "_class": "AST_SymbolVar",
+                                      "name": "t",
+                                      "thedef": "1000023 t"
+                                    },
+                                    "value": null
+                                  }
+                                ]
+                              },
+                              "object": {
+                                "_class": "AST_SymbolRef",
+                                "name": "i",
+                                "thedef": "1000022 i"
+                              },
+                              "body": {
+                                "_class": "AST_BlockStatement",
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "o",
+                                          "thedef": "1000024 o"
+                                        },
+                                        "value": {
+                                          "_class": "AST_Sub",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "i",
+                                            "thedef": "1000022 i"
+                                          },
+                                          "property": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "t",
+                                            "thedef": "1000023 t"
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_If",
+                                    "condition": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "getCookie"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "o",
+                                          "thedef": "1000024 o"
+                                        }
+                                      ]
+                                    },
+                                    "alternative": null,
+                                    "body": {
+                                      "_class": "AST_BlockStatement",
+                                      "body": [
+                                        {
+                                          "_class": "AST_Var",
+                                          "definitions": [
+                                            {
+                                              "_class": "AST_VarDef",
+                                              "name": {
+                                                "_class": "AST_SymbolVar",
+                                                "name": "n",
+                                                "thedef": "1000025 n"
+                                              },
+                                              "value": {
+                                                "_class": "AST_Object",
+                                                "properties": []
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "_class": "AST_SimpleStatement",
+                                          "body": {
+                                            "_class": "AST_Assign",
+                                            "operator": "=",
+                                            "left": {
+                                              "_class": "AST_Sub",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "n",
+                                                "thedef": "1000025 n"
+                                              },
+                                              "property": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "o",
+                                                "thedef": "1000024 o"
+                                              }
+                                            },
+                                            "right": {
+                                              "_class": "AST_True"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "_class": "AST_SimpleStatement",
+                                          "body": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_This",
+                                                  "name": "this"
+                                                },
+                                                "property": "scope"
+                                              },
+                                              "property": "trigger"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_String",
+                                                "value": "pp_setState",
+                                                "quote": "\""
+                                              },
+                                              {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "n",
+                                                "thedef": "1000025 n"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "setCookie",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000027 e"
+                          },
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "i",
+                              "thedef": "1000028 i"
+                            },
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "t",
+                              "thedef": "1000029 t"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000026 arguments",
+                            "1000027 e",
+                            "1000028 i",
+                            "1000029 t"
+                          ],
+                          "functions": [
+                            "1000027 e"
+                          ],
+                          "enclosed": [
+                            "1000028 i",
+                            "1000015 o",
+                            "1000029 t"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_If",
+                              "condition": {
+                                "_class": "AST_UnaryPrefix",
+                                "operator": "!",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "i",
+                                    "thedef": "1000028 i"
+                                  },
+                                  "property": "length"
+                                }
+                              },
+                              "alternative": null,
+                              "body": {
+                                "_class": "AST_Return",
+                                "value": {
+                                  "_class": "AST_False"
+                                }
+                              }
+                            },
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "o",
+                                    "thedef": "1000015 o"
+                                  },
+                                  "property": "cookie"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_This",
+                                        "name": "this"
+                                      },
+                                      "property": "prefixed"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "i",
+                                        "thedef": "1000028 i"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Conditional",
+                                    "condition": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "t",
+                                      "thedef": "1000029 t"
+                                    },
+                                    "consequent": {
+                                      "_class": "AST_String",
+                                      "value": "yes",
+                                      "quote": "\""
+                                    },
+                                    "alternative": {
+                                      "_class": "AST_Null"
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_Object",
+                                    "properties": [
+                                      {
+                                        "_class": "AST_ObjectKeyVal",
+                                        "key": "path",
+                                        "value": {
+                                          "_class": "AST_String",
+                                          "value": "/",
+                                          "quote": "\""
+                                        }
+                                      },
+                                      {
+                                        "_class": "AST_ObjectKeyVal",
+                                        "key": "expires",
+                                        "value": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_This",
+                                              "name": "this"
+                                            },
+                                            "property": "options"
+                                          },
+                                          "property": "expires"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_True"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "getCookie",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000031 e"
+                          },
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "i",
+                              "thedef": "1000032 i"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000030 arguments",
+                            "1000031 e",
+                            "1000032 i"
+                          ],
+                          "functions": [
+                            "1000031 e"
+                          ],
+                          "enclosed": [
+                            "1000032 i",
+                            "1000015 o"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_If",
+                              "condition": {
+                                "_class": "AST_UnaryPrefix",
+                                "operator": "!",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "i",
+                                    "thedef": "1000032 i"
+                                  },
+                                  "property": "length"
+                                }
+                              },
+                              "alternative": null,
+                              "body": {
+                                "_class": "AST_Return",
+                                "value": {
+                                  "_class": "AST_False"
+                                }
+                              }
+                            },
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Binary",
+                                "operator": "!=",
+                                "left": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "o",
+                                      "thedef": "1000015 o"
+                                    },
+                                    "property": "cookie"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "prefixed"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "i",
+                                          "thedef": "1000032 i"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "right": {
+                                  "_class": "AST_Null"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "prefixed",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000034 e"
+                          },
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "i",
+                              "thedef": "1000035 i"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000033 arguments",
+                            "1000034 e",
+                            "1000035 i"
+                          ],
+                          "functions": [
+                            "1000034 e"
+                          ],
+                          "enclosed": [
+                            "1000035 i"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_This",
+                                      "name": "this"
+                                    },
+                                    "property": "options"
+                                  },
+                                  "property": "namespace"
+                                },
+                                "right": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "i",
+                                  "thedef": "1000035 i"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_ObjectKeyVal",
+                        "key": "bindStateChangeListener",
+                        "value": {
+                          "_class": "AST_Function",
+                          "name": {
+                            "_class": "AST_SymbolLambda",
+                            "name": "e",
+                            "thedef": "1000037 e"
+                          },
+                          "argnames": [],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000036 arguments",
+                            "1000037 e",
+                            "1000038 t"
+                          ],
+                          "functions": [
+                            "1000037 e"
+                          ],
+                          "enclosed": [
+                            "1000038 t"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Var",
+                              "definitions": [
+                                {
+                                  "_class": "AST_VarDef",
+                                  "name": {
+                                    "_class": "AST_SymbolVar",
+                                    "name": "t",
+                                    "thedef": "1000038 t"
+                                  },
+                                  "value": {
+                                    "_class": "AST_This",
+                                    "name": "this"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_This",
+                                      "name": "this"
+                                    },
+                                    "property": "polypageScope"
+                                  },
+                                  "property": "bind"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "pp_stateChange",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_Function",
+                                    "name": null,
+                                    "argnames": [
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "e",
+                                        "thedef": "1000040 e"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "i",
+                                        "thedef": "1000041 i"
+                                      }
+                                    ],
+                                    "uses_arguments": false,
+                                    "variables": [
+                                      "1000039 arguments",
+                                      "1000040 e",
+                                      "1000041 i"
+                                    ],
+                                    "enclosed": [
+                                      "1000038 t",
+                                      "1000041 i"
+                                    ],
+                                    "body": [
+                                      {
+                                        "_class": "AST_SimpleStatement",
+                                        "body": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "t",
+                                              "thedef": "1000038 t"
+                                            },
+                                            "property": "setCookie"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "i",
+                                                "thedef": "1000041 i"
+                                              },
+                                              "property": "name"
+                                            },
+                                            {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "i",
+                                                "thedef": "1000041 i"
+                                              },
+                                              "property": "value"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "args": [
+          {
+            "_class": "AST_SymbolRef",
+            "name": "jQuery",
+            "thedef": "1000042 jQuery"
+          }
+        ]
+      }
+    }
+  ]
+}
