@@ -30,24 +30,24 @@ var readfiles_from_list = function(list){
 			var second_file = data[1]
 			var third_file = data[2]
 			readfile(first_file, function(d1){
-				readfile(second_file, function(d2){
-					readfile(third_file, function(d3){
-						var d_first = To_Upper_Case(d1)
-						var d_snd = To_Upper_Case(d2)
-						var d_thrd = To_Upper_Case(d3)
-						console.log(first_file,d_first)
-						console.log(second_file,d_snd)
-						console.log(third_file,d_thrd)
-						writefile(first_file,d_first,function(e1){
-							console.log(e1)
-						})
-						writefile(second_file,d_snd,function(e2){
-							console.log(e2)
-						})
-						writefile(third_file,d_thrd,function(e3){
-							console.log(e3)
-						})
-					})
+				var d_first = To_Upper_Case(d1)
+				console.log(first_file,d_first)
+				writefile(first_file,d_first,function(e1){
+					console.log(e1)
+				})
+			})
+			readfile(second_file, function(d2){
+				var d_snd = To_Upper_Case(d2)
+				console.log(second_file,d_snd)
+				writefile(second_file,d_snd,function(e2){
+					console.log(e2)
+				})
+			})
+			readfile(third_file, function(d3){
+				var d_thrd = To_Upper_Case(d3)
+				console.log(third_file,d_thrd)
+				writefile(third_file,d_thrd,function(e3){
+					console.log(e3)
 				})
 			})
 		})
