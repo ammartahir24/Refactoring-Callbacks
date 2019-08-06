@@ -24,7 +24,7 @@ var split_to_array = function(strng){
 
 var readfiles_from_list = function(list){
 	list.forEach(function (i){
-		readfile(i, function(data){
+		readfile(i, function(d){
 			var data = split_to_array(d)
 			var first_file = data[0]
 			var second_file = data[1]
