@@ -13,6 +13,11 @@ async function writefile(obj){
 	return await fwrite('convertedast.txt',JSON.stringify(obj))
 }
 
+
+async function writeCodefile(data){
+	return await fwrite('test-data/output/output.js',data)
+}
+
 //converts code to ast with specified options
 const codeToAst = {
 	parse: {},
@@ -267,10 +272,10 @@ var scopefinder = function(data, liste, cb){
 	for(var key in data){
 		if(data.hasOwnProperty(key)){
 			if(data[key]["_class"]=="AST_Var" &&data[key]["definitions"][0]["value"]!=null&& 
-data[key]["definitions"][0]["value"]["_class"]!="AST_Function"){
-				list.push(data[key]["definitions"][0]["name"]["name"]);
-				fvars.push(data[key]["definitions"][0]["name"]["name"]);
-			}
+	data[key]["definitions"][0]["value"]["_class"]!="AST_Function"){
+		list.push(data[key]["definitions"][0]["name"]["name"]);
+		fvars.push(data[key]["definitions"][0]["name"]["name"]);
+	}
 		}
 	}
 	cb(list,fvars);
@@ -320,6 +325,7 @@ var refactor = function(data,mdata,name,mname,mast,ast,signal){
 							nem = i["fname"]
 							index = templist.findIndex(x =>x["fname"]==nem);
 						}
+						
 						refactor(i["body"],data,nem,name,ast,ast[key]["body"]["args"][index]["body"],1);
 					}
 				})
@@ -593,7 +599,8 @@ async function prog(fname){
 			refactor(cdata["body"],cdata["body"],"main","main",ast['ast']['body'],ast['ast']['body'],0);
 			console.log("---------refactored code--------------------")
 			var resultCode = await convertAstToCode(resultAst.ast)
-			console.log(resultCode.code)
+			console.log('written to test-data/output/output.js')
+			await writeCodefile(resultCode.code)
 			// codelines = resultCode.code.split(';')
 			// for(var i=0; i<codelines.length; i++){
 			// 	console.log(codelines[i])

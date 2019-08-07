@@ -1,0 +1,2848 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000069 require",
+    "1000070 describe",
+    "1000071 before",
+    "1000072 it",
+    "1000073 JSON",
+    "1000074 Error"
+  ],
+  "variables": [
+    "1000001 http",
+    "1000002 methods",
+    "1000003 request",
+    "1000004 bodyParser",
+    "1000061 createServer"
+  ],
+  "functions": [
+    "1000061 createServer"
+  ],
+  "enclosed": [
+    "1000069 require",
+    "1000070 describe",
+    "1000071 before",
+    "1000061 createServer",
+    "1000072 it",
+    "1000003 request",
+    "1000004 bodyParser",
+    "1000001 http",
+    "1000073 JSON",
+    "1000002 methods",
+    "1000074 Error"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "http",
+            "thedef": "1000001 http"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000069 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "http",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "methods",
+            "thedef": "1000002 methods"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000069 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "methods",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "request",
+            "thedef": "1000003 request"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000069 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "supertest",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "bodyParser",
+            "thedef": "1000004 bodyParser"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000069 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "..",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000070 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "bodyParser()",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000005 arguments"
+            ],
+            "enclosed": [
+              "1000071 before",
+              "1000061 createServer",
+              "1000072 it",
+              "1000003 request",
+              "1000004 bodyParser",
+              "1000001 http",
+              "1000073 JSON",
+              "1000070 describe",
+              "1000002 methods",
+              "1000074 Error"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "before",
+                    "thedef": "1000071 before"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000006 arguments"
+                      ],
+                      "enclosed": [
+                        "1000061 createServer"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Assign",
+                            "operator": "=",
+                            "left": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_This",
+                                "name": "this"
+                              },
+                              "property": "server"
+                            },
+                            "right": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "createServer",
+                                "thedef": "1000061 createServer"
+                              },
+                              "args": []
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000072 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should default to {}",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000008 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000007 arguments",
+                        "1000008 e"
+                      ],
+                      "enclosed": [
+                        "1000003 request",
+                        "1000008 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "request",
+                                      "thedef": "1000003 request"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "server"
+                                      }
+                                    ]
+                                  },
+                                  "property": "post"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "/",
+                                    "quote": "\""
+                                  }
+                                ]
+                              },
+                              "property": "expect"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 200
+                              },
+                              {
+                                "_class": "AST_String",
+                                "value": "{}",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000008 e"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000072 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should parse JSON",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000010 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000009 arguments",
+                        "1000010 e"
+                      ],
+                      "enclosed": [
+                        "1000003 request",
+                        "1000010 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "request",
+                                              "thedef": "1000003 request"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_This",
+                                                  "name": "this"
+                                                },
+                                                "property": "server"
+                                              }
+                                            ]
+                                          },
+                                          "property": "post"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_String",
+                                            "value": "/",
+                                            "quote": "\""
+                                          }
+                                        ]
+                                      },
+                                      "property": "set"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "Content-Type",
+                                        "quote": "\""
+                                      },
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "application/json",
+                                        "quote": "\""
+                                      }
+                                    ]
+                                  },
+                                  "property": "send"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "{\"user\":\"tobi\"}",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              "property": "expect"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 200
+                              },
+                              {
+                                "_class": "AST_String",
+                                "value": "{\"user\":\"tobi\"}",
+                                "quote": "'"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000010 e"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000072 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should parse x-www-form-urlencoded",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000012 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000011 arguments",
+                        "1000012 e"
+                      ],
+                      "enclosed": [
+                        "1000003 request",
+                        "1000012 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "request",
+                                              "thedef": "1000003 request"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_This",
+                                                  "name": "this"
+                                                },
+                                                "property": "server"
+                                              }
+                                            ]
+                                          },
+                                          "property": "post"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_String",
+                                            "value": "/",
+                                            "quote": "\""
+                                          }
+                                        ]
+                                      },
+                                      "property": "set"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "Content-Type",
+                                        "quote": "\""
+                                      },
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "application/x-www-form-urlencoded",
+                                        "quote": "\""
+                                      }
+                                    ]
+                                  },
+                                  "property": "send"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "user=tobi",
+                                    "quote": "\""
+                                  }
+                                ]
+                              },
+                              "property": "expect"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 200
+                              },
+                              {
+                                "_class": "AST_String",
+                                "value": "{\"user\":\"tobi\"}",
+                                "quote": "'"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000012 e"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000072 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should handle duplicated middleware",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000014 e"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000013 arguments",
+                        "1000014 e",
+                        "1000015 t",
+                        "1000016 r"
+                      ],
+                      "enclosed": [
+                        "1000004 bodyParser",
+                        "1000001 http",
+                        "1000015 t",
+                        "1000073 JSON",
+                        "1000003 request",
+                        "1000016 r",
+                        "1000014 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "t",
+                                "thedef": "1000015 t"
+                              },
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "bodyParser",
+                                  "thedef": "1000004 bodyParser"
+                                },
+                                "args": []
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "r",
+                                "thedef": "1000016 r"
+                              },
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "http",
+                                    "thedef": "1000001 http"
+                                  },
+                                  "property": "createServer"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Function",
+                                    "name": null,
+                                    "argnames": [
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "o",
+                                        "thedef": "1000018 o"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "s",
+                                        "thedef": "1000019 s"
+                                      }
+                                    ],
+                                    "uses_arguments": false,
+                                    "variables": [
+                                      "1000017 arguments",
+                                      "1000018 o",
+                                      "1000019 s"
+                                    ],
+                                    "enclosed": [
+                                      "1000015 t",
+                                      "1000018 o",
+                                      "1000019 s",
+                                      "1000073 JSON"
+                                    ],
+                                    "body": [
+                                      {
+                                        "_class": "AST_SimpleStatement",
+                                        "body": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "t",
+                                            "thedef": "1000015 t"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "o",
+                                              "thedef": "1000018 o"
+                                            },
+                                            {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "s",
+                                              "thedef": "1000019 s"
+                                            },
+                                            {
+                                              "_class": "AST_Function",
+                                              "name": null,
+                                              "argnames": [
+                                                {
+                                                  "_class": "AST_SymbolFunarg",
+                                                  "name": "r",
+                                                  "thedef": "1000021 r"
+                                                }
+                                              ],
+                                              "uses_arguments": false,
+                                              "variables": [
+                                                "1000020 arguments",
+                                                "1000021 r"
+                                              ],
+                                              "enclosed": [
+                                                "1000015 t",
+                                                "1000018 o",
+                                                "1000019 s",
+                                                "1000021 r",
+                                                "1000073 JSON"
+                                              ],
+                                              "body": [
+                                                {
+                                                  "_class": "AST_SimpleStatement",
+                                                  "body": {
+                                                    "_class": "AST_Call",
+                                                    "expression": {
+                                                      "_class": "AST_SymbolRef",
+                                                      "name": "t",
+                                                      "thedef": "1000015 t"
+                                                    },
+                                                    "args": [
+                                                      {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "o",
+                                                        "thedef": "1000018 o"
+                                                      },
+                                                      {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "s",
+                                                        "thedef": "1000019 s"
+                                                      },
+                                                      {
+                                                        "_class": "AST_Function",
+                                                        "name": null,
+                                                        "argnames": [
+                                                          {
+                                                            "_class": "AST_SymbolFunarg",
+                                                            "name": "e",
+                                                            "thedef": "1000023 e"
+                                                          }
+                                                        ],
+                                                        "uses_arguments": false,
+                                                        "variables": [
+                                                          "1000022 arguments",
+                                                          "1000023 e",
+                                                          "1000024 t"
+                                                        ],
+                                                        "enclosed": [
+                                                          "1000021 r",
+                                                          "1000023 e",
+                                                          "1000019 s",
+                                                          "1000024 t",
+                                                          "1000073 JSON",
+                                                          "1000018 o"
+                                                        ],
+                                                        "body": [
+                                                          {
+                                                            "_class": "AST_Var",
+                                                            "definitions": [
+                                                              {
+                                                                "_class": "AST_VarDef",
+                                                                "name": {
+                                                                  "_class": "AST_SymbolVar",
+                                                                  "name": "t",
+                                                                  "thedef": "1000024 t"
+                                                                },
+                                                                "value": {
+                                                                  "_class": "AST_Binary",
+                                                                  "operator": "||",
+                                                                  "left": {
+                                                                    "_class": "AST_SymbolRef",
+                                                                    "name": "r",
+                                                                    "thedef": "1000021 r"
+                                                                  },
+                                                                  "right": {
+                                                                    "_class": "AST_SymbolRef",
+                                                                    "name": "e",
+                                                                    "thedef": "1000023 e"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "_class": "AST_SimpleStatement",
+                                                            "body": {
+                                                              "_class": "AST_Assign",
+                                                              "operator": "=",
+                                                              "left": {
+                                                                "_class": "AST_Dot",
+                                                                "expression": {
+                                                                  "_class": "AST_SymbolRef",
+                                                                  "name": "s",
+                                                                  "thedef": "1000019 s"
+                                                                },
+                                                                "property": "statusCode"
+                                                              },
+                                                              "right": {
+                                                                "_class": "AST_Conditional",
+                                                                "condition": {
+                                                                  "_class": "AST_SymbolRef",
+                                                                  "name": "t",
+                                                                  "thedef": "1000024 t"
+                                                                },
+                                                                "consequent": {
+                                                                  "_class": "AST_Binary",
+                                                                  "operator": "||",
+                                                                  "left": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_SymbolRef",
+                                                                      "name": "t",
+                                                                      "thedef": "1000024 t"
+                                                                    },
+                                                                    "property": "status"
+                                                                  },
+                                                                  "right": {
+                                                                    "_class": "AST_Number",
+                                                                    "value": 500
+                                                                  }
+                                                                },
+                                                                "alternative": {
+                                                                  "_class": "AST_Number",
+                                                                  "value": 200
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "_class": "AST_SimpleStatement",
+                                                            "body": {
+                                                              "_class": "AST_Call",
+                                                              "expression": {
+                                                                "_class": "AST_Dot",
+                                                                "expression": {
+                                                                  "_class": "AST_SymbolRef",
+                                                                  "name": "s",
+                                                                  "thedef": "1000019 s"
+                                                                },
+                                                                "property": "end"
+                                                              },
+                                                              "args": [
+                                                                {
+                                                                  "_class": "AST_Conditional",
+                                                                  "condition": {
+                                                                    "_class": "AST_SymbolRef",
+                                                                    "name": "t",
+                                                                    "thedef": "1000024 t"
+                                                                  },
+                                                                  "consequent": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_SymbolRef",
+                                                                      "name": "t",
+                                                                      "thedef": "1000024 t"
+                                                                    },
+                                                                    "property": "message"
+                                                                  },
+                                                                  "alternative": {
+                                                                    "_class": "AST_Call",
+                                                                    "expression": {
+                                                                      "_class": "AST_Dot",
+                                                                      "expression": {
+                                                                        "_class": "AST_SymbolRef",
+                                                                        "name": "JSON",
+                                                                        "thedef": "1000073 JSON"
+                                                                      },
+                                                                      "property": "stringify"
+                                                                    },
+                                                                    "args": [
+                                                                      {
+                                                                        "_class": "AST_Dot",
+                                                                        "expression": {
+                                                                          "_class": "AST_SymbolRef",
+                                                                          "name": "o",
+                                                                          "thedef": "1000018 o"
+                                                                        },
+                                                                        "property": "body"
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "request",
+                                              "thedef": "1000003 request"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "r",
+                                                "thedef": "1000016 r"
+                                              }
+                                            ]
+                                          },
+                                          "property": "post"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_String",
+                                            "value": "/",
+                                            "quote": "\""
+                                          }
+                                        ]
+                                      },
+                                      "property": "set"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "Content-Type",
+                                        "quote": "\""
+                                      },
+                                      {
+                                        "_class": "AST_String",
+                                        "value": "application/json",
+                                        "quote": "\""
+                                      }
+                                    ]
+                                  },
+                                  "property": "send"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "{\"user\":\"tobi\"}",
+                                    "quote": "'"
+                                  }
+                                ]
+                              },
+                              "property": "expect"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 200
+                              },
+                              {
+                                "_class": "AST_String",
+                                "value": "{\"user\":\"tobi\"}",
+                                "quote": "'"
+                              },
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000014 e"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "describe",
+                    "thedef": "1000070 describe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "http methods",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000025 arguments"
+                      ],
+                      "enclosed": [
+                        "1000071 before",
+                        "1000004 bodyParser",
+                        "1000001 http",
+                        "1000002 methods",
+                        "1000072 it",
+                        "1000003 request"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "before",
+                              "thedef": "1000071 before"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000026 arguments",
+                                  "1000027 e"
+                                ],
+                                "enclosed": [
+                                  "1000004 bodyParser",
+                                  "1000001 http",
+                                  "1000027 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "e",
+                                          "thedef": "1000027 e"
+                                        },
+                                        "value": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "bodyParser",
+                                            "thedef": "1000004 bodyParser"
+                                          },
+                                          "args": []
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Assign",
+                                      "operator": "=",
+                                      "left": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "server"
+                                      },
+                                      "right": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "http",
+                                            "thedef": "1000001 http"
+                                          },
+                                          "property": "createServer"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Function",
+                                            "name": null,
+                                            "argnames": [
+                                              {
+                                                "_class": "AST_SymbolFunarg",
+                                                "name": "t",
+                                                "thedef": "1000029 t"
+                                              },
+                                              {
+                                                "_class": "AST_SymbolFunarg",
+                                                "name": "r",
+                                                "thedef": "1000030 r"
+                                              }
+                                            ],
+                                            "uses_arguments": false,
+                                            "variables": [
+                                              "1000028 arguments",
+                                              "1000029 t",
+                                              "1000030 r"
+                                            ],
+                                            "enclosed": [
+                                              "1000027 e",
+                                              "1000029 t",
+                                              "1000030 r"
+                                            ],
+                                            "body": [
+                                              {
+                                                "_class": "AST_SimpleStatement",
+                                                "body": {
+                                                  "_class": "AST_Call",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "e",
+                                                    "thedef": "1000027 e"
+                                                  },
+                                                  "args": [
+                                                    {
+                                                      "_class": "AST_SymbolRef",
+                                                      "name": "t",
+                                                      "thedef": "1000029 t"
+                                                    },
+                                                    {
+                                                      "_class": "AST_SymbolRef",
+                                                      "name": "r",
+                                                      "thedef": "1000030 r"
+                                                    },
+                                                    {
+                                                      "_class": "AST_Function",
+                                                      "name": null,
+                                                      "argnames": [
+                                                        {
+                                                          "_class": "AST_SymbolFunarg",
+                                                          "name": "e",
+                                                          "thedef": "1000032 e"
+                                                        }
+                                                      ],
+                                                      "uses_arguments": false,
+                                                      "variables": [
+                                                        "1000031 arguments",
+                                                        "1000032 e"
+                                                      ],
+                                                      "enclosed": [
+                                                        "1000032 e",
+                                                        "1000030 r",
+                                                        "1000029 t"
+                                                      ],
+                                                      "body": [
+                                                        {
+                                                          "_class": "AST_If",
+                                                          "condition": {
+                                                            "_class": "AST_SymbolRef",
+                                                            "name": "e",
+                                                            "thedef": "1000032 e"
+                                                          },
+                                                          "alternative": null,
+                                                          "body": {
+                                                            "_class": "AST_BlockStatement",
+                                                            "body": [
+                                                              {
+                                                                "_class": "AST_SimpleStatement",
+                                                                "body": {
+                                                                  "_class": "AST_Assign",
+                                                                  "operator": "=",
+                                                                  "left": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_SymbolRef",
+                                                                      "name": "r",
+                                                                      "thedef": "1000030 r"
+                                                                    },
+                                                                    "property": "statusCode"
+                                                                  },
+                                                                  "right": {
+                                                                    "_class": "AST_Number",
+                                                                    "value": 500
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "_class": "AST_SimpleStatement",
+                                                                "body": {
+                                                                  "_class": "AST_Call",
+                                                                  "expression": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_SymbolRef",
+                                                                      "name": "r",
+                                                                      "thedef": "1000030 r"
+                                                                    },
+                                                                    "property": "end"
+                                                                  },
+                                                                  "args": [
+                                                                    {
+                                                                      "_class": "AST_Dot",
+                                                                      "expression": {
+                                                                        "_class": "AST_SymbolRef",
+                                                                        "name": "e",
+                                                                        "thedef": "1000032 e"
+                                                                      },
+                                                                      "property": "message"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              },
+                                                              {
+                                                                "_class": "AST_Return",
+                                                                "value": null
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        {
+                                                          "_class": "AST_SimpleStatement",
+                                                          "body": {
+                                                            "_class": "AST_Assign",
+                                                            "operator": "=",
+                                                            "left": {
+                                                              "_class": "AST_Dot",
+                                                              "expression": {
+                                                                "_class": "AST_SymbolRef",
+                                                                "name": "r",
+                                                                "thedef": "1000030 r"
+                                                              },
+                                                              "property": "statusCode"
+                                                            },
+                                                            "right": {
+                                                              "_class": "AST_Conditional",
+                                                              "condition": {
+                                                                "_class": "AST_Binary",
+                                                                "operator": "===",
+                                                                "left": {
+                                                                  "_class": "AST_Sub",
+                                                                  "expression": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_SymbolRef",
+                                                                      "name": "t",
+                                                                      "thedef": "1000029 t"
+                                                                    },
+                                                                    "property": "headers"
+                                                                  },
+                                                                  "property": {
+                                                                    "_class": "AST_String",
+                                                                    "value": "x-expect-method",
+                                                                    "quote": "\""
+                                                                  }
+                                                                },
+                                                                "right": {
+                                                                  "_class": "AST_Dot",
+                                                                  "expression": {
+                                                                    "_class": "AST_SymbolRef",
+                                                                    "name": "t",
+                                                                    "thedef": "1000029 t"
+                                                                  },
+                                                                  "property": "method"
+                                                                }
+                                                              },
+                                                              "consequent": {
+                                                                "_class": "AST_Conditional",
+                                                                "condition": {
+                                                                  "_class": "AST_Binary",
+                                                                  "operator": "===",
+                                                                  "left": {
+                                                                    "_class": "AST_Dot",
+                                                                    "expression": {
+                                                                      "_class": "AST_Dot",
+                                                                      "expression": {
+                                                                        "_class": "AST_SymbolRef",
+                                                                        "name": "t",
+                                                                        "thedef": "1000029 t"
+                                                                      },
+                                                                      "property": "body"
+                                                                    },
+                                                                    "property": "user"
+                                                                  },
+                                                                  "right": {
+                                                                    "_class": "AST_String",
+                                                                    "value": "tobi",
+                                                                    "quote": "\""
+                                                                  }
+                                                                },
+                                                                "consequent": {
+                                                                  "_class": "AST_Number",
+                                                                  "value": 201
+                                                                },
+                                                                "alternative": {
+                                                                  "_class": "AST_Number",
+                                                                  "value": 400
+                                                                }
+                                                              },
+                                                              "alternative": {
+                                                                "_class": "AST_Number",
+                                                                "value": 405
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        {
+                                                          "_class": "AST_SimpleStatement",
+                                                          "body": {
+                                                            "_class": "AST_Call",
+                                                            "expression": {
+                                                              "_class": "AST_Dot",
+                                                              "expression": {
+                                                                "_class": "AST_SymbolRef",
+                                                                "name": "r",
+                                                                "thedef": "1000030 r"
+                                                              },
+                                                              "property": "end"
+                                                            },
+                                                            "args": []
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "methods",
+                                        "thedef": "1000002 methods"
+                                      },
+                                      "property": "slice"
+                                    },
+                                    "args": []
+                                  },
+                                  "property": "sort"
+                                },
+                                "args": []
+                              },
+                              "property": "forEach"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "t",
+                                    "thedef": "1000034 t"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000033 arguments",
+                                  "1000034 t"
+                                ],
+                                "enclosed": [
+                                  "1000034 t",
+                                  "1000072 it",
+                                  "1000003 request"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_If",
+                                    "condition": {
+                                      "_class": "AST_Binary",
+                                      "operator": "===",
+                                      "left": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "t",
+                                        "thedef": "1000034 t"
+                                      },
+                                      "right": {
+                                        "_class": "AST_String",
+                                        "value": "connect",
+                                        "quote": "\""
+                                      }
+                                    },
+                                    "alternative": null,
+                                    "body": {
+                                      "_class": "AST_BlockStatement",
+                                      "body": [
+                                        {
+                                          "_class": "AST_Return",
+                                          "value": null
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "it",
+                                        "thedef": "1000072 it"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Binary",
+                                          "operator": "+",
+                                          "left": {
+                                            "_class": "AST_Binary",
+                                            "operator": "+",
+                                            "left": {
+                                              "_class": "AST_String",
+                                              "value": "should support ",
+                                              "quote": "\""
+                                            },
+                                            "right": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "t",
+                                                  "thedef": "1000034 t"
+                                                },
+                                                "property": "toUpperCase"
+                                              },
+                                              "args": []
+                                            }
+                                          },
+                                          "right": {
+                                            "_class": "AST_String",
+                                            "value": " requests",
+                                            "quote": "\""
+                                          }
+                                        },
+                                        {
+                                          "_class": "AST_Function",
+                                          "name": null,
+                                          "argnames": [
+                                            {
+                                              "_class": "AST_SymbolFunarg",
+                                              "name": "e",
+                                              "thedef": "1000036 e"
+                                            }
+                                          ],
+                                          "uses_arguments": false,
+                                          "variables": [
+                                            "1000035 arguments",
+                                            "1000036 e"
+                                          ],
+                                          "enclosed": [
+                                            "1000003 request",
+                                            "1000034 t",
+                                            "1000036 e"
+                                          ],
+                                          "body": [
+                                            {
+                                              "_class": "AST_SimpleStatement",
+                                              "body": {
+                                                "_class": "AST_Call",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_Call",
+                                                    "expression": {
+                                                      "_class": "AST_Dot",
+                                                      "expression": {
+                                                        "_class": "AST_Call",
+                                                        "expression": {
+                                                          "_class": "AST_Dot",
+                                                          "expression": {
+                                                            "_class": "AST_Call",
+                                                            "expression": {
+                                                              "_class": "AST_Dot",
+                                                              "expression": {
+                                                                "_class": "AST_Call",
+                                                                "expression": {
+                                                                  "_class": "AST_Dot",
+                                                                  "expression": {
+                                                                    "_class": "AST_Call",
+                                                                    "expression": {
+                                                                      "_class": "AST_Sub",
+                                                                      "expression": {
+                                                                        "_class": "AST_Call",
+                                                                        "expression": {
+                                                                          "_class": "AST_SymbolRef",
+                                                                          "name": "request",
+                                                                          "thedef": "1000003 request"
+                                                                        },
+                                                                        "args": [
+                                                                          {
+                                                                            "_class": "AST_Dot",
+                                                                            "expression": {
+                                                                              "_class": "AST_This",
+                                                                              "name": "this"
+                                                                            },
+                                                                            "property": "server"
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      "property": {
+                                                                        "_class": "AST_SymbolRef",
+                                                                        "name": "t",
+                                                                        "thedef": "1000034 t"
+                                                                      }
+                                                                    },
+                                                                    "args": [
+                                                                      {
+                                                                        "_class": "AST_String",
+                                                                        "value": "/",
+                                                                        "quote": "\""
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  "property": "set"
+                                                                },
+                                                                "args": [
+                                                                  {
+                                                                    "_class": "AST_String",
+                                                                    "value": "Content-Type",
+                                                                    "quote": "\""
+                                                                  },
+                                                                  {
+                                                                    "_class": "AST_String",
+                                                                    "value": "application/json",
+                                                                    "quote": "\""
+                                                                  }
+                                                                ]
+                                                              },
+                                                              "property": "set"
+                                                            },
+                                                            "args": [
+                                                              {
+                                                                "_class": "AST_String",
+                                                                "value": "Content-Length",
+                                                                "quote": "\""
+                                                              },
+                                                              {
+                                                                "_class": "AST_String",
+                                                                "value": "15",
+                                                                "quote": "\""
+                                                              }
+                                                            ]
+                                                          },
+                                                          "property": "set"
+                                                        },
+                                                        "args": [
+                                                          {
+                                                            "_class": "AST_String",
+                                                            "value": "X-Expect-Method",
+                                                            "quote": "\""
+                                                          },
+                                                          {
+                                                            "_class": "AST_Call",
+                                                            "expression": {
+                                                              "_class": "AST_Dot",
+                                                              "expression": {
+                                                                "_class": "AST_SymbolRef",
+                                                                "name": "t",
+                                                                "thedef": "1000034 t"
+                                                              },
+                                                              "property": "toUpperCase"
+                                                            },
+                                                            "args": []
+                                                          }
+                                                        ]
+                                                      },
+                                                      "property": "send"
+                                                    },
+                                                    "args": [
+                                                      {
+                                                        "_class": "AST_String",
+                                                        "value": "{\"user\":\"tobi\"}",
+                                                        "quote": "'"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "property": "expect"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_Number",
+                                                    "value": 201
+                                                  },
+                                                  {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "e",
+                                                    "thedef": "1000036 e"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "describe",
+                    "thedef": "1000070 describe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "with type option",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000037 arguments"
+                      ],
+                      "enclosed": [
+                        "1000071 before",
+                        "1000061 createServer",
+                        "1000072 it",
+                        "1000003 request"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "before",
+                              "thedef": "1000071 before"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000038 arguments"
+                                ],
+                                "enclosed": [
+                                  "1000061 createServer"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Assign",
+                                      "operator": "=",
+                                      "left": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_This",
+                                          "name": "this"
+                                        },
+                                        "property": "server"
+                                      },
+                                      "right": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "createServer",
+                                          "thedef": "1000061 createServer"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Object",
+                                            "properties": [
+                                              {
+                                                "_class": "AST_ObjectKeyVal",
+                                                "key": "limit",
+                                                "value": {
+                                                  "_class": "AST_String",
+                                                  "value": "1mb",
+                                                  "quote": "\""
+                                                }
+                                              },
+                                              {
+                                                "_class": "AST_ObjectKeyVal",
+                                                "key": "type",
+                                                "value": {
+                                                  "_class": "AST_String",
+                                                  "value": "application/octet-stream",
+                                                  "quote": "\""
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000072 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should parse JSON",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000040 e"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000039 arguments",
+                                  "1000040 e"
+                                ],
+                                "enclosed": [
+                                  "1000003 request",
+                                  "1000040 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Call",
+                                                  "expression": {
+                                                    "_class": "AST_Dot",
+                                                    "expression": {
+                                                      "_class": "AST_Call",
+                                                      "expression": {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "request",
+                                                        "thedef": "1000003 request"
+                                                      },
+                                                      "args": [
+                                                        {
+                                                          "_class": "AST_Dot",
+                                                          "expression": {
+                                                            "_class": "AST_This",
+                                                            "name": "this"
+                                                          },
+                                                          "property": "server"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "property": "post"
+                                                  },
+                                                  "args": [
+                                                    {
+                                                      "_class": "AST_String",
+                                                      "value": "/",
+                                                      "quote": "\""
+                                                    }
+                                                  ]
+                                                },
+                                                "property": "set"
+                                              },
+                                              "args": [
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "Content-Type",
+                                                  "quote": "\""
+                                                },
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "application/json",
+                                                  "quote": "\""
+                                                }
+                                              ]
+                                            },
+                                            "property": "send"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_String",
+                                              "value": "{\"user\":\"tobi\"}",
+                                              "quote": "'"
+                                            }
+                                          ]
+                                        },
+                                        "property": "expect"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 200
+                                        },
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "{\"user\":\"tobi\"}",
+                                          "quote": "'"
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000040 e"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000072 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should parse x-www-form-urlencoded",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000042 e"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000041 arguments",
+                                  "1000042 e"
+                                ],
+                                "enclosed": [
+                                  "1000003 request",
+                                  "1000042 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Call",
+                                                  "expression": {
+                                                    "_class": "AST_Dot",
+                                                    "expression": {
+                                                      "_class": "AST_Call",
+                                                      "expression": {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "request",
+                                                        "thedef": "1000003 request"
+                                                      },
+                                                      "args": [
+                                                        {
+                                                          "_class": "AST_Dot",
+                                                          "expression": {
+                                                            "_class": "AST_This",
+                                                            "name": "this"
+                                                          },
+                                                          "property": "server"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "property": "post"
+                                                  },
+                                                  "args": [
+                                                    {
+                                                      "_class": "AST_String",
+                                                      "value": "/",
+                                                      "quote": "\""
+                                                    }
+                                                  ]
+                                                },
+                                                "property": "set"
+                                              },
+                                              "args": [
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "Content-Type",
+                                                  "quote": "\""
+                                                },
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "application/x-www-form-urlencoded",
+                                                  "quote": "\""
+                                                }
+                                              ]
+                                            },
+                                            "property": "send"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_String",
+                                              "value": "user=tobi",
+                                              "quote": "\""
+                                            }
+                                          ]
+                                        },
+                                        "property": "expect"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 200
+                                        },
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "{\"user\":\"tobi\"}",
+                                          "quote": "'"
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000042 e"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "describe",
+                    "thedef": "1000070 describe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "with verify option",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000043 arguments"
+                      ],
+                      "enclosed": [
+                        "1000072 it",
+                        "1000061 createServer",
+                        "1000074 Error",
+                        "1000003 request"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000072 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should apply to json",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000045 e"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000044 arguments",
+                                  "1000045 e",
+                                  "1000046 t"
+                                ],
+                                "enclosed": [
+                                  "1000061 createServer",
+                                  "1000074 Error",
+                                  "1000003 request",
+                                  "1000046 t",
+                                  "1000045 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "t",
+                                          "thedef": "1000046 t"
+                                        },
+                                        "value": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "createServer",
+                                            "thedef": "1000061 createServer"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Object",
+                                              "properties": [
+                                                {
+                                                  "_class": "AST_ObjectKeyVal",
+                                                  "key": "verify",
+                                                  "value": {
+                                                    "_class": "AST_Function",
+                                                    "name": {
+                                                      "_class": "AST_SymbolLambda",
+                                                      "name": "e",
+                                                      "thedef": "1000048 e"
+                                                    },
+                                                    "argnames": [
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "t",
+                                                        "thedef": "1000049 t"
+                                                      },
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "r",
+                                                        "thedef": "1000050 r"
+                                                      },
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "o",
+                                                        "thedef": "1000051 o"
+                                                      }
+                                                    ],
+                                                    "uses_arguments": false,
+                                                    "variables": [
+                                                      "1000047 arguments",
+                                                      "1000048 e",
+                                                      "1000049 t",
+                                                      "1000050 r",
+                                                      "1000051 o"
+                                                    ],
+                                                    "functions": [
+                                                      "1000048 e"
+                                                    ],
+                                                    "enclosed": [
+                                                      "1000051 o",
+                                                      "1000074 Error"
+                                                    ],
+                                                    "body": [
+                                                      {
+                                                        "_class": "AST_If",
+                                                        "condition": {
+                                                          "_class": "AST_Binary",
+                                                          "operator": "===",
+                                                          "left": {
+                                                            "_class": "AST_Sub",
+                                                            "expression": {
+                                                              "_class": "AST_SymbolRef",
+                                                              "name": "o",
+                                                              "thedef": "1000051 o"
+                                                            },
+                                                            "property": {
+                                                              "_class": "AST_Number",
+                                                              "value": 0
+                                                            }
+                                                          },
+                                                          "right": {
+                                                            "_class": "AST_Number",
+                                                            "value": 32
+                                                          }
+                                                        },
+                                                        "alternative": null,
+                                                        "body": {
+                                                          "_class": "AST_Throw",
+                                                          "value": {
+                                                            "_class": "AST_New",
+                                                            "expression": {
+                                                              "_class": "AST_SymbolRef",
+                                                              "name": "Error",
+                                                              "thedef": "1000074 Error"
+                                                            },
+                                                            "args": [
+                                                              {
+                                                                "_class": "AST_String",
+                                                                "value": "no leading space",
+                                                                "quote": "\""
+                                                              }
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Call",
+                                                  "expression": {
+                                                    "_class": "AST_Dot",
+                                                    "expression": {
+                                                      "_class": "AST_Call",
+                                                      "expression": {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "request",
+                                                        "thedef": "1000003 request"
+                                                      },
+                                                      "args": [
+                                                        {
+                                                          "_class": "AST_SymbolRef",
+                                                          "name": "t",
+                                                          "thedef": "1000046 t"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "property": "post"
+                                                  },
+                                                  "args": [
+                                                    {
+                                                      "_class": "AST_String",
+                                                      "value": "/",
+                                                      "quote": "\""
+                                                    }
+                                                  ]
+                                                },
+                                                "property": "set"
+                                              },
+                                              "args": [
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "Content-Type",
+                                                  "quote": "\""
+                                                },
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "application/json",
+                                                  "quote": "\""
+                                                }
+                                              ]
+                                            },
+                                            "property": "send"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_String",
+                                              "value": " {\"user\":\"tobi\"}",
+                                              "quote": "'"
+                                            }
+                                          ]
+                                        },
+                                        "property": "expect"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 403
+                                        },
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "no leading space",
+                                          "quote": "\""
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000045 e"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000072 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should apply to urlencoded",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000053 e"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000052 arguments",
+                                  "1000053 e",
+                                  "1000054 t"
+                                ],
+                                "enclosed": [
+                                  "1000061 createServer",
+                                  "1000074 Error",
+                                  "1000003 request",
+                                  "1000054 t",
+                                  "1000053 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "t",
+                                          "thedef": "1000054 t"
+                                        },
+                                        "value": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "createServer",
+                                            "thedef": "1000061 createServer"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Object",
+                                              "properties": [
+                                                {
+                                                  "_class": "AST_ObjectKeyVal",
+                                                  "key": "verify",
+                                                  "value": {
+                                                    "_class": "AST_Function",
+                                                    "name": {
+                                                      "_class": "AST_SymbolLambda",
+                                                      "name": "e",
+                                                      "thedef": "1000056 e"
+                                                    },
+                                                    "argnames": [
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "t",
+                                                        "thedef": "1000057 t"
+                                                      },
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "r",
+                                                        "thedef": "1000058 r"
+                                                      },
+                                                      {
+                                                        "_class": "AST_SymbolFunarg",
+                                                        "name": "o",
+                                                        "thedef": "1000059 o"
+                                                      }
+                                                    ],
+                                                    "uses_arguments": false,
+                                                    "variables": [
+                                                      "1000055 arguments",
+                                                      "1000056 e",
+                                                      "1000057 t",
+                                                      "1000058 r",
+                                                      "1000059 o"
+                                                    ],
+                                                    "functions": [
+                                                      "1000056 e"
+                                                    ],
+                                                    "enclosed": [
+                                                      "1000059 o",
+                                                      "1000074 Error"
+                                                    ],
+                                                    "body": [
+                                                      {
+                                                        "_class": "AST_If",
+                                                        "condition": {
+                                                          "_class": "AST_Binary",
+                                                          "operator": "===",
+                                                          "left": {
+                                                            "_class": "AST_Sub",
+                                                            "expression": {
+                                                              "_class": "AST_SymbolRef",
+                                                              "name": "o",
+                                                              "thedef": "1000059 o"
+                                                            },
+                                                            "property": {
+                                                              "_class": "AST_Number",
+                                                              "value": 0
+                                                            }
+                                                          },
+                                                          "right": {
+                                                            "_class": "AST_Number",
+                                                            "value": 32
+                                                          }
+                                                        },
+                                                        "alternative": null,
+                                                        "body": {
+                                                          "_class": "AST_Throw",
+                                                          "value": {
+                                                            "_class": "AST_New",
+                                                            "expression": {
+                                                              "_class": "AST_SymbolRef",
+                                                              "name": "Error",
+                                                              "thedef": "1000074 Error"
+                                                            },
+                                                            "args": [
+                                                              {
+                                                                "_class": "AST_String",
+                                                                "value": "no leading space",
+                                                                "quote": "\""
+                                                              }
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Call",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Call",
+                                                  "expression": {
+                                                    "_class": "AST_Dot",
+                                                    "expression": {
+                                                      "_class": "AST_Call",
+                                                      "expression": {
+                                                        "_class": "AST_SymbolRef",
+                                                        "name": "request",
+                                                        "thedef": "1000003 request"
+                                                      },
+                                                      "args": [
+                                                        {
+                                                          "_class": "AST_SymbolRef",
+                                                          "name": "t",
+                                                          "thedef": "1000054 t"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "property": "post"
+                                                  },
+                                                  "args": [
+                                                    {
+                                                      "_class": "AST_String",
+                                                      "value": "/",
+                                                      "quote": "\""
+                                                    }
+                                                  ]
+                                                },
+                                                "property": "set"
+                                              },
+                                              "args": [
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "Content-Type",
+                                                  "quote": "\""
+                                                },
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "application/x-www-form-urlencoded",
+                                                  "quote": "\""
+                                                }
+                                              ]
+                                            },
+                                            "property": "send"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_String",
+                                              "value": " user=tobi",
+                                              "quote": "\""
+                                            }
+                                          ]
+                                        },
+                                        "property": "expect"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 403
+                                        },
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "no leading space",
+                                          "quote": "\""
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000053 e"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "createServer",
+        "thedef": "1000061 createServer"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "e",
+          "thedef": "1000062 e"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000060 arguments",
+        "1000062 e",
+        "1000063 o"
+      ],
+      "enclosed": [
+        "1000004 bodyParser",
+        "1000062 e",
+        "1000001 http",
+        "1000063 o",
+        "1000073 JSON"
+      ],
+      "body": [
+        {
+          "_class": "AST_Var",
+          "definitions": [
+            {
+              "_class": "AST_VarDef",
+              "name": {
+                "_class": "AST_SymbolVar",
+                "name": "o",
+                "thedef": "1000063 o"
+              },
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "bodyParser",
+                  "thedef": "1000004 bodyParser"
+                },
+                "args": [
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "e",
+                    "thedef": "1000062 e"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "_class": "AST_Return",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "http",
+                "thedef": "1000001 http"
+              },
+              "property": "createServer"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "t",
+                    "thedef": "1000065 t"
+                  },
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "r",
+                    "thedef": "1000066 r"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000064 arguments",
+                  "1000065 t",
+                  "1000066 r"
+                ],
+                "enclosed": [
+                  "1000063 o",
+                  "1000065 t",
+                  "1000066 r",
+                  "1000073 JSON"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_SimpleStatement",
+                    "body": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "o",
+                        "thedef": "1000063 o"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "t",
+                          "thedef": "1000065 t"
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "r",
+                          "thedef": "1000066 r"
+                        },
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "e",
+                              "thedef": "1000068 e"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000067 arguments",
+                            "1000068 e"
+                          ],
+                          "enclosed": [
+                            "1000066 r",
+                            "1000068 e",
+                            "1000073 JSON",
+                            "1000065 t"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Assign",
+                                "operator": "=",
+                                "left": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "r",
+                                    "thedef": "1000066 r"
+                                  },
+                                  "property": "statusCode"
+                                },
+                                "right": {
+                                  "_class": "AST_Conditional",
+                                  "condition": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "e",
+                                    "thedef": "1000068 e"
+                                  },
+                                  "consequent": {
+                                    "_class": "AST_Binary",
+                                    "operator": "||",
+                                    "left": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "e",
+                                        "thedef": "1000068 e"
+                                      },
+                                      "property": "status"
+                                    },
+                                    "right": {
+                                      "_class": "AST_Number",
+                                      "value": 500
+                                    }
+                                  },
+                                  "alternative": {
+                                    "_class": "AST_Number",
+                                    "value": 200
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "r",
+                                    "thedef": "1000066 r"
+                                  },
+                                  "property": "end"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Conditional",
+                                    "condition": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "e",
+                                      "thedef": "1000068 e"
+                                    },
+                                    "consequent": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "e",
+                                        "thedef": "1000068 e"
+                                      },
+                                      "property": "message"
+                                    },
+                                    "alternative": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "JSON",
+                                          "thedef": "1000073 JSON"
+                                        },
+                                        "property": "stringify"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "t",
+                                            "thedef": "1000065 t"
+                                          },
+                                          "property": "body"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

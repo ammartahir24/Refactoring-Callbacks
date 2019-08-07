@@ -1,0 +1,1656 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000044 require",
+    "1000045 Date"
+  ],
+  "variables": [
+    "1000001 mongoose",
+    "1000002 l",
+    "1000003 async",
+    "1000004 cfg",
+    "1000005 mailer",
+    "1000006 module_exports_notifyRequesters",
+    "1000019 module_exports_notifySupport",
+    "1000026 module_exports_notifyMaintainer",
+    "1000032 module_exports_supportNotifyMaintainer"
+  ],
+  "enclosed": [
+    "1000044 require",
+    "1000001 mongoose",
+    "1000003 async",
+    "1000005 mailer",
+    "1000045 Date",
+    "1000004 cfg",
+    "1000002 l"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "mongoose",
+            "thedef": "1000001 mongoose"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000044 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "mongoose",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "l",
+            "thedef": "1000002 l"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000044 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "lodash",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "async",
+            "thedef": "1000003 async"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000044 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "async",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "cfg",
+            "thedef": "1000004 cfg"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000044 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "../../config",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "mailer",
+            "thedef": "1000005 mailer"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000044 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "../utils/mailer",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "module_exports_notifyRequesters",
+            "thedef": "1000006 module_exports_notifyRequesters"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "o",
+                "thedef": "1000008 o"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "t",
+                "thedef": "1000009 t"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000007 arguments",
+              "1000008 o",
+              "1000009 t",
+              "1000010 e"
+            ],
+            "enclosed": [
+              "1000001 mongoose",
+              "1000010 e",
+              "1000008 o",
+              "1000009 t",
+              "1000003 async",
+              "1000005 mailer",
+              "1000045 Date"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "e",
+                      "thedef": "1000010 e"
+                    },
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "mongoose",
+                          "thedef": "1000001 mongoose"
+                        },
+                        "property": "model"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "Request",
+                          "quote": "\""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000010 e"
+                            },
+                            "property": "findOne"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_Object",
+                              "properties": [
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "$or",
+                                  "value": {
+                                    "_class": "AST_Array",
+                                    "elements": [
+                                      {
+                                        "_class": "AST_Object",
+                                        "properties": [
+                                          {
+                                            "_class": "AST_ObjectKeyVal",
+                                            "quote": "\"",
+                                            "key": "project.ref",
+                                            "value": {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "o",
+                                                "thedef": "1000008 o"
+                                              },
+                                              "property": "_id"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "_class": "AST_Object",
+                                        "properties": [
+                                          {
+                                            "_class": "AST_ObjectKeyVal",
+                                            "quote": "\"",
+                                            "key": "project.githubId",
+                                            "value": {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "o",
+                                                "thedef": "1000008 o"
+                                              },
+                                              "property": "githubId"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "_class": "AST_ObjectKeyVal",
+                                  "key": "satisfied",
+                                  "value": {
+                                    "_class": "AST_False"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "property": "populate"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": "supporters",
+                          "quote": "\""
+                        }
+                      ]
+                    },
+                    "property": "exec"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "e",
+                          "thedef": "1000012 e"
+                        },
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "r",
+                          "thedef": "1000013 r"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000011 arguments",
+                        "1000012 e",
+                        "1000013 r"
+                      ],
+                      "enclosed": [
+                        "1000012 e",
+                        "1000009 t",
+                        "1000013 r",
+                        "1000003 async",
+                        "1000005 mailer",
+                        "1000008 o",
+                        "1000045 Date"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_If",
+                          "condition": {
+                            "_class": "AST_SymbolRef",
+                            "name": "e",
+                            "thedef": "1000012 e"
+                          },
+                          "alternative": null,
+                          "body": {
+                            "_class": "AST_Return",
+                            "value": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000009 t"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_String",
+                                  "value": "Failed to get requests for project",
+                                  "quote": "\""
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "_class": "AST_If",
+                          "condition": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000013 r"
+                            }
+                          },
+                          "alternative": null,
+                          "body": {
+                            "_class": "AST_Return",
+                            "value": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "t",
+                                "thedef": "1000009 t"
+                              },
+                              "args": []
+                            }
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "async",
+                                "thedef": "1000003 async"
+                              },
+                              "property": "each"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000013 r"
+                                },
+                                "property": "supporters"
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000015 e"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "r",
+                                    "thedef": "1000016 r"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000014 arguments",
+                                  "1000015 e",
+                                  "1000016 r"
+                                ],
+                                "enclosed": [
+                                  "1000015 e",
+                                  "1000016 r",
+                                  "1000005 mailer",
+                                  "1000008 o"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_If",
+                                    "condition": {
+                                      "_class": "AST_UnaryPrefix",
+                                      "operator": "!",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000015 e"
+                                        },
+                                        "property": "email"
+                                      }
+                                    },
+                                    "alternative": null,
+                                    "body": {
+                                      "_class": "AST_Return",
+                                      "value": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "r",
+                                          "thedef": "1000016 r"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_Null"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "mailer",
+                                          "thedef": "1000005 mailer"
+                                        },
+                                        "property": "send"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_String",
+                                          "value": "donate-request-satisfied",
+                                          "quote": "\""
+                                        },
+                                        {
+                                          "_class": "AST_Call",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_Array",
+                                              "elements": [
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "Your donate methods request for project",
+                                                  "quote": "\""
+                                                },
+                                                {
+                                                  "_class": "AST_Binary",
+                                                  "operator": "+",
+                                                  "left": {
+                                                    "_class": "AST_Binary",
+                                                    "operator": "+",
+                                                    "left": {
+                                                      "_class": "AST_Dot",
+                                                      "expression": {
+                                                        "_class": "AST_Dot",
+                                                        "expression": {
+                                                          "_class": "AST_SymbolRef",
+                                                          "name": "o",
+                                                          "thedef": "1000008 o"
+                                                        },
+                                                        "property": "owner"
+                                                      },
+                                                      "property": "username"
+                                                    },
+                                                    "right": {
+                                                      "_class": "AST_String",
+                                                      "value": " / ",
+                                                      "quote": "\""
+                                                    }
+                                                  },
+                                                  "right": {
+                                                    "_class": "AST_Dot",
+                                                    "expression": {
+                                                      "_class": "AST_SymbolRef",
+                                                      "name": "o",
+                                                      "thedef": "1000008 o"
+                                                    },
+                                                    "property": "name"
+                                                  }
+                                                },
+                                                {
+                                                  "_class": "AST_String",
+                                                  "value": "satisfied",
+                                                  "quote": "\""
+                                                }
+                                              ]
+                                            },
+                                            "property": "join"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_String",
+                                              "value": " ",
+                                              "quote": "\""
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "e",
+                                            "thedef": "1000015 e"
+                                          },
+                                          "property": "email"
+                                        },
+                                        {
+                                          "_class": "AST_Object",
+                                          "properties": [
+                                            {
+                                              "_class": "AST_ObjectKeyVal",
+                                              "key": "project",
+                                              "value": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "o",
+                                                "thedef": "1000008 o"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "r",
+                                          "thedef": "1000016 r"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000018 e"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000017 arguments",
+                                  "1000018 e"
+                                ],
+                                "enclosed": [
+                                  "1000018 e",
+                                  "1000009 t",
+                                  "1000013 r",
+                                  "1000045 Date"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_If",
+                                    "condition": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "e",
+                                      "thedef": "1000018 e"
+                                    },
+                                    "alternative": null,
+                                    "body": {
+                                      "_class": "AST_Return",
+                                      "value": {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "t",
+                                          "thedef": "1000009 t"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_String",
+                                            "value": "Failed to get requests for project",
+                                            "quote": "\""
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Assign",
+                                      "operator": "=",
+                                      "left": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "r",
+                                          "thedef": "1000013 r"
+                                        },
+                                        "property": "satisfied"
+                                      },
+                                      "right": {
+                                        "_class": "AST_True"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Assign",
+                                      "operator": "=",
+                                      "left": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "r",
+                                            "thedef": "1000013 r"
+                                          },
+                                          "property": "project"
+                                        },
+                                        "property": "methodsSet"
+                                      },
+                                      "right": {
+                                        "_class": "AST_True"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Assign",
+                                      "operator": "=",
+                                      "left": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "r",
+                                            "thedef": "1000013 r"
+                                          },
+                                          "property": "project"
+                                        },
+                                        "property": "methodsSetAt"
+                                      },
+                                      "right": {
+                                        "_class": "AST_New",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "Date",
+                                          "thedef": "1000045 Date"
+                                        },
+                                        "args": []
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "r",
+                                          "thedef": "1000013 r"
+                                        },
+                                        "property": "save"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "t",
+                                          "thedef": "1000009 t"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "module_exports_notifySupport",
+            "thedef": "1000019 module_exports_notifySupport"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000021 e"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "r",
+                "thedef": "1000022 r"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "o",
+                "thedef": "1000023 o"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "t",
+                "thedef": "1000024 t"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000020 arguments",
+              "1000021 e",
+              "1000022 r",
+              "1000023 o",
+              "1000024 t",
+              "1000025 n"
+            ],
+            "enclosed": [
+              "1000022 r",
+              "1000005 mailer",
+              "1000023 o",
+              "1000025 n",
+              "1000004 cfg",
+              "1000024 t"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "n",
+                      "thedef": "1000025 n"
+                    },
+                    "value": {
+                      "_class": "AST_Binary",
+                      "operator": "||",
+                      "left": {
+                        "_class": "AST_Binary",
+                        "operator": "||",
+                        "left": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000022 r"
+                            },
+                            "property": "owner"
+                          },
+                          "property": "org"
+                        },
+                        "right": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "r",
+                              "thedef": "1000022 r"
+                            },
+                            "property": "owner"
+                          },
+                          "property": "user"
+                        }
+                      },
+                      "right": {
+                        "_class": "AST_Null"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "mailer",
+                      "thedef": "1000005 mailer"
+                    },
+                    "property": "send"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "donate-request-support",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Array",
+                          "elements": [
+                            {
+                              "_class": "AST_String",
+                              "value": "Donate methods request from",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Conditional",
+                              "condition": {
+                                "_class": "AST_SymbolRef",
+                                "name": "o",
+                                "thedef": "1000023 o"
+                              },
+                              "consequent": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "o",
+                                  "thedef": "1000023 o"
+                                },
+                                "property": "username"
+                              },
+                              "alternative": {
+                                "_class": "AST_String",
+                                "value": "anonymous",
+                                "quote": "\""
+                              }
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": "for ",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Conditional",
+                              "condition": {
+                                "_class": "AST_SymbolRef",
+                                "name": "n",
+                                "thedef": "1000025 n"
+                              },
+                              "consequent": {
+                                "_class": "AST_String",
+                                "value": "maintaining",
+                                "quote": "\""
+                              },
+                              "alternative": {
+                                "_class": "AST_String",
+                                "value": "unclaimed",
+                                "quote": "\""
+                              }
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": " project ",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Binary",
+                              "operator": "+",
+                              "left": {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "r",
+                                      "thedef": "1000022 r"
+                                    },
+                                    "property": "owner"
+                                  },
+                                  "property": "username"
+                                },
+                                "right": {
+                                  "_class": "AST_String",
+                                  "value": " / ",
+                                  "quote": "\""
+                                }
+                              },
+                              "right": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000022 r"
+                                },
+                                "property": "name"
+                              }
+                            }
+                          ]
+                        },
+                        "property": "join"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": " ",
+                          "quote": "\""
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cfg",
+                          "thedef": "1000004 cfg"
+                        },
+                        "property": "emails"
+                      },
+                      "property": "to"
+                    },
+                    {
+                      "_class": "AST_Object",
+                      "properties": [
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "user",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "o",
+                            "thedef": "1000023 o"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "project",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "r",
+                            "thedef": "1000022 r"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "owner",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "n",
+                            "thedef": "1000025 n"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "t",
+                      "thedef": "1000024 t"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "module_exports_notifyMaintainer",
+            "thedef": "1000026 module_exports_notifyMaintainer"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000028 e"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "r",
+                "thedef": "1000029 r"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "o",
+                "thedef": "1000030 o"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "t",
+                "thedef": "1000031 t"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000027 arguments",
+              "1000028 e",
+              "1000029 r",
+              "1000030 o",
+              "1000031 t"
+            ],
+            "enclosed": [
+              "1000005 mailer",
+              "1000030 o",
+              "1000029 r",
+              "1000028 e",
+              "1000031 t"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "mailer",
+                      "thedef": "1000005 mailer"
+                    },
+                    "property": "send"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "donate-request-maintainer",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Array",
+                          "elements": [
+                            {
+                              "_class": "AST_String",
+                              "value": "Donate methods request from",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Conditional",
+                              "condition": {
+                                "_class": "AST_SymbolRef",
+                                "name": "o",
+                                "thedef": "1000030 o"
+                              },
+                              "consequent": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "o",
+                                  "thedef": "1000030 o"
+                                },
+                                "property": "username"
+                              },
+                              "alternative": {
+                                "_class": "AST_String",
+                                "value": "anonymous",
+                                "quote": "\""
+                              }
+                            },
+                            {
+                              "_class": "AST_String",
+                              "value": "for your project ",
+                              "quote": "\""
+                            },
+                            {
+                              "_class": "AST_Binary",
+                              "operator": "+",
+                              "left": {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "r",
+                                      "thedef": "1000029 r"
+                                    },
+                                    "property": "owner"
+                                  },
+                                  "property": "username"
+                                },
+                                "right": {
+                                  "_class": "AST_String",
+                                  "value": " / ",
+                                  "quote": "\""
+                                }
+                              },
+                              "right": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "r",
+                                  "thedef": "1000029 r"
+                                },
+                                "property": "name"
+                              }
+                            }
+                          ]
+                        },
+                        "property": "join"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_String",
+                          "value": " ",
+                          "quote": "\""
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "e",
+                          "thedef": "1000028 e"
+                        },
+                        "property": "maintainer"
+                      },
+                      "property": "email"
+                    },
+                    {
+                      "_class": "AST_Object",
+                      "properties": [
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "user",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "o",
+                            "thedef": "1000030 o"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "project",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "r",
+                            "thedef": "1000029 r"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "t",
+                      "thedef": "1000031 t"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "module_exports_supportNotifyMaintainer",
+            "thedef": "1000032 module_exports_supportNotifyMaintainer"
+          },
+          "value": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000034 e"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "r",
+                "thedef": "1000035 r"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000033 arguments",
+              "1000034 e",
+              "1000035 r",
+              "1000036 o",
+              "1000039 t",
+              "1000042 n",
+              "1000043 s"
+            ],
+            "enclosed": [
+              "1000002 l",
+              "1000034 e",
+              "1000036 o",
+              "1000039 t",
+              "1000005 mailer",
+              "1000042 n",
+              "1000043 s",
+              "1000035 r"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "o",
+                      "thedef": "1000036 o"
+                    },
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "l",
+                          "thedef": "1000002 l"
+                        },
+                        "property": "filter"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "e",
+                            "thedef": "1000034 e"
+                          },
+                          "property": "supporters"
+                        },
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "e",
+                              "thedef": "1000038 e"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000037 arguments",
+                            "1000038 e"
+                          ],
+                          "enclosed": [
+                            "1000038 e"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_UnaryPrefix",
+                                "operator": "!",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "e",
+                                    "thedef": "1000038 e"
+                                  },
+                                  "property": "isAnon"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "t",
+                      "thedef": "1000039 t"
+                    },
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "l",
+                          "thedef": "1000002 l"
+                        },
+                        "property": "filter"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "e",
+                            "thedef": "1000034 e"
+                          },
+                          "property": "supporters"
+                        },
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "e",
+                              "thedef": "1000041 e"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000040 arguments",
+                            "1000041 e"
+                          ],
+                          "enclosed": [
+                            "1000041 e"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "e",
+                                  "thedef": "1000041 e"
+                                },
+                                "property": "isAnon"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "n",
+                      "thedef": "1000042 n"
+                    },
+                    "value": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "o",
+                        "thedef": "1000036 o"
+                      },
+                      "property": "length"
+                    }
+                  },
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "s",
+                      "thedef": "1000043 s"
+                    },
+                    "value": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "t",
+                        "thedef": "1000039 t"
+                      },
+                      "property": "length"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "mailer",
+                      "thedef": "1000005 mailer"
+                    },
+                    "property": "send"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "donate-request-notify-maintainer",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Binary",
+                      "operator": "+",
+                      "left": {
+                        "_class": "AST_Binary",
+                        "operator": "+",
+                        "left": {
+                          "_class": "AST_Binary",
+                          "operator": "+",
+                          "left": {
+                            "_class": "AST_String",
+                            "value": "Donate methods request from I Love Open Source for your project ",
+                            "quote": "\""
+                          },
+                          "right": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "e",
+                                    "thedef": "1000034 e"
+                                  },
+                                  "property": "project"
+                                },
+                                "property": "ref"
+                              },
+                              "property": "owner"
+                            },
+                            "property": "username"
+                          }
+                        },
+                        "right": {
+                          "_class": "AST_String",
+                          "value": " / ",
+                          "quote": "\""
+                        }
+                      },
+                      "right": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "e",
+                              "thedef": "1000034 e"
+                            },
+                            "property": "project"
+                          },
+                          "property": "ref"
+                        },
+                        "property": "name"
+                      }
+                    },
+                    {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "e",
+                          "thedef": "1000034 e"
+                        },
+                        "property": "maintainer"
+                      },
+                      "property": "email"
+                    },
+                    {
+                      "_class": "AST_Object",
+                      "properties": [
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "request",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "e",
+                            "thedef": "1000034 e"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "project",
+                          "value": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "e",
+                                "thedef": "1000034 e"
+                              },
+                              "property": "project"
+                            },
+                            "property": "ref"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "users",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "o",
+                            "thedef": "1000036 o"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "usersCount",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "n",
+                            "thedef": "1000042 n"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "anonsCount",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "s",
+                            "thedef": "1000043 s"
+                          }
+                        },
+                        {
+                          "_class": "AST_ObjectKeyVal",
+                          "key": "totalCount",
+                          "value": {
+                            "_class": "AST_Binary",
+                            "operator": "+",
+                            "left": {
+                              "_class": "AST_SymbolRef",
+                              "name": "n",
+                              "thedef": "1000042 n"
+                            },
+                            "right": {
+                              "_class": "AST_SymbolRef",
+                              "name": "s",
+                              "thedef": "1000043 s"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "r",
+                      "thedef": "1000035 r"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
