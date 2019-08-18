@@ -1,0 +1,1209 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000031 require",
+    "1000032 describe",
+    "1000033 it",
+    "1000034 __dirname",
+    "1000035 expect"
+  ],
+  "variables": [
+    "1000001 _require",
+    "1000002 SimplePlane",
+    "1000003 _require2",
+    "1000004 skipHello",
+    "1000005 _require3",
+    "1000006 Loader",
+    "1000007 _require4",
+    "1000008 Point",
+    "1000009 _require5",
+    "1000010 RenderTexture",
+    "1000011 Texture"
+  ],
+  "enclosed": [
+    "1000031 require",
+    "1000001 _require",
+    "1000003 _require2",
+    "1000005 _require3",
+    "1000007 _require4",
+    "1000009 _require5",
+    "1000004 skipHello",
+    "1000032 describe",
+    "1000033 it",
+    "1000006 Loader",
+    "1000034 __dirname",
+    "1000002 SimplePlane",
+    "1000035 expect",
+    "1000011 Texture",
+    "1000008 Point",
+    "1000010 RenderTexture"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "_require",
+            "thedef": "1000001 _require"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000031 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "../",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "SimplePlane",
+            "thedef": "1000002 SimplePlane"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require",
+              "thedef": "1000001 _require"
+            },
+            "property": "SimplePlane"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "_require2",
+            "thedef": "1000003 _require2"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000031 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "@pixi/utils",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "skipHello",
+            "thedef": "1000004 skipHello"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require2",
+              "thedef": "1000003 _require2"
+            },
+            "property": "skipHello"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "_require3",
+            "thedef": "1000005 _require3"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000031 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "@pixi/loaders",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "Loader",
+            "thedef": "1000006 Loader"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require3",
+              "thedef": "1000005 _require3"
+            },
+            "property": "Loader"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "_require4",
+            "thedef": "1000007 _require4"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000031 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "@pixi/math",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "Point",
+            "thedef": "1000008 Point"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require4",
+              "thedef": "1000007 _require4"
+            },
+            "property": "Point"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "_require5",
+            "thedef": "1000009 _require5"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000031 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "@pixi/core",
+                "quote": "\""
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "RenderTexture",
+            "thedef": "1000010 RenderTexture"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require5",
+              "thedef": "1000009 _require5"
+            },
+            "property": "RenderTexture"
+          }
+        },
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "Texture",
+            "thedef": "1000011 Texture"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "_require5",
+              "thedef": "1000009 _require5"
+            },
+            "property": "Texture"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "skipHello",
+          "thedef": "1000004 skipHello"
+        },
+        "args": []
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "describe",
+          "thedef": "1000032 describe"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "PIXI.SimplePlane",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [],
+            "uses_arguments": false,
+            "variables": [
+              "1000012 arguments"
+            ],
+            "enclosed": [
+              "1000033 it",
+              "1000006 Loader",
+              "1000034 __dirname",
+              "1000002 SimplePlane",
+              "1000035 expect",
+              "1000011 Texture",
+              "1000032 describe",
+              "1000008 Point",
+              "1000010 RenderTexture"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000033 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should create a plane from an external image",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "i",
+                          "thedef": "1000014 i"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000013 arguments",
+                        "1000014 i",
+                        "1000015 e"
+                      ],
+                      "enclosed": [
+                        "1000006 Loader",
+                        "1000015 e",
+                        "1000034 __dirname",
+                        "1000002 SimplePlane",
+                        "1000035 expect",
+                        "1000014 i"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "e",
+                                "thedef": "1000015 e"
+                              },
+                              "value": {
+                                "_class": "AST_New",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "Loader",
+                                  "thedef": "1000006 Loader"
+                                },
+                                "args": []
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "e",
+                                    "thedef": "1000015 e"
+                                  },
+                                  "property": "add"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "testBitmap",
+                                    "quote": "\""
+                                  },
+                                  {
+                                    "_class": "AST_Binary",
+                                    "operator": "+",
+                                    "left": {
+                                      "_class": "AST_Binary",
+                                      "operator": "+",
+                                      "left": {
+                                        "_class": "AST_String",
+                                        "value": "file://",
+                                        "quote": "\""
+                                      },
+                                      "right": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "__dirname",
+                                        "thedef": "1000034 __dirname"
+                                      }
+                                    },
+                                    "right": {
+                                      "_class": "AST_String",
+                                      "value": "/resources/bitmap-1.png",
+                                      "quote": "\""
+                                    }
+                                  }
+                                ]
+                              },
+                              "property": "load"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "e",
+                                    "thedef": "1000017 e"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "r",
+                                    "thedef": "1000018 r"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000016 arguments",
+                                  "1000017 e",
+                                  "1000018 r",
+                                  "1000019 t"
+                                ],
+                                "enclosed": [
+                                  "1000002 SimplePlane",
+                                  "1000018 r",
+                                  "1000035 expect",
+                                  "1000019 t",
+                                  "1000014 i"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "t",
+                                          "thedef": "1000019 t"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "SimplePlane",
+                                            "thedef": "1000002 SimplePlane"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Dot",
+                                              "expression": {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "r",
+                                                  "thedef": "1000018 r"
+                                                },
+                                                "property": "testBitmap"
+                                              },
+                                              "property": "texture"
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "expect",
+                                              "thedef": "1000035 expect"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "t",
+                                                    "thedef": "1000019 t"
+                                                  },
+                                                  "property": "geometry"
+                                                },
+                                                "property": "segWidth"
+                                              }
+                                            ]
+                                          },
+                                          "property": "to"
+                                        },
+                                        "property": "equal"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 100
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "expect",
+                                              "thedef": "1000035 expect"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Dot",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "t",
+                                                    "thedef": "1000019 t"
+                                                  },
+                                                  "property": "geometry"
+                                                },
+                                                "property": "segHeight"
+                                              }
+                                            ]
+                                          },
+                                          "property": "to"
+                                        },
+                                        "property": "equal"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Number",
+                                          "value": 100
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "i",
+                                        "thedef": "1000014 i"
+                                      },
+                                      "args": []
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "it",
+                    "thedef": "1000033 it"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "should create a new empty textured SimplePlane",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000020 arguments",
+                        "1000021 e"
+                      ],
+                      "enclosed": [
+                        "1000002 SimplePlane",
+                        "1000011 Texture",
+                        "1000035 expect",
+                        "1000021 e"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_Var",
+                          "definitions": [
+                            {
+                              "_class": "AST_VarDef",
+                              "name": {
+                                "_class": "AST_SymbolVar",
+                                "name": "e",
+                                "thedef": "1000021 e"
+                              },
+                              "value": {
+                                "_class": "AST_New",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "SimplePlane",
+                                  "thedef": "1000002 SimplePlane"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "Texture",
+                                      "thedef": "1000011 Texture"
+                                    },
+                                    "property": "EMPTY"
+                                  },
+                                  {
+                                    "_class": "AST_Number",
+                                    "value": 100
+                                  },
+                                  {
+                                    "_class": "AST_Number",
+                                    "value": 100
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "expect",
+                                    "thedef": "1000035 expect"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000021 e"
+                                        },
+                                        "property": "geometry"
+                                      },
+                                      "property": "segWidth"
+                                    }
+                                  ]
+                                },
+                                "property": "to"
+                              },
+                              "property": "equal"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 100
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_Dot",
+                                "expression": {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "expect",
+                                    "thedef": "1000035 expect"
+                                  },
+                                  "args": [
+                                    {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "e",
+                                          "thedef": "1000021 e"
+                                        },
+                                        "property": "geometry"
+                                      },
+                                      "property": "segHeight"
+                                    }
+                                  ]
+                                },
+                                "property": "to"
+                              },
+                              "property": "equal"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Number",
+                                "value": 100
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "describe",
+                    "thedef": "1000032 describe"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "containsPoint",
+                      "quote": "\""
+                    },
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000022 arguments"
+                      ],
+                      "enclosed": [
+                        "1000033 it",
+                        "1000008 Point",
+                        "1000010 RenderTexture",
+                        "1000002 SimplePlane",
+                        "1000035 expect"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000033 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should return true when point inside",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000023 arguments",
+                                  "1000024 e",
+                                  "1000025 r",
+                                  "1000026 t"
+                                ],
+                                "enclosed": [
+                                  "1000008 Point",
+                                  "1000010 RenderTexture",
+                                  "1000002 SimplePlane",
+                                  "1000025 r",
+                                  "1000035 expect",
+                                  "1000026 t",
+                                  "1000024 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "e",
+                                          "thedef": "1000024 e"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "Point",
+                                            "thedef": "1000008 Point"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 10
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 10
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "r",
+                                          "thedef": "1000025 r"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "RenderTexture",
+                                              "thedef": "1000010 RenderTexture"
+                                            },
+                                            "property": "create"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 20
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 30
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "t",
+                                          "thedef": "1000026 t"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "SimplePlane",
+                                            "thedef": "1000002 SimplePlane"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "r",
+                                              "thedef": "1000025 r"
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "expect",
+                                              "thedef": "1000035 expect"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Call",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "t",
+                                                    "thedef": "1000026 t"
+                                                  },
+                                                  "property": "containsPoint"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "e",
+                                                    "thedef": "1000024 e"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          "property": "to"
+                                        },
+                                        "property": "be"
+                                      },
+                                      "property": "true"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "it",
+                              "thedef": "1000033 it"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "should return false when point outside",
+                                "quote": "\""
+                              },
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000027 arguments",
+                                  "1000028 e",
+                                  "1000029 r",
+                                  "1000030 t"
+                                ],
+                                "enclosed": [
+                                  "1000008 Point",
+                                  "1000010 RenderTexture",
+                                  "1000002 SimplePlane",
+                                  "1000029 r",
+                                  "1000035 expect",
+                                  "1000030 t",
+                                  "1000028 e"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "e",
+                                          "thedef": "1000028 e"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "Point",
+                                            "thedef": "1000008 Point"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "r",
+                                          "thedef": "1000029 r"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "RenderTexture",
+                                              "thedef": "1000010 RenderTexture"
+                                            },
+                                            "property": "create"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 20
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 30
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Var",
+                                    "definitions": [
+                                      {
+                                        "_class": "AST_VarDef",
+                                        "name": {
+                                          "_class": "AST_SymbolVar",
+                                          "name": "t",
+                                          "thedef": "1000030 t"
+                                        },
+                                        "value": {
+                                          "_class": "AST_New",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "SimplePlane",
+                                            "thedef": "1000002 SimplePlane"
+                                          },
+                                          "args": [
+                                            {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "r",
+                                              "thedef": "1000029 r"
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            },
+                                            {
+                                              "_class": "AST_Number",
+                                              "value": 100
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_SimpleStatement",
+                                    "body": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_Dot",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_Call",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "expect",
+                                              "thedef": "1000035 expect"
+                                            },
+                                            "args": [
+                                              {
+                                                "_class": "AST_Call",
+                                                "expression": {
+                                                  "_class": "AST_Dot",
+                                                  "expression": {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "t",
+                                                    "thedef": "1000030 t"
+                                                  },
+                                                  "property": "containsPoint"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_SymbolRef",
+                                                    "name": "e",
+                                                    "thedef": "1000028 e"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          "property": "to"
+                                        },
+                                        "property": "be"
+                                      },
+                                      "property": "false"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
