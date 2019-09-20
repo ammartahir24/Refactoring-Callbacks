@@ -1,0 +1,4262 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000114 require",
+    "1000115 module",
+    "1000116 Object",
+    "1000117 Error",
+    "1000118 JSON"
+  ],
+  "variables": [
+    "1000001 BB",
+    "1000002 figgyPudding",
+    "1000003 libaccess",
+    "1000004 npmConfig",
+    "1000005 output",
+    "1000006 otplease",
+    "1000007 path",
+    "1000008 prefix",
+    "1000009 readPackageJson",
+    "1000010 usage",
+    "1000011 whoami",
+    "1000012 AccessConfig",
+    "1000014 UsageError",
+    "1000021 access",
+    "1000094 modifyPackage",
+    "1000104 getPackage"
+  ],
+  "functions": [
+    "1000014 UsageError",
+    "1000021 access",
+    "1000094 modifyPackage",
+    "1000104 getPackage"
+  ],
+  "enclosed": [
+    "1000114 require",
+    "1000001 BB",
+    "1000115 module",
+    "1000021 access",
+    "1000010 usage",
+    "1000002 figgyPudding",
+    "1000116 Object",
+    "1000117 Error",
+    "1000014 UsageError",
+    "1000012 AccessConfig",
+    "1000004 npmConfig",
+    "1000094 modifyPackage",
+    "1000003 libaccess",
+    "1000011 whoami",
+    "1000005 output",
+    "1000118 JSON",
+    "1000104 getPackage",
+    "1000006 otplease",
+    "1000009 readPackageJson",
+    "1000007 path",
+    "1000008 prefix"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "'"
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "BB",
+            "thedef": "1000001 BB"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "bluebird",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "figgyPudding",
+            "thedef": "1000002 figgyPudding"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "figgy-pudding",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "libaccess",
+            "thedef": "1000003 libaccess"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "libnpm/access",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "npmConfig",
+            "thedef": "1000004 npmConfig"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./config/figgy-config.js",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "output",
+            "thedef": "1000005 output"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./utils/output.js",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "otplease",
+            "thedef": "1000006 otplease"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./utils/otplease.js",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "path",
+            "thedef": "1000007 path"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "path",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "prefix",
+            "thedef": "1000008 prefix"
+          },
+          "value": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "require",
+                "thedef": "1000114 require"
+              },
+              "args": [
+                {
+                  "_class": "AST_String",
+                  "value": "./npm.js",
+                  "quote": "'"
+                }
+              ]
+            },
+            "property": "prefix"
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "readPackageJson",
+            "thedef": "1000009 readPackageJson"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "BB",
+                "thedef": "1000001 BB"
+              },
+              "property": "promisify"
+            },
+            "args": [
+              {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "require",
+                  "thedef": "1000114 require"
+                },
+                "args": [
+                  {
+                    "_class": "AST_String",
+                    "value": "read-package-json",
+                    "quote": "'"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "usage",
+            "thedef": "1000010 usage"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./utils/usage.js",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "whoami",
+            "thedef": "1000011 whoami"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000114 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "./whoami.js",
+                "quote": "'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "module",
+            "thedef": "1000115 module"
+          },
+          "property": "exports"
+        },
+        "right": {
+          "_class": "AST_SymbolRef",
+          "name": "access",
+          "thedef": "1000021 access"
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "usage"
+        },
+        "right": {
+          "_class": "AST_Call",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "usage",
+            "thedef": "1000010 usage"
+          },
+          "args": [
+            {
+              "_class": "AST_String",
+              "value": "npm access",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_Binary",
+              "operator": "+",
+              "left": {
+                "_class": "AST_Binary",
+                "operator": "+",
+                "left": {
+                  "_class": "AST_Binary",
+                  "operator": "+",
+                  "left": {
+                    "_class": "AST_Binary",
+                    "operator": "+",
+                    "left": {
+                      "_class": "AST_Binary",
+                      "operator": "+",
+                      "left": {
+                        "_class": "AST_Binary",
+                        "operator": "+",
+                        "left": {
+                          "_class": "AST_Binary",
+                          "operator": "+",
+                          "left": {
+                            "_class": "AST_Binary",
+                            "operator": "+",
+                            "left": {
+                              "_class": "AST_String",
+                              "value": "npm access public [<package>]\n",
+                              "quote": "'"
+                            },
+                            "right": {
+                              "_class": "AST_String",
+                              "value": "npm access restricted [<package>]\n",
+                              "quote": "'"
+                            }
+                          },
+                          "right": {
+                            "_class": "AST_String",
+                            "value": "npm access grant <read-only|read-write> <scope:team> [<package>]\n",
+                            "quote": "'"
+                          }
+                        },
+                        "right": {
+                          "_class": "AST_String",
+                          "value": "npm access revoke <scope:team> [<package>]\n",
+                          "quote": "'"
+                        }
+                      },
+                      "right": {
+                        "_class": "AST_String",
+                        "value": "npm access 2fa-required [<package>]\n",
+                        "quote": "'"
+                      }
+                    },
+                    "right": {
+                      "_class": "AST_String",
+                      "value": "npm access 2fa-not-required [<package>]\n",
+                      "quote": "'"
+                    }
+                  },
+                  "right": {
+                    "_class": "AST_String",
+                    "value": "npm access ls-packages [<user>|<scope>|<scope:team>]\n",
+                    "quote": "'"
+                  }
+                },
+                "right": {
+                  "_class": "AST_String",
+                  "value": "npm access ls-collaborators [<package> [<user>]]\n",
+                  "quote": "'"
+                }
+              },
+              "right": {
+                "_class": "AST_String",
+                "value": "npm access edit [<package>]",
+                "quote": "'"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "subcommands"
+        },
+        "right": {
+          "_class": "AST_Array",
+          "elements": [
+            {
+              "_class": "AST_String",
+              "value": "public",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "restricted",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "grant",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "revoke",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "ls-packages",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "ls-collaborators",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "edit",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "2fa-required",
+              "quote": "'"
+            },
+            {
+              "_class": "AST_String",
+              "value": "2fa-not-required",
+              "quote": "'"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "AccessConfig",
+            "thedef": "1000012 AccessConfig"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "figgyPudding",
+              "thedef": "1000002 figgyPudding"
+            },
+            "args": [
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "json",
+                    "value": {
+                      "_class": "AST_Object",
+                      "properties": []
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "UsageError",
+        "thedef": "1000014 UsageError"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "msg",
+          "thedef": "1000015 msg"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000013 arguments",
+        "1000015 msg"
+      ],
+      "enclosed": [
+        "1000015 msg",
+        "1000116 Object",
+        "1000117 Error",
+        "1000021 access"
+      ],
+      "body": [
+        {
+          "_class": "AST_If",
+          "condition": {
+            "_class": "AST_Binary",
+            "operator": "===",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "msg",
+              "thedef": "1000015 msg"
+            },
+            "right": {
+              "_class": "AST_UnaryPrefix",
+              "operator": "void",
+              "expression": {
+                "_class": "AST_Number",
+                "value": 0
+              }
+            }
+          },
+          "alternative": null,
+          "body": {
+            "_class": "AST_BlockStatement",
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_SymbolRef",
+                    "name": "msg",
+                    "thedef": "1000015 msg"
+                  },
+                  "right": {
+                    "_class": "AST_String",
+                    "value": "",
+                    "quote": "'"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_Throw",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_SymbolRef",
+                "name": "Object",
+                "thedef": "1000116 Object"
+              },
+              "property": "assign"
+            },
+            "args": [
+              {
+                "_class": "AST_New",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "Error",
+                  "thedef": "1000117 Error"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Binary",
+                    "operator": "+",
+                    "left": {
+                      "_class": "AST_Conditional",
+                      "condition": {
+                        "_class": "AST_SymbolRef",
+                        "name": "msg",
+                        "thedef": "1000015 msg"
+                      },
+                      "consequent": {
+                        "_class": "AST_Binary",
+                        "operator": "+",
+                        "left": {
+                          "_class": "AST_Binary",
+                          "operator": "+",
+                          "left": {
+                            "_class": "AST_String",
+                            "value": "\nUsage: ",
+                            "quote": "\""
+                          },
+                          "right": {
+                            "_class": "AST_SymbolRef",
+                            "name": "msg",
+                            "thedef": "1000015 msg"
+                          }
+                        },
+                        "right": {
+                          "_class": "AST_String",
+                          "value": "\n\n",
+                          "quote": "\""
+                        }
+                      },
+                      "alternative": {
+                        "_class": "AST_String",
+                        "value": "",
+                        "quote": "'"
+                      }
+                    },
+                    "right": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "access",
+                        "thedef": "1000021 access"
+                      },
+                      "property": "usage"
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Object",
+                "properties": [
+                  {
+                    "_class": "AST_ObjectKeyVal",
+                    "key": "code",
+                    "value": {
+                      "_class": "AST_String",
+                      "value": "EUSAGE",
+                      "quote": "'"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "completion"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "opts",
+              "thedef": "1000017 opts"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "cb",
+              "thedef": "1000018 cb"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000016 arguments",
+            "1000017 opts",
+            "1000018 cb",
+            "1000019 argv"
+          ],
+          "enclosed": [
+            "1000017 opts",
+            "1000019 argv",
+            "1000018 cb",
+            "1000021 access",
+            "1000117 Error"
+          ],
+          "body": [
+            {
+              "_class": "AST_Var",
+              "definitions": [
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "argv",
+                    "thedef": "1000019 argv"
+                  },
+                  "value": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "opts",
+                          "thedef": "1000017 opts"
+                        },
+                        "property": "conf"
+                      },
+                      "property": "argv"
+                    },
+                    "property": "remain"
+                  }
+                }
+              ]
+            },
+            {
+              "_class": "AST_If",
+              "condition": {
+                "_class": "AST_Binary",
+                "operator": "===",
+                "left": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "argv",
+                    "thedef": "1000019 argv"
+                  },
+                  "property": "length"
+                },
+                "right": {
+                  "_class": "AST_Number",
+                  "value": 2
+                }
+              },
+              "alternative": null,
+              "body": {
+                "_class": "AST_BlockStatement",
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "cb",
+                        "thedef": "1000018 cb"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Null"
+                        },
+                        {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "access",
+                            "thedef": "1000021 access"
+                          },
+                          "property": "subcommands"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "_class": "AST_Switch",
+              "expression": {
+                "_class": "AST_Sub",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "argv",
+                  "thedef": "1000019 argv"
+                },
+                "property": {
+                  "_class": "AST_Number",
+                  "value": 2
+                }
+              },
+              "body": [
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "grant",
+                    "quote": "'"
+                  },
+                  "body": [
+                    {
+                      "_class": "AST_If",
+                      "condition": {
+                        "_class": "AST_Binary",
+                        "operator": "===",
+                        "left": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "argv",
+                            "thedef": "1000019 argv"
+                          },
+                          "property": "length"
+                        },
+                        "right": {
+                          "_class": "AST_Number",
+                          "value": 3
+                        }
+                      },
+                      "alternative": {
+                        "_class": "AST_BlockStatement",
+                        "body": [
+                          {
+                            "_class": "AST_Return",
+                            "value": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "cb",
+                                "thedef": "1000018 cb"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Null"
+                                },
+                                {
+                                  "_class": "AST_Array",
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "body": {
+                        "_class": "AST_BlockStatement",
+                        "body": [
+                          {
+                            "_class": "AST_Return",
+                            "value": {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "cb",
+                                "thedef": "1000018 cb"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Null"
+                                },
+                                {
+                                  "_class": "AST_Array",
+                                  "elements": [
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "read-only",
+                                      "quote": "'"
+                                    },
+                                    {
+                                      "_class": "AST_String",
+                                      "value": "read-write",
+                                      "quote": "'"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "public",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "restricted",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "ls-packages",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "ls-collaborators",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "edit",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "2fa-required",
+                    "quote": "'"
+                  },
+                  "body": []
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "2fa-not-required",
+                    "quote": "'"
+                  },
+                  "body": [
+                    {
+                      "_class": "AST_Return",
+                      "value": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cb",
+                          "thedef": "1000018 cb"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_Null"
+                          },
+                          {
+                            "_class": "AST_Array",
+                            "elements": []
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_class": "AST_Case",
+                  "expression": {
+                    "_class": "AST_String",
+                    "value": "revoke",
+                    "quote": "'"
+                  },
+                  "body": [
+                    {
+                      "_class": "AST_Return",
+                      "value": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cb",
+                          "thedef": "1000018 cb"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_Null"
+                          },
+                          {
+                            "_class": "AST_Array",
+                            "elements": []
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_class": "AST_Default",
+                  "body": [
+                    {
+                      "_class": "AST_Return",
+                      "value": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cb",
+                          "thedef": "1000018 cb"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_New",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "Error",
+                              "thedef": "1000117 Error"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Binary",
+                                "operator": "+",
+                                "left": {
+                                  "_class": "AST_Sub",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "argv",
+                                    "thedef": "1000019 argv"
+                                  },
+                                  "property": {
+                                    "_class": "AST_Number",
+                                    "value": 2
+                                  }
+                                },
+                                "right": {
+                                  "_class": "AST_String",
+                                  "value": " not recognized",
+                                  "quote": "'"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "access",
+        "thedef": "1000021 access"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "_ref",
+          "thedef": "1000022 _ref"
+        },
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "cb",
+          "thedef": "1000023 cb"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000020 arguments",
+        "1000022 _ref",
+        "1000023 cb",
+        "1000024 cmd",
+        "1000025 args"
+      ],
+      "enclosed": [
+        "1000022 _ref",
+        "1000001 BB",
+        "1000021 access",
+        "1000024 cmd",
+        "1000014 UsageError",
+        "1000025 args",
+        "1000012 AccessConfig",
+        "1000004 npmConfig",
+        "1000023 cb"
+      ],
+      "body": [
+        {
+          "_class": "AST_Var",
+          "definitions": [
+            {
+              "_class": "AST_VarDef",
+              "name": {
+                "_class": "AST_SymbolVar",
+                "name": "cmd",
+                "thedef": "1000024 cmd"
+              },
+              "value": {
+                "_class": "AST_Sub",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "_ref",
+                  "thedef": "1000022 _ref"
+                },
+                "property": {
+                  "_class": "AST_Number",
+                  "value": 0
+                }
+              }
+            },
+            {
+              "_class": "AST_VarDef",
+              "name": {
+                "_class": "AST_SymbolVar",
+                "name": "args",
+                "thedef": "1000025 args"
+              },
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "_ref",
+                    "thedef": "1000022 _ref"
+                  },
+                  "property": "slice"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Number",
+                    "value": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "_class": "AST_Return",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "BB",
+                    "thedef": "1000001 BB"
+                  },
+                  "property": "try"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000026 arguments",
+                      "1000027 fn"
+                    ],
+                    "enclosed": [
+                      "1000021 access",
+                      "1000024 cmd",
+                      "1000014 UsageError",
+                      "1000027 fn",
+                      "1000025 args",
+                      "1000012 AccessConfig",
+                      "1000004 npmConfig"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_Var",
+                        "definitions": [
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "fn",
+                              "thedef": "1000027 fn"
+                            },
+                            "value": {
+                              "_class": "AST_Binary",
+                              "operator": "&&",
+                              "left": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Dot",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "access",
+                                      "thedef": "1000021 access"
+                                    },
+                                    "property": "subcommands"
+                                  },
+                                  "property": "includes"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "cmd",
+                                    "thedef": "1000024 cmd"
+                                  }
+                                ]
+                              },
+                              "right": {
+                                "_class": "AST_Sub",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "access",
+                                  "thedef": "1000021 access"
+                                },
+                                "property": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "cmd",
+                                  "thedef": "1000024 cmd"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_UnaryPrefix",
+                          "operator": "!",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "cmd",
+                            "thedef": "1000024 cmd"
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "Subcommand is required.",
+                                    "quote": "'"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_UnaryPrefix",
+                          "operator": "!",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "fn",
+                            "thedef": "1000027 fn"
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Binary",
+                                    "operator": "+",
+                                    "left": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "cmd",
+                                      "thedef": "1000024 cmd"
+                                    },
+                                    "right": {
+                                      "_class": "AST_String",
+                                      "value": " is not a recognized subcommand.",
+                                      "quote": "\""
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Return",
+                        "value": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "fn",
+                            "thedef": "1000027 fn"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "args",
+                              "thedef": "1000025 args"
+                            },
+                            {
+                              "_class": "AST_Call",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "AccessConfig",
+                                "thedef": "1000012 AccessConfig"
+                              },
+                              "args": [
+                                {
+                                  "_class": "AST_Call",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "npmConfig",
+                                    "thedef": "1000004 npmConfig"
+                                  },
+                                  "args": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "property": "then"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "x",
+                    "thedef": "1000029 x"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000028 arguments",
+                  "1000029 x"
+                ],
+                "enclosed": [
+                  "1000023 cb",
+                  "1000029 x"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "cb",
+                        "thedef": "1000023 cb"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Null"
+                        },
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "x",
+                          "thedef": "1000029 x"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "err",
+                    "thedef": "1000031 err"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000030 arguments",
+                  "1000031 err"
+                ],
+                "enclosed": [
+                  "1000031 err",
+                  "1000023 cb"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Conditional",
+                      "condition": {
+                        "_class": "AST_Binary",
+                        "operator": "===",
+                        "left": {
+                          "_class": "AST_Dot",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "err",
+                            "thedef": "1000031 err"
+                          },
+                          "property": "code"
+                        },
+                        "right": {
+                          "_class": "AST_String",
+                          "value": "EUSAGE",
+                          "quote": "'"
+                        }
+                      },
+                      "consequent": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cb",
+                          "thedef": "1000023 cb"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "err",
+                              "thedef": "1000031 err"
+                            },
+                            "property": "message"
+                          }
+                        ]
+                      },
+                      "alternative": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "cb",
+                          "thedef": "1000023 cb"
+                        },
+                        "args": [
+                          {
+                            "_class": "AST_SymbolRef",
+                            "name": "err",
+                            "thedef": "1000031 err"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "public"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "_ref2",
+              "thedef": "1000033 _ref2"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "opts",
+              "thedef": "1000034 opts"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000032 arguments",
+            "1000033 _ref2",
+            "1000034 opts",
+            "1000035 pkg"
+          ],
+          "enclosed": [
+            "1000033 _ref2",
+            "1000094 modifyPackage",
+            "1000035 pkg",
+            "1000034 opts",
+            "1000003 libaccess"
+          ],
+          "body": [
+            {
+              "_class": "AST_Var",
+              "definitions": [
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "pkg",
+                    "thedef": "1000035 pkg"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref2",
+                      "thedef": "1000033 _ref2"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "_class": "AST_Return",
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "modifyPackage",
+                  "thedef": "1000094 modifyPackage"
+                },
+                "args": [
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "pkg",
+                    "thedef": "1000035 pkg"
+                  },
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "opts",
+                    "thedef": "1000034 opts"
+                  },
+                  {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "libaccess",
+                      "thedef": "1000003 libaccess"
+                    },
+                    "property": "public"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "restricted"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "_ref3",
+              "thedef": "1000037 _ref3"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "opts",
+              "thedef": "1000038 opts"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000036 arguments",
+            "1000037 _ref3",
+            "1000038 opts",
+            "1000039 pkg"
+          ],
+          "enclosed": [
+            "1000037 _ref3",
+            "1000094 modifyPackage",
+            "1000039 pkg",
+            "1000038 opts",
+            "1000003 libaccess"
+          ],
+          "body": [
+            {
+              "_class": "AST_Var",
+              "definitions": [
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "pkg",
+                    "thedef": "1000039 pkg"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref3",
+                      "thedef": "1000037 _ref3"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "_class": "AST_Return",
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "modifyPackage",
+                  "thedef": "1000094 modifyPackage"
+                },
+                "args": [
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "pkg",
+                    "thedef": "1000039 pkg"
+                  },
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "opts",
+                    "thedef": "1000038 opts"
+                  },
+                  {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "libaccess",
+                      "thedef": "1000003 libaccess"
+                    },
+                    "property": "restricted"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "grant"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "_ref4",
+              "thedef": "1000041 _ref4"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "opts",
+              "thedef": "1000042 opts"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000040 arguments",
+            "1000041 _ref4",
+            "1000042 opts",
+            "1000043 perms",
+            "1000044 scopeteam",
+            "1000045 pkg"
+          ],
+          "enclosed": [
+            "1000041 _ref4",
+            "1000001 BB",
+            "1000043 perms",
+            "1000014 UsageError",
+            "1000044 scopeteam",
+            "1000094 modifyPackage",
+            "1000045 pkg",
+            "1000042 opts",
+            "1000003 libaccess"
+          ],
+          "body": [
+            {
+              "_class": "AST_Var",
+              "definitions": [
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "perms",
+                    "thedef": "1000043 perms"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref4",
+                      "thedef": "1000041 _ref4"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "scopeteam",
+                    "thedef": "1000044 scopeteam"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref4",
+                      "thedef": "1000041 _ref4"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "pkg",
+                    "thedef": "1000045 pkg"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref4",
+                      "thedef": "1000041 _ref4"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 2
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "_class": "AST_Return",
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "BB",
+                    "thedef": "1000001 BB"
+                  },
+                  "property": "try"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000046 arguments",
+                      "1000047 _ref5",
+                      "1000048 scope",
+                      "1000049 team"
+                    ],
+                    "enclosed": [
+                      "1000043 perms",
+                      "1000014 UsageError",
+                      "1000044 scopeteam",
+                      "1000047 _ref5",
+                      "1000048 scope",
+                      "1000049 team",
+                      "1000094 modifyPackage",
+                      "1000045 pkg",
+                      "1000042 opts",
+                      "1000003 libaccess"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_Binary",
+                          "operator": "||",
+                          "left": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "perms",
+                              "thedef": "1000043 perms"
+                            }
+                          },
+                          "right": {
+                            "_class": "AST_Binary",
+                            "operator": "&&",
+                            "left": {
+                              "_class": "AST_Binary",
+                              "operator": "!==",
+                              "left": {
+                                "_class": "AST_SymbolRef",
+                                "name": "perms",
+                                "thedef": "1000043 perms"
+                              },
+                              "right": {
+                                "_class": "AST_String",
+                                "value": "read-only",
+                                "quote": "'"
+                              }
+                            },
+                            "right": {
+                              "_class": "AST_Binary",
+                              "operator": "!==",
+                              "left": {
+                                "_class": "AST_SymbolRef",
+                                "name": "perms",
+                                "thedef": "1000043 perms"
+                              },
+                              "right": {
+                                "_class": "AST_String",
+                                "value": "read-write",
+                                "quote": "'"
+                              }
+                            }
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "First argument must be either `read-only` or `read-write.`",
+                                    "quote": "'"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_UnaryPrefix",
+                          "operator": "!",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "scopeteam",
+                            "thedef": "1000044 scopeteam"
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "`<scope:team>` argument is required.",
+                                    "quote": "'"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Var",
+                        "definitions": [
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "_ref5",
+                              "thedef": "1000047 _ref5"
+                            },
+                            "value": {
+                              "_class": "AST_Binary",
+                              "operator": "||",
+                              "left": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "scopeteam",
+                                    "thedef": "1000044 scopeteam"
+                                  },
+                                  "property": "match"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_RegExp",
+                                    "value": {
+                                      "raw_source": "^@?([^:]+):(.*)$"
+                                    }
+                                  }
+                                ]
+                              },
+                              "right": {
+                                "_class": "AST_Array",
+                                "elements": []
+                              }
+                            }
+                          },
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "scope",
+                              "thedef": "1000048 scope"
+                            },
+                            "value": {
+                              "_class": "AST_Sub",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "_ref5",
+                                "thedef": "1000047 _ref5"
+                              },
+                              "property": {
+                                "_class": "AST_Number",
+                                "value": 1
+                              }
+                            }
+                          },
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "team",
+                              "thedef": "1000049 team"
+                            },
+                            "value": {
+                              "_class": "AST_Sub",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "_ref5",
+                                "thedef": "1000047 _ref5"
+                              },
+                              "property": {
+                                "_class": "AST_Number",
+                                "value": 2
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_Binary",
+                          "operator": "&&",
+                          "left": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "scope",
+                              "thedef": "1000048 scope"
+                            }
+                          },
+                          "right": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "team",
+                              "thedef": "1000049 team"
+                            }
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Binary",
+                                    "operator": "+",
+                                    "left": {
+                                      "_class": "AST_String",
+                                      "value": "Second argument used incorrect format.\n",
+                                      "quote": "'"
+                                    },
+                                    "right": {
+                                      "_class": "AST_String",
+                                      "value": "Example: @example:developers",
+                                      "quote": "'"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Return",
+                        "value": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "modifyPackage",
+                            "thedef": "1000094 modifyPackage"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "pkg",
+                              "thedef": "1000045 pkg"
+                            },
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "opts",
+                              "thedef": "1000042 opts"
+                            },
+                            {
+                              "_class": "AST_Function",
+                              "name": null,
+                              "argnames": [
+                                {
+                                  "_class": "AST_SymbolFunarg",
+                                  "name": "pkgName",
+                                  "thedef": "1000051 pkgName"
+                                },
+                                {
+                                  "_class": "AST_SymbolFunarg",
+                                  "name": "opts",
+                                  "thedef": "1000052 opts"
+                                }
+                              ],
+                              "uses_arguments": false,
+                              "variables": [
+                                "1000050 arguments",
+                                "1000051 pkgName",
+                                "1000052 opts"
+                              ],
+                              "enclosed": [
+                                "1000003 libaccess",
+                                "1000051 pkgName",
+                                "1000044 scopeteam",
+                                "1000043 perms",
+                                "1000052 opts"
+                              ],
+                              "body": [
+                                {
+                                  "_class": "AST_Return",
+                                  "value": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "libaccess",
+                                        "thedef": "1000003 libaccess"
+                                      },
+                                      "property": "grant"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "pkgName",
+                                        "thedef": "1000051 pkgName"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "scopeteam",
+                                        "thedef": "1000044 scopeteam"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "perms",
+                                        "thedef": "1000043 perms"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "opts",
+                                        "thedef": "1000052 opts"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": "revoke"
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "_ref6",
+              "thedef": "1000054 _ref6"
+            },
+            {
+              "_class": "AST_SymbolFunarg",
+              "name": "opts",
+              "thedef": "1000055 opts"
+            }
+          ],
+          "uses_arguments": false,
+          "variables": [
+            "1000053 arguments",
+            "1000054 _ref6",
+            "1000055 opts",
+            "1000056 scopeteam",
+            "1000057 pkg"
+          ],
+          "enclosed": [
+            "1000054 _ref6",
+            "1000001 BB",
+            "1000056 scopeteam",
+            "1000014 UsageError",
+            "1000094 modifyPackage",
+            "1000057 pkg",
+            "1000055 opts",
+            "1000003 libaccess"
+          ],
+          "body": [
+            {
+              "_class": "AST_Var",
+              "definitions": [
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "scopeteam",
+                    "thedef": "1000056 scopeteam"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref6",
+                      "thedef": "1000054 _ref6"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "_class": "AST_VarDef",
+                  "name": {
+                    "_class": "AST_SymbolVar",
+                    "name": "pkg",
+                    "thedef": "1000057 pkg"
+                  },
+                  "value": {
+                    "_class": "AST_Sub",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "_ref6",
+                      "thedef": "1000054 _ref6"
+                    },
+                    "property": {
+                      "_class": "AST_Number",
+                      "value": 1
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "_class": "AST_Return",
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "BB",
+                    "thedef": "1000001 BB"
+                  },
+                  "property": "try"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000058 arguments",
+                      "1000059 _ref7",
+                      "1000060 scope",
+                      "1000061 team"
+                    ],
+                    "enclosed": [
+                      "1000056 scopeteam",
+                      "1000014 UsageError",
+                      "1000059 _ref7",
+                      "1000060 scope",
+                      "1000061 team",
+                      "1000094 modifyPackage",
+                      "1000057 pkg",
+                      "1000055 opts",
+                      "1000003 libaccess"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_UnaryPrefix",
+                          "operator": "!",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "scopeteam",
+                            "thedef": "1000056 scopeteam"
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_String",
+                                    "value": "`<scope:team>` argument is required.",
+                                    "quote": "'"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Var",
+                        "definitions": [
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "_ref7",
+                              "thedef": "1000059 _ref7"
+                            },
+                            "value": {
+                              "_class": "AST_Binary",
+                              "operator": "||",
+                              "left": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "scopeteam",
+                                    "thedef": "1000056 scopeteam"
+                                  },
+                                  "property": "match"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_RegExp",
+                                    "value": {
+                                      "raw_source": "^@?([^:]+):(.*)$"
+                                    }
+                                  }
+                                ]
+                              },
+                              "right": {
+                                "_class": "AST_Array",
+                                "elements": []
+                              }
+                            }
+                          },
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "scope",
+                              "thedef": "1000060 scope"
+                            },
+                            "value": {
+                              "_class": "AST_Sub",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "_ref7",
+                                "thedef": "1000059 _ref7"
+                              },
+                              "property": {
+                                "_class": "AST_Number",
+                                "value": 1
+                              }
+                            }
+                          },
+                          {
+                            "_class": "AST_VarDef",
+                            "name": {
+                              "_class": "AST_SymbolVar",
+                              "name": "team",
+                              "thedef": "1000061 team"
+                            },
+                            "value": {
+                              "_class": "AST_Sub",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "_ref7",
+                                "thedef": "1000059 _ref7"
+                              },
+                              "property": {
+                                "_class": "AST_Number",
+                                "value": 2
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_Binary",
+                          "operator": "||",
+                          "left": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "scope",
+                              "thedef": "1000060 scope"
+                            }
+                          },
+                          "right": {
+                            "_class": "AST_UnaryPrefix",
+                            "operator": "!",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "team",
+                              "thedef": "1000061 team"
+                            }
+                          }
+                        },
+                        "alternative": null,
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_SimpleStatement",
+                              "body": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "UsageError",
+                                  "thedef": "1000014 UsageError"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Binary",
+                                    "operator": "+",
+                                    "left": {
+                                      "_class": "AST_String",
+                                      "value": "First argument used incorrect format.\n",
+                                      "quote": "'"
+                                    },
+                                    "right": {
+                                      "_class": "AST_String",
+                                      "value": "Example: @example:developers",
+                                      "quote": "'"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "_class": "AST_Return",
+                        "value": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "modifyPackage",
+                            "thedef": "1000094 modifyPackage"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "pkg",
+                              "thedef": "1000057 pkg"
+                            },
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "opts",
+                              "thedef": "1000055 opts"
+                            },
+                            {
+                              "_class": "AST_Function",
+                              "name": null,
+                              "argnames": [
+                                {
+                                  "_class": "AST_SymbolFunarg",
+                                  "name": "pkgName",
+                                  "thedef": "1000063 pkgName"
+                                },
+                                {
+                                  "_class": "AST_SymbolFunarg",
+                                  "name": "opts",
+                                  "thedef": "1000064 opts"
+                                }
+                              ],
+                              "uses_arguments": false,
+                              "variables": [
+                                "1000062 arguments",
+                                "1000063 pkgName",
+                                "1000064 opts"
+                              ],
+                              "enclosed": [
+                                "1000003 libaccess",
+                                "1000063 pkgName",
+                                "1000056 scopeteam",
+                                "1000064 opts"
+                              ],
+                              "body": [
+                                {
+                                  "_class": "AST_Return",
+                                  "value": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_Dot",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "libaccess",
+                                        "thedef": "1000003 libaccess"
+                                      },
+                                      "property": "revoke"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "pkgName",
+                                        "thedef": "1000063 pkgName"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "scopeteam",
+                                        "thedef": "1000056 scopeteam"
+                                      },
+                                      {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "opts",
+                                        "thedef": "1000064 opts"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Sub",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": {
+            "_class": "AST_String",
+            "value": "2fa-required",
+            "quote": "'"
+          }
+        },
+        "right": {
+          "_class": "AST_Assign",
+          "operator": "=",
+          "left": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "access",
+              "thedef": "1000021 access"
+            },
+            "property": "tfaRequired"
+          },
+          "right": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "_ref8",
+                "thedef": "1000066 _ref8"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "opts",
+                "thedef": "1000067 opts"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000065 arguments",
+              "1000066 _ref8",
+              "1000067 opts",
+              "1000068 pkg"
+            ],
+            "enclosed": [
+              "1000066 _ref8",
+              "1000094 modifyPackage",
+              "1000068 pkg",
+              "1000067 opts",
+              "1000003 libaccess"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "pkg",
+                      "thedef": "1000068 pkg"
+                    },
+                    "value": {
+                      "_class": "AST_Sub",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "_ref8",
+                        "thedef": "1000066 _ref8"
+                      },
+                      "property": {
+                        "_class": "AST_Number",
+                        "value": 0
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "modifyPackage",
+                    "thedef": "1000094 modifyPackage"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "pkg",
+                      "thedef": "1000068 pkg"
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "opts",
+                      "thedef": "1000067 opts"
+                    },
+                    {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "libaccess",
+                        "thedef": "1000003 libaccess"
+                      },
+                      "property": "tfaRequired"
+                    },
+                    {
+                      "_class": "AST_False"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Sub",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": {
+            "_class": "AST_String",
+            "value": "2fa-not-required",
+            "quote": "'"
+          }
+        },
+        "right": {
+          "_class": "AST_Assign",
+          "operator": "=",
+          "left": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "access",
+              "thedef": "1000021 access"
+            },
+            "property": "tfaNotRequired"
+          },
+          "right": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "_ref9",
+                "thedef": "1000070 _ref9"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "opts",
+                "thedef": "1000071 opts"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000069 arguments",
+              "1000070 _ref9",
+              "1000071 opts",
+              "1000072 pkg"
+            ],
+            "enclosed": [
+              "1000070 _ref9",
+              "1000094 modifyPackage",
+              "1000072 pkg",
+              "1000071 opts",
+              "1000003 libaccess"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "pkg",
+                      "thedef": "1000072 pkg"
+                    },
+                    "value": {
+                      "_class": "AST_Sub",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "_ref9",
+                        "thedef": "1000070 _ref9"
+                      },
+                      "property": {
+                        "_class": "AST_Number",
+                        "value": 0
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "modifyPackage",
+                    "thedef": "1000094 modifyPackage"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "pkg",
+                      "thedef": "1000072 pkg"
+                    },
+                    {
+                      "_class": "AST_SymbolRef",
+                      "name": "opts",
+                      "thedef": "1000071 opts"
+                    },
+                    {
+                      "_class": "AST_Dot",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "libaccess",
+                        "thedef": "1000003 libaccess"
+                      },
+                      "property": "tfaNotRequired"
+                    },
+                    {
+                      "_class": "AST_False"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Sub",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": {
+            "_class": "AST_String",
+            "value": "ls-packages",
+            "quote": "'"
+          }
+        },
+        "right": {
+          "_class": "AST_Assign",
+          "operator": "=",
+          "left": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "access",
+              "thedef": "1000021 access"
+            },
+            "property": "lsPackages"
+          },
+          "right": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "_ref10",
+                "thedef": "1000074 _ref10"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "opts",
+                "thedef": "1000075 opts"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000073 arguments",
+              "1000074 _ref10",
+              "1000075 opts",
+              "1000076 owner"
+            ],
+            "enclosed": [
+              "1000074 _ref10",
+              "1000076 owner",
+              "1000001 BB",
+              "1000011 whoami",
+              "1000003 libaccess",
+              "1000075 opts",
+              "1000005 output",
+              "1000118 JSON"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "owner",
+                      "thedef": "1000076 owner"
+                    },
+                    "value": {
+                      "_class": "AST_Sub",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "_ref10",
+                        "thedef": "1000074 _ref10"
+                      },
+                      "property": {
+                        "_class": "AST_Number",
+                        "value": 0
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Conditional",
+                          "condition": {
+                            "_class": "AST_SymbolRef",
+                            "name": "owner",
+                            "thedef": "1000076 owner"
+                          },
+                          "consequent": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "BB",
+                                "thedef": "1000001 BB"
+                              },
+                              "property": "resolve"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_SymbolRef",
+                                "name": "owner",
+                                "thedef": "1000076 owner"
+                              }
+                            ]
+                          },
+                          "alternative": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "BB",
+                                "thedef": "1000001 BB"
+                              },
+                              "property": "fromNode"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Function",
+                                "name": null,
+                                "argnames": [
+                                  {
+                                    "_class": "AST_SymbolFunarg",
+                                    "name": "cb",
+                                    "thedef": "1000078 cb"
+                                  }
+                                ],
+                                "uses_arguments": false,
+                                "variables": [
+                                  "1000077 arguments",
+                                  "1000078 cb"
+                                ],
+                                "enclosed": [
+                                  "1000011 whoami",
+                                  "1000078 cb"
+                                ],
+                                "body": [
+                                  {
+                                    "_class": "AST_Return",
+                                    "value": {
+                                      "_class": "AST_Call",
+                                      "expression": {
+                                        "_class": "AST_SymbolRef",
+                                        "name": "whoami",
+                                        "thedef": "1000011 whoami"
+                                      },
+                                      "args": [
+                                        {
+                                          "_class": "AST_Array",
+                                          "elements": []
+                                        },
+                                        {
+                                          "_class": "AST_True"
+                                        },
+                                        {
+                                          "_class": "AST_SymbolRef",
+                                          "name": "cb",
+                                          "thedef": "1000078 cb"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "property": "then"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "owner",
+                              "thedef": "1000080 owner"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000079 arguments",
+                            "1000080 owner"
+                          ],
+                          "enclosed": [
+                            "1000003 libaccess",
+                            "1000080 owner",
+                            "1000075 opts"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "libaccess",
+                                    "thedef": "1000003 libaccess"
+                                  },
+                                  "property": "lsPackages"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "owner",
+                                    "thedef": "1000080 owner"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "opts",
+                                    "thedef": "1000075 opts"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "then"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "pkgs",
+                          "thedef": "1000082 pkgs"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000081 arguments",
+                        "1000082 pkgs"
+                      ],
+                      "enclosed": [
+                        "1000005 output",
+                        "1000118 JSON",
+                        "1000082 pkgs"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "output",
+                              "thedef": "1000005 output"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "JSON",
+                                    "thedef": "1000118 JSON"
+                                  },
+                                  "property": "stringify"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "pkgs",
+                                    "thedef": "1000082 pkgs"
+                                  },
+                                  {
+                                    "_class": "AST_Null"
+                                  },
+                                  {
+                                    "_class": "AST_Number",
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Sub",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": {
+            "_class": "AST_String",
+            "value": "ls-collaborators",
+            "quote": "'"
+          }
+        },
+        "right": {
+          "_class": "AST_Assign",
+          "operator": "=",
+          "left": {
+            "_class": "AST_Dot",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "access",
+              "thedef": "1000021 access"
+            },
+            "property": "lsCollaborators"
+          },
+          "right": {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "_ref11",
+                "thedef": "1000084 _ref11"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "opts",
+                "thedef": "1000085 opts"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000083 arguments",
+              "1000084 _ref11",
+              "1000085 opts",
+              "1000086 pkg",
+              "1000087 usr"
+            ],
+            "enclosed": [
+              "1000084 _ref11",
+              "1000104 getPackage",
+              "1000086 pkg",
+              "1000003 libaccess",
+              "1000087 usr",
+              "1000085 opts",
+              "1000005 output",
+              "1000118 JSON"
+            ],
+            "body": [
+              {
+                "_class": "AST_Var",
+                "definitions": [
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "pkg",
+                      "thedef": "1000086 pkg"
+                    },
+                    "value": {
+                      "_class": "AST_Sub",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "_ref11",
+                        "thedef": "1000084 _ref11"
+                      },
+                      "property": {
+                        "_class": "AST_Number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  {
+                    "_class": "AST_VarDef",
+                    "name": {
+                      "_class": "AST_SymbolVar",
+                      "name": "usr",
+                      "thedef": "1000087 usr"
+                    },
+                    "value": {
+                      "_class": "AST_Sub",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "_ref11",
+                        "thedef": "1000084 _ref11"
+                      },
+                      "property": {
+                        "_class": "AST_Number",
+                        "value": 1
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "_class": "AST_Return",
+                "value": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_Dot",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_SymbolRef",
+                            "name": "getPackage",
+                            "thedef": "1000104 getPackage"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_SymbolRef",
+                              "name": "pkg",
+                              "thedef": "1000086 pkg"
+                            },
+                            {
+                              "_class": "AST_False"
+                            }
+                          ]
+                        },
+                        "property": "then"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "pkgName",
+                              "thedef": "1000089 pkgName"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000088 arguments",
+                            "1000089 pkgName"
+                          ],
+                          "enclosed": [
+                            "1000003 libaccess",
+                            "1000089 pkgName",
+                            "1000087 usr",
+                            "1000085 opts"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "libaccess",
+                                    "thedef": "1000003 libaccess"
+                                  },
+                                  "property": "lsCollaborators"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "pkgName",
+                                    "thedef": "1000089 pkgName"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "usr",
+                                    "thedef": "1000087 usr"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "opts",
+                                    "thedef": "1000085 opts"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "property": "then"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_Function",
+                      "name": null,
+                      "argnames": [
+                        {
+                          "_class": "AST_SymbolFunarg",
+                          "name": "collabs",
+                          "thedef": "1000091 collabs"
+                        }
+                      ],
+                      "uses_arguments": false,
+                      "variables": [
+                        "1000090 arguments",
+                        "1000091 collabs"
+                      ],
+                      "enclosed": [
+                        "1000005 output",
+                        "1000118 JSON",
+                        "1000091 collabs"
+                      ],
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "output",
+                              "thedef": "1000005 output"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "JSON",
+                                    "thedef": "1000118 JSON"
+                                  },
+                                  "property": "stringify"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "collabs",
+                                    "thedef": "1000091 collabs"
+                                  },
+                                  {
+                                    "_class": "AST_Null"
+                                  },
+                                  {
+                                    "_class": "AST_Number",
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Assign",
+        "operator": "=",
+        "left": {
+          "_class": "AST_Sub",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "access",
+            "thedef": "1000021 access"
+          },
+          "property": {
+            "_class": "AST_String",
+            "value": "edit",
+            "quote": "'"
+          }
+        },
+        "right": {
+          "_class": "AST_Function",
+          "name": null,
+          "argnames": [],
+          "uses_arguments": false,
+          "variables": [
+            "1000092 arguments"
+          ],
+          "enclosed": [
+            "1000001 BB",
+            "1000117 Error"
+          ],
+          "body": [
+            {
+              "_class": "AST_Return",
+              "value": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "BB",
+                    "thedef": "1000001 BB"
+                  },
+                  "property": "reject"
+                },
+                "args": [
+                  {
+                    "_class": "AST_New",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "Error",
+                      "thedef": "1000117 Error"
+                    },
+                    "args": [
+                      {
+                        "_class": "AST_String",
+                        "value": "edit subcommand is not implemented yet",
+                        "quote": "'"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "modifyPackage",
+        "thedef": "1000094 modifyPackage"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "pkg",
+          "thedef": "1000095 pkg"
+        },
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "opts",
+          "thedef": "1000096 opts"
+        },
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "fn",
+          "thedef": "1000097 fn"
+        },
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "requireScope",
+          "thedef": "1000098 requireScope"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000093 arguments",
+        "1000095 pkg",
+        "1000096 opts",
+        "1000097 fn",
+        "1000098 requireScope"
+      ],
+      "enclosed": [
+        "1000098 requireScope",
+        "1000104 getPackage",
+        "1000095 pkg",
+        "1000006 otplease",
+        "1000096 opts",
+        "1000097 fn"
+      ],
+      "body": [
+        {
+          "_class": "AST_If",
+          "condition": {
+            "_class": "AST_Binary",
+            "operator": "===",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "requireScope",
+              "thedef": "1000098 requireScope"
+            },
+            "right": {
+              "_class": "AST_UnaryPrefix",
+              "operator": "void",
+              "expression": {
+                "_class": "AST_Number",
+                "value": 0
+              }
+            }
+          },
+          "alternative": null,
+          "body": {
+            "_class": "AST_BlockStatement",
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_SymbolRef",
+                    "name": "requireScope",
+                    "thedef": "1000098 requireScope"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_Return",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "getPackage",
+                  "thedef": "1000104 getPackage"
+                },
+                "args": [
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "pkg",
+                    "thedef": "1000095 pkg"
+                  },
+                  {
+                    "_class": "AST_SymbolRef",
+                    "name": "requireScope",
+                    "thedef": "1000098 requireScope"
+                  }
+                ]
+              },
+              "property": "then"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "pkgName",
+                    "thedef": "1000100 pkgName"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000099 arguments",
+                  "1000100 pkgName"
+                ],
+                "enclosed": [
+                  "1000006 otplease",
+                  "1000096 opts",
+                  "1000097 fn",
+                  "1000100 pkgName"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_Return",
+                    "value": {
+                      "_class": "AST_Call",
+                      "expression": {
+                        "_class": "AST_SymbolRef",
+                        "name": "otplease",
+                        "thedef": "1000006 otplease"
+                      },
+                      "args": [
+                        {
+                          "_class": "AST_SymbolRef",
+                          "name": "opts",
+                          "thedef": "1000096 opts"
+                        },
+                        {
+                          "_class": "AST_Function",
+                          "name": null,
+                          "argnames": [
+                            {
+                              "_class": "AST_SymbolFunarg",
+                              "name": "opts",
+                              "thedef": "1000102 opts"
+                            }
+                          ],
+                          "uses_arguments": false,
+                          "variables": [
+                            "1000101 arguments",
+                            "1000102 opts"
+                          ],
+                          "enclosed": [
+                            "1000097 fn",
+                            "1000100 pkgName",
+                            "1000102 opts"
+                          ],
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_SymbolRef",
+                                  "name": "fn",
+                                  "thedef": "1000097 fn"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "pkgName",
+                                    "thedef": "1000100 pkgName"
+                                  },
+                                  {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "opts",
+                                    "thedef": "1000102 opts"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Defun",
+      "name": {
+        "_class": "AST_SymbolDefun",
+        "name": "getPackage",
+        "thedef": "1000104 getPackage"
+      },
+      "argnames": [
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "name",
+          "thedef": "1000105 name"
+        },
+        {
+          "_class": "AST_SymbolFunarg",
+          "name": "requireScope",
+          "thedef": "1000106 requireScope"
+        }
+      ],
+      "uses_arguments": false,
+      "variables": [
+        "1000103 arguments",
+        "1000105 name",
+        "1000106 requireScope"
+      ],
+      "enclosed": [
+        "1000106 requireScope",
+        "1000001 BB",
+        "1000105 name",
+        "1000009 readPackageJson",
+        "1000007 path",
+        "1000008 prefix",
+        "1000117 Error",
+        "1000014 UsageError"
+      ],
+      "body": [
+        {
+          "_class": "AST_If",
+          "condition": {
+            "_class": "AST_Binary",
+            "operator": "===",
+            "left": {
+              "_class": "AST_SymbolRef",
+              "name": "requireScope",
+              "thedef": "1000106 requireScope"
+            },
+            "right": {
+              "_class": "AST_UnaryPrefix",
+              "operator": "void",
+              "expression": {
+                "_class": "AST_Number",
+                "value": 0
+              }
+            }
+          },
+          "alternative": null,
+          "body": {
+            "_class": "AST_BlockStatement",
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Assign",
+                  "operator": "=",
+                  "left": {
+                    "_class": "AST_SymbolRef",
+                    "name": "requireScope",
+                    "thedef": "1000106 requireScope"
+                  },
+                  "right": {
+                    "_class": "AST_True"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_class": "AST_Return",
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_Dot",
+              "expression": {
+                "_class": "AST_Call",
+                "expression": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_SymbolRef",
+                    "name": "BB",
+                    "thedef": "1000001 BB"
+                  },
+                  "property": "try"
+                },
+                "args": [
+                  {
+                    "_class": "AST_Function",
+                    "name": null,
+                    "argnames": [],
+                    "uses_arguments": false,
+                    "variables": [
+                      "1000107 arguments"
+                    ],
+                    "enclosed": [
+                      "1000105 name",
+                      "1000009 readPackageJson",
+                      "1000007 path",
+                      "1000008 prefix",
+                      "1000117 Error"
+                    ],
+                    "body": [
+                      {
+                        "_class": "AST_If",
+                        "condition": {
+                          "_class": "AST_Binary",
+                          "operator": "&&",
+                          "left": {
+                            "_class": "AST_SymbolRef",
+                            "name": "name",
+                            "thedef": "1000105 name"
+                          },
+                          "right": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_Dot",
+                              "expression": {
+                                "_class": "AST_SymbolRef",
+                                "name": "name",
+                                "thedef": "1000105 name"
+                              },
+                              "property": "trim"
+                            },
+                            "args": []
+                          }
+                        },
+                        "alternative": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_Call",
+                                    "expression": {
+                                      "_class": "AST_SymbolRef",
+                                      "name": "readPackageJson",
+                                      "thedef": "1000009 readPackageJson"
+                                    },
+                                    "args": [
+                                      {
+                                        "_class": "AST_Call",
+                                        "expression": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "path",
+                                            "thedef": "1000007 path"
+                                          },
+                                          "property": "resolve"
+                                        },
+                                        "args": [
+                                          {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "prefix",
+                                            "thedef": "1000008 prefix"
+                                          },
+                                          {
+                                            "_class": "AST_String",
+                                            "value": "package.json",
+                                            "quote": "'"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "property": "then"
+                                },
+                                "args": [
+                                  {
+                                    "_class": "AST_Function",
+                                    "name": null,
+                                    "argnames": [
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "data",
+                                        "thedef": "1000109 data"
+                                      }
+                                    ],
+                                    "uses_arguments": false,
+                                    "variables": [
+                                      "1000108 arguments",
+                                      "1000109 data"
+                                    ],
+                                    "enclosed": [
+                                      "1000109 data"
+                                    ],
+                                    "body": [
+                                      {
+                                        "_class": "AST_Return",
+                                        "value": {
+                                          "_class": "AST_Dot",
+                                          "expression": {
+                                            "_class": "AST_SymbolRef",
+                                            "name": "data",
+                                            "thedef": "1000109 data"
+                                          },
+                                          "property": "name"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "_class": "AST_Function",
+                                    "name": null,
+                                    "argnames": [
+                                      {
+                                        "_class": "AST_SymbolFunarg",
+                                        "name": "err",
+                                        "thedef": "1000111 err"
+                                      }
+                                    ],
+                                    "uses_arguments": false,
+                                    "variables": [
+                                      "1000110 arguments",
+                                      "1000111 err"
+                                    ],
+                                    "enclosed": [
+                                      "1000111 err",
+                                      "1000117 Error"
+                                    ],
+                                    "body": [
+                                      {
+                                        "_class": "AST_If",
+                                        "condition": {
+                                          "_class": "AST_Binary",
+                                          "operator": "===",
+                                          "left": {
+                                            "_class": "AST_Dot",
+                                            "expression": {
+                                              "_class": "AST_SymbolRef",
+                                              "name": "err",
+                                              "thedef": "1000111 err"
+                                            },
+                                            "property": "code"
+                                          },
+                                          "right": {
+                                            "_class": "AST_String",
+                                            "value": "ENOENT",
+                                            "quote": "'"
+                                          }
+                                        },
+                                        "alternative": {
+                                          "_class": "AST_BlockStatement",
+                                          "body": [
+                                            {
+                                              "_class": "AST_Throw",
+                                              "value": {
+                                                "_class": "AST_SymbolRef",
+                                                "name": "err",
+                                                "thedef": "1000111 err"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        "body": {
+                                          "_class": "AST_BlockStatement",
+                                          "body": [
+                                            {
+                                              "_class": "AST_Throw",
+                                              "value": {
+                                                "_class": "AST_New",
+                                                "expression": {
+                                                  "_class": "AST_SymbolRef",
+                                                  "name": "Error",
+                                                  "thedef": "1000117 Error"
+                                                },
+                                                "args": [
+                                                  {
+                                                    "_class": "AST_String",
+                                                    "value": "no package name passed to command and no package.json found",
+                                                    "quote": "'"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        "body": {
+                          "_class": "AST_BlockStatement",
+                          "body": [
+                            {
+                              "_class": "AST_Return",
+                              "value": {
+                                "_class": "AST_Call",
+                                "expression": {
+                                  "_class": "AST_Dot",
+                                  "expression": {
+                                    "_class": "AST_SymbolRef",
+                                    "name": "name",
+                                    "thedef": "1000105 name"
+                                  },
+                                  "property": "trim"
+                                },
+                                "args": []
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "property": "then"
+            },
+            "args": [
+              {
+                "_class": "AST_Function",
+                "name": null,
+                "argnames": [
+                  {
+                    "_class": "AST_SymbolFunarg",
+                    "name": "name",
+                    "thedef": "1000113 name"
+                  }
+                ],
+                "uses_arguments": false,
+                "variables": [
+                  "1000112 arguments",
+                  "1000113 name"
+                ],
+                "enclosed": [
+                  "1000106 requireScope",
+                  "1000113 name",
+                  "1000014 UsageError"
+                ],
+                "body": [
+                  {
+                    "_class": "AST_If",
+                    "condition": {
+                      "_class": "AST_Binary",
+                      "operator": "&&",
+                      "left": {
+                        "_class": "AST_SymbolRef",
+                        "name": "requireScope",
+                        "thedef": "1000106 requireScope"
+                      },
+                      "right": {
+                        "_class": "AST_UnaryPrefix",
+                        "operator": "!",
+                        "expression": {
+                          "_class": "AST_Call",
+                          "expression": {
+                            "_class": "AST_Dot",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "name",
+                              "thedef": "1000113 name"
+                            },
+                            "property": "match"
+                          },
+                          "args": [
+                            {
+                              "_class": "AST_RegExp",
+                              "value": {
+                                "raw_source": "^@[^/]+\\/.*$"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "alternative": {
+                      "_class": "AST_BlockStatement",
+                      "body": [
+                        {
+                          "_class": "AST_Return",
+                          "value": {
+                            "_class": "AST_SymbolRef",
+                            "name": "name",
+                            "thedef": "1000113 name"
+                          }
+                        }
+                      ]
+                    },
+                    "body": {
+                      "_class": "AST_BlockStatement",
+                      "body": [
+                        {
+                          "_class": "AST_SimpleStatement",
+                          "body": {
+                            "_class": "AST_Call",
+                            "expression": {
+                              "_class": "AST_SymbolRef",
+                              "name": "UsageError",
+                              "thedef": "1000014 UsageError"
+                            },
+                            "args": [
+                              {
+                                "_class": "AST_String",
+                                "value": "This command is only available for scoped packages.",
+                                "quote": "'"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

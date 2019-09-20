@@ -1,0 +1,328 @@
+{
+  "_class": "AST_Toplevel",
+  "globals": [
+    "1000012 require",
+    "1000013 parseInt",
+    "1000014 process",
+    "1000015 console"
+  ],
+  "variables": [
+    "1000001 express",
+    "1000002 app",
+    "1000003 n"
+  ],
+  "enclosed": [
+    "1000012 require",
+    "1000001 express",
+    "1000013 parseInt",
+    "1000014 process",
+    "1000015 console",
+    "1000003 n",
+    "1000002 app"
+  ],
+  "body": [
+    {
+      "_class": "AST_Directive",
+      "value": "use strict",
+      "quote": "\""
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "express",
+            "thedef": "1000001 express"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "require",
+              "thedef": "1000012 require"
+            },
+            "args": [
+              {
+                "_class": "AST_String",
+                "value": "..",
+                "quote": "\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "app",
+            "thedef": "1000002 app"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "express",
+              "thedef": "1000001 express"
+            },
+            "args": []
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_Var",
+      "definitions": [
+        {
+          "_class": "AST_VarDef",
+          "name": {
+            "_class": "AST_SymbolVar",
+            "name": "n",
+            "thedef": "1000003 n"
+          },
+          "value": {
+            "_class": "AST_Call",
+            "expression": {
+              "_class": "AST_SymbolRef",
+              "name": "parseInt",
+              "thedef": "1000013 parseInt"
+            },
+            "args": [
+              {
+                "_class": "AST_Binary",
+                "operator": "||",
+                "left": {
+                  "_class": "AST_Dot",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "process",
+                      "thedef": "1000014 process"
+                    },
+                    "property": "env"
+                  },
+                  "property": "MW"
+                },
+                "right": {
+                  "_class": "AST_String",
+                  "value": "1",
+                  "quote": "\""
+                }
+              },
+              {
+                "_class": "AST_Number",
+                "value": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "console",
+            "thedef": "1000015 console"
+          },
+          "property": "log"
+        },
+        "args": [
+          {
+            "_class": "AST_String",
+            "value": "  %s middleware",
+            "quote": "\""
+          },
+          {
+            "_class": "AST_SymbolRef",
+            "name": "n",
+            "thedef": "1000003 n"
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_While",
+      "condition": {
+        "_class": "AST_UnaryPostfix",
+        "operator": "--",
+        "expression": {
+          "_class": "AST_SymbolRef",
+          "name": "n",
+          "thedef": "1000003 n"
+        }
+      },
+      "body": {
+        "_class": "AST_BlockStatement",
+        "body": [
+          {
+            "_class": "AST_SimpleStatement",
+            "body": {
+              "_class": "AST_Call",
+              "expression": {
+                "_class": "AST_Dot",
+                "expression": {
+                  "_class": "AST_SymbolRef",
+                  "name": "app",
+                  "thedef": "1000002 app"
+                },
+                "property": "use"
+              },
+              "args": [
+                {
+                  "_class": "AST_Function",
+                  "name": null,
+                  "argnames": [
+                    {
+                      "_class": "AST_SymbolFunarg",
+                      "name": "e",
+                      "thedef": "1000005 e"
+                    },
+                    {
+                      "_class": "AST_SymbolFunarg",
+                      "name": "s",
+                      "thedef": "1000006 s"
+                    },
+                    {
+                      "_class": "AST_SymbolFunarg",
+                      "name": "n",
+                      "thedef": "1000007 n"
+                    }
+                  ],
+                  "uses_arguments": false,
+                  "variables": [
+                    "1000004 arguments",
+                    "1000005 e",
+                    "1000006 s",
+                    "1000007 n"
+                  ],
+                  "enclosed": [
+                    "1000007 n"
+                  ],
+                  "body": [
+                    {
+                      "_class": "AST_SimpleStatement",
+                      "body": {
+                        "_class": "AST_Call",
+                        "expression": {
+                          "_class": "AST_SymbolRef",
+                          "name": "n",
+                          "thedef": "1000007 n"
+                        },
+                        "args": []
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "app",
+            "thedef": "1000002 app"
+          },
+          "property": "use"
+        },
+        "args": [
+          {
+            "_class": "AST_Function",
+            "name": null,
+            "argnames": [
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "e",
+                "thedef": "1000009 e"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "s",
+                "thedef": "1000010 s"
+              },
+              {
+                "_class": "AST_SymbolFunarg",
+                "name": "n",
+                "thedef": "1000011 n"
+              }
+            ],
+            "uses_arguments": false,
+            "variables": [
+              "1000008 arguments",
+              "1000009 e",
+              "1000010 s",
+              "1000011 n"
+            ],
+            "enclosed": [
+              "1000010 s"
+            ],
+            "body": [
+              {
+                "_class": "AST_SimpleStatement",
+                "body": {
+                  "_class": "AST_Call",
+                  "expression": {
+                    "_class": "AST_Dot",
+                    "expression": {
+                      "_class": "AST_SymbolRef",
+                      "name": "s",
+                      "thedef": "1000010 s"
+                    },
+                    "property": "send"
+                  },
+                  "args": [
+                    {
+                      "_class": "AST_String",
+                      "value": "Hello World",
+                      "quote": "\""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_class": "AST_SimpleStatement",
+      "body": {
+        "_class": "AST_Call",
+        "expression": {
+          "_class": "AST_Dot",
+          "expression": {
+            "_class": "AST_SymbolRef",
+            "name": "app",
+            "thedef": "1000002 app"
+          },
+          "property": "listen"
+        },
+        "args": [
+          {
+            "_class": "AST_Number",
+            "value": 3333
+          }
+        ]
+      }
+    }
+  ]
+}
